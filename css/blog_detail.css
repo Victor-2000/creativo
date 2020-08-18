@@ -395,6 +395,9 @@ header .col-xs-3 {
   padding-top: 1.5em;
   border-bottom: 1px solid #dedede;
 }
+.lite footer .logo a {
+  color: white;
+}
 footer {
   padding: 10em 0 2em 0;
   background: url("../images/footer_decoration.png") center center no-repeat;
