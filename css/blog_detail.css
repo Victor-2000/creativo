@@ -257,6 +257,9 @@ header .col-xs-3 {
 #solution-img {
   width: 75%;
 }
+.blog-content {
+  padding-bottom: 7em;
+}
 .blog-content .row {
   width: 100%;
 }
