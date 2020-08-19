@@ -25,6 +25,14 @@ a {
   background-size: 100% 100%;
   padding-bottom: 7em;
 }
+input,
+textarea {
+  background: #f5f6f8;
+  border: 1px solid #dedede;
+  color: #333333;
+  outline: none;
+  resize: none;
+}
 .lite .main-background {
   position: relative;
   background: none;
@@ -191,9 +199,15 @@ header .col-xs-3 {
   margin-bottom: 0;
   width: 100%;
 }
+.lite #cta-title {
+  color: #333333;
+}
 #cta-text {
   margin: 1.5em 0 3em 0;
   color: #f9fcfb;
+}
+.lite #cta-text {
+  color: #666666;
 }
 .button-pannel,
 .input-pannel {
@@ -256,6 +270,211 @@ header .col-xs-3 {
 }
 #solution-img {
   width: 75%;
+}
+.main-cta {
+  margin-top: 0;
+}
+.contact-content {
+  padding-bottom: 7em;
+}
+.contact-content .button-pannel {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+.contact-content .row {
+  width: 100%;
+}
+.contact-content .title-one {
+  color: #333333;
+  font-size: 36px;
+  padding: 0.7em 2em 0.5em 0;
+}
+.contact-content .content-title {
+  padding: 1em 0;
+  padding-top: 2em;
+}
+.contact-content .content-section {
+  width: 66%;
+}
+.side-menu {
+  width: 34%;
+}
+.side-menu .title-one {
+  padding: 0.7em 1.5em 1.5em 0.7em;
+}
+.side-menu-heading {
+  background: #d4ede1;
+}
+.side-menu-heading .title-one {
+  font-size: 32px;
+}
+.featured-image {
+  border-radius: 4px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: url("../images/image_placeholder.png");
+  width: 97.3%;
+  height: 350px;
+  margin-left: 0.75em;
+  margin-bottom: 3em;
+}
+.side-menu-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #f5f6f8;
+  width: 100%;
+  padding: 1em 0;
+}
+.small-ow {
+  display: block;
+  position: relative;
+  top: 1px;
+  margin: 0.6em 1.5em;
+  height: 47vh;
+  cursor: pointer;
+}
+.small-ow-image {
+  display: block;
+  background: url("../images/image_placeholder.png");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+}
+.small-ow-text {
+  position: absolute;
+  background: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+.small-ow-text .small-ow-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  color: #333333;
+  font-size: 14px;
+  padding: 1em;
+}
+.small-ow-text .small-ow-author {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  color: #b7b7b8;
+  font-size: 12px;
+  padding: 0 0 2em 16px;
+}
+.blog-image {
+  margin: 1em 0;
+}
+.blog-image .image-description {
+  color: #666666;
+}
+.author {
+  display: flex;
+  padding-top: 3em;
+  float: left;
+  overflow: hidden;
+}
+#author-name {
+  padding: 0 0 0 1em;
+}
+#author-description {
+  padding-top: 0;
+  font-size: 12px;
+  color: #b7b7b8;
+}
+#author-image {
+  display: block;
+  background: url("../images/sprites.png");
+  background-position: -128px -128px;
+  width: 40px;
+  height: 40px;
+}
+.contact-ui {
+  float: right;
+  padding-top: 3em;
+}
+.contact,
+.bookmark,
+.share {
+  display: block;
+  background: url("../images/sprites.png");
+  width: 22px;
+  height: 22px;
+}
+.contact {
+  background-position: -192px 0;
+}
+.bookmark {
+  background-position: -256px 0;
+  width: 18px;
+}
+.share {
+  background-position: -320px 0;
+}
+#author-line {
+  clear: both;
+  padding-top: 1.5em;
+  border-bottom: 1px solid #dedede;
+}
+#contact-us-form input,
+#contact-us-form textarea {
+  width: 100%;
+  font-size: 14px;
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+}
+#contact-us-form input[type="submit"] {
+  width: initial;
+  margin: auto;
+  color: white;
+  height: 4em;
+  width: 12em;
+}
+#contact-us-form input {
+  height: 3em;
+}
+#contact-us-form textarea {
+  height: 10em;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 9em 0 0 4em;
+}
+.info-block {
+  display: flex;
+  margin-bottom: 2em;
+  align-items: center;
+}
+.info-text {
+  margin-left: 2em;
+  float: left;
+}
+.info-icon {
+  display: block;
+  background: url("../images/sprites.png");
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.location {
+  background-position: -192px -64px;
+}
+.mail {
+  background-position: -256px -64px;
+}
+.phone {
+  background-position: -320px -64px;
 }
 .lite footer .logo a {
   color: white;
