@@ -142,7 +142,7 @@ header .col-xs-3 {
 .navigation-menu ul li .nav-selected:hover {
   color: white;
 }
-.sections {
+section {
   padding: 5em 0;
 }
 .hollow.button {
@@ -156,6 +156,7 @@ header .col-xs-3 {
   background: none;
 }
 .hollow.button:hover {
+  color: white;
   border: 1px solid #27a469;
   background-color: #83e1b5;
 }
@@ -163,19 +164,26 @@ header .col-xs-3 {
   color: white;
 }
 .hollow.button.selected {
+  color: white;
   background-color: #27a469;
   border: 1px solid #27a469;
 }
 .hollow.button.selected a {
   color: white;
 }
+.hollow.button.selected:hover {
+  border: 1px solid #2cb976;
+  background-color: #2cb976;
+}
 .hollow.button.lite {
+  color: white;
   border: 1px solid #dedede;
 }
 .hollow.button.lite a {
   color: white;
 }
 .hollow.button.lite:hover {
+  color: white;
   background-color: rgba(255, 255, 255, 0.2);
 }
 .hollow.button.lite:hover a {
@@ -257,6 +265,57 @@ header .col-xs-3 {
 }
 .main-background {
   background: url("../images/image_placeholder.png");
+}
+.main-cta .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+#cta-text {
+  width: 85%;
+  color: #eeeeee;
+}
+.button-pannel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery {
+  padding-top: 3em;
+  background-color: #fdfdfe;
+  background-image: -webkit-linear-gradient(top, #f5f6f8, #fdfdfe);
+  background-image: -moz-linear-gradient(top, #f5f6f8, #fdfdfe);
+  background-image: -o-linear-gradient(top, #f5f6f8, #fdfdfe);
+  background-image: -ms-linear-gradient(top, #f5f6f8, #fdfdfe);
+  background-image: linear-gradient(top, #f5f6f8, #fdfdfe);
+}
+.gallery .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.gallery div [class*="col"] {
+  padding: 0 4px;
+}
+.gallery div [class*="col"] img:nth-child(even) {
+  float: right;
+}
+.gallery div [class*="col"] img:nth-child(n + 3) {
+  margin-top: 26px;
+}
+.gallery .row img {
+  vertical-align: middle;
+  margin-top: 21px;
+  margin-right: 21px;
+}
+.gallery-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 footer {
   padding: 10em 0 2em 0;
