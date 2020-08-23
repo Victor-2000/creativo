@@ -5,6 +5,21 @@
     whyContent: { content: $(".content.why"), button: $(".button.why") },
   };
 
+  maxHeight =
+    Math.max(
+      contentButtonPairs.whoContent.content.height(),
+      Math.max(
+        contentButtonPairs.whatContent.content.height(),
+        contentButtonPairs.whyContent.content.height()
+      )
+    ) + 20;
+
+  console.log(maxHeight);
+
+  contentButtonPairs.whoContent.content.height(maxHeight);
+  contentButtonPairs.whatContent.content.height(maxHeight);
+  contentButtonPairs.whyContent.content.height(maxHeight);
+
   last = "whoContent";
 
   $.each(contentButtonPairs, function (key, currentPair) {

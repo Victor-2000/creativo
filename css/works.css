@@ -310,6 +310,8 @@ section {
   vertical-align: middle;
   margin-top: 21px;
   margin-right: 21px;
+  -webkit-box-shadow: 2px 2px 5px 0 #999999;
+  box-shadow: 2px 2px 5px 0 #999999;
 }
 .gallery-nav {
   display: flex;
