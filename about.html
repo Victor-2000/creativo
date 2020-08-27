@@ -38,7 +38,7 @@
               </h1>
             </div>
 
-            <div class="col-xs-7 navigation-menu">
+            <div class="col-lg-7 col-xs-6 navigation-menu">
               <ul>
                 <li><a href="./blog.html">Home</a></li>
                 <li><a href="./about.html" class="nav-selected">About</a></li>
@@ -48,8 +48,33 @@
               </ul>
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-lg-2 col-xs-3" id="nav-action-pannel">
               <div class="button top-menu-button">
+                <a href="./contact_us.html">Contact us</a>
+              </div>
+              <span
+                class="mobile-hamburger-button"
+                onclick="openSidebar()"
+              ></span>
+            </div>
+            <div class="sidebar lite">
+              <span
+                class="side-menu-hamburger-button"
+                onclick="closeSidebar()"
+              ></span>
+              <ul>
+                <li><a href="./blog.html">Home</a></li>
+                <hr />
+                <li><a href="./about.html" class="nav-selected">About</a></li>
+                <hr />
+                <li><a href="./works.html">Works</a></li>
+                <hr />
+                <li><a href="./services.html">Services</a></li>
+                <hr />
+                <li><a href="./blog.html">Blog</a></li>
+                <hr />
+              </ul>
+              <div class="button" id="contact-slidebar-button">
                 <a href="./contact_us.html">Contact us</a>
               </div>
             </div>
@@ -61,7 +86,7 @@
       <section class="main-cta">
         <div class="container">
           <div class="row display-flex">
-            <div class="col-xs-6">
+            <div class="col-sm-6 col-xs-12">
               <h1 id="cta-title" class="title-one">
                 Transform your business with us right now
               </h1>
@@ -78,7 +103,7 @@
               </div>
             </div>
 
-            <div class="col-xs-6">
+            <div class="col-sm-6 col-xs-12">
               <img
                 src="./images/about/hero_image.png"
                 alt="IT Solution Services"
@@ -106,48 +131,60 @@
           <li class="button why">Why we do it</li>
         </ul>
         <div class="content who details-content">
-          Sed ut enim maxime consuevit iactare vestra se repellere, idque facere
-          nondum depravatum ipsa natura incorrupte atque natum sit, amet,
-          consectetur, adipisci velit, sed uti oratione perpetua malo quam nihil
-          ut aliquid ex ea commodi consequatur? quis nostrum exercitationem
-          ullam corporis suscipit laboriosam, <br /><br />
-          Hanc ego assentior, cum memoriter, tum etiam ac ratione intellegi
-          posse et accusamus et harum quidem se oratio, tua praesertim, qui haec
-          subtilius velint tradere et iusto odio dignissimos ducimus, qui
-          officia deserunt mollitia animi, id est consecutus? laudem et dolorum
-          fuga et aut quid.
+          <p>
+            Sed ut enim maxime consuevit iactare vestra se repellere, idque
+            facere nondum depravatum ipsa natura incorrupte atque natum sit,
+            amet, consectetur, adipisci velit, sed uti oratione perpetua malo
+            quam nihil ut aliquid ex ea commodi consequatur? quis nostrum
+            exercitationem ullam corporis suscipit laboriosam,
+          </p>
+          <p>
+            Hanc ego assentior, cum memoriter, tum etiam ac ratione intellegi
+            posse et accusamus et harum quidem se oratio, tua praesertim, qui
+            haec subtilius velint tradere et iusto odio dignissimos ducimus, qui
+            officia deserunt mollitia animi, id est consecutus? laudem et
+            dolorum fuga et aut quid.
+          </p>
         </div>
         <div class="content what details-content">
-          Aliqua sit consequat fugiat commodo elit exercitation est irure ipsum
-          eu id sunt voluptate. Id sit aute consectetur occaecat labore
-          consectetur veniam. Ipsum minim aliqua cillum sint do ea magna
-          ullamco. Nulla minim aliqua fugiat dolor ea nulla pariatur veniam ea
-          et veniam. Veniam eiusmod do nulla do et commodo consectetur nulla
-          officia incididunt Lorem ullamco laborum. Amet et adipisicing cillum
-          nisi ex in excepteur. Aliquip culpa ad ullamco ex consequat.
-          <br /><br />
-          Quis quis nisi do aliquip exercitation laborum officia ex esse sint
-          exercitation qui. Ex irure laborum id adipisicing. Exercitation labore
-          enim ullamco exercitation dolore tempor anim eu ex consequat. Elit ex
-          veniam in pariatur aute dolor incididunt aliqua anim amet ea sit
-          labore amet. Magna tempor est irure mollit magna in Lorem tempor
-          tempor nulla. Est enim duis veniam veniam eiusmod irure. Et velit duis
-          fugiat sint commodo fugiat ea.
+          <p>
+            Aliqua sit consequat fugiat commodo elit exercitation est irure
+            ipsum eu id sunt voluptate. Id sit aute consectetur occaecat labore
+            consectetur veniam. Ipsum minim aliqua cillum sint do ea magna
+            ullamco. Nulla minim aliqua fugiat dolor ea nulla pariatur veniam ea
+            et veniam. Veniam eiusmod do nulla do et commodo consectetur nulla
+            officia incididunt Lorem ullamco laborum. Amet et adipisicing cillum
+            nisi ex in excepteur. Aliquip culpa ad ullamco ex consequat.
+          </p>
+          <p>
+            Quis quis nisi do aliquip exercitation laborum officia ex esse sint
+            exercitation qui. Ex irure laborum id adipisicing. Exercitation
+            labore enim ullamco exercitation dolore tempor anim eu ex consequat.
+            Elit ex veniam in pariatur aute dolor incididunt aliqua anim amet ea
+            sit labore amet. Magna tempor est irure mollit magna in Lorem tempor
+            tempor nulla. Est enim duis veniam veniam eiusmod irure. Et velit
+            duis fugiat sint commodo fugiat ea.
+          </p>
         </div>
         <div class="content why details-content">
-          Dolor adipisicing voluptate ullamco ea enim irure esse irure nulla
-          incididunt. Ad reprehenderit nulla velit veniam id dolor ullamco dolor
-          Lorem mollit veniam. Lorem incididunt esse amet sit. Sit ut aute
-          cupidatat laboris quis non. Nulla amet do incididunt aliqua consequat
-          deserunt culpa. <br /><br />
-          Ut commodo consequat cillum labore velit voluptate. Adipisicing sint
-          minim aliqua labore aliquip officia minim aliqua exercitation ad elit
-          in qui. Reprehenderit elit exercitation anim sit nulla ex ad
-          adipisicing tempor. Id exercitation incididunt nostrud id culpa
-          consequat enim ipsum anim voluptate. Aliqua adipisicing exercitation
-          esse duis cupidatat do magna quis et minim elit nisi. Reprehenderit
-          qui aute consequat ipsum dolore cillum do minim excepteur officia id
-          aute.
+          <p>
+            Dolor adipisicing voluptate ullamco ea enim irure esse irure nulla
+            incididunt. Ad reprehenderit nulla velit veniam id dolor ullamco
+            dolor Lorem mollit veniam. Lorem incididunt esse amet sit. Sit ut
+            aute cupidatat laboris quis non. Nulla amet do incididunt aliqua
+            consequat deserunt culpa.
+          </p>
+
+          <p>
+            Ut commodo consequat cillum labore velit voluptate. Adipisicing sint
+            minim aliqua labore aliquip officia minim aliqua exercitation ad
+            elit in qui. Reprehenderit elit exercitation anim sit nulla ex ad
+            adipisicing tempor. Id exercitation incididunt nostrud id culpa
+            consequat enim ipsum anim voluptate. Aliqua adipisicing exercitation
+            esse duis cupidatat do magna quis et minim elit nisi. Reprehenderit
+            qui aute consequat ipsum dolore cillum do minim excepteur officia id
+            aute.
+          </p>
         </div>
       </div>
       <img
@@ -167,7 +204,7 @@
           In quo quaerimus, non numquam eius modi tempora incidunt,
         </h2>
         <div class="row display-flex">
-          <div class="col-xs-4 detail-box">
+          <div class="col-sm-4 col-xs-12 detail-box">
             <span class="icon_big" id="tick"></span>
             <h3>Experience</h3>
             <div class="content">
@@ -175,7 +212,7 @@
               voluptate ponit.
             </div>
           </div>
-          <div class="col-xs-4 detail-box">
+          <div class="col-sm-4 col-xs-12 detail-box">
             <span class="icon_big" id="mug"></span>
             <h3>Comfortable</h3>
             <div class="content">
@@ -183,7 +220,7 @@
               fugiendum.
             </div>
           </div>
-          <div class="col-xs-4 detail-box">
+          <div class="col-sm-4 col-xs-12 detail-box">
             <span class="icon_big" id="bubble"></span>
             <h3>Easy Communication</h3>
             <div class="content">
@@ -203,7 +240,7 @@
           nec me tamen laudandis.
         </h2>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-11">
             <div class="member-card">
               <img
                 src="./images/image_placeholder.png"
@@ -239,7 +276,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-11">
             <div class="member-card">
               <img
                 src="./images/image_placeholder.png"
@@ -275,7 +312,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-11">
             <div class="member-card">
               <img
                 src="./images/image_placeholder.png"
@@ -426,7 +463,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-xs-3">
+          <div class="col-sm-3 col-xs-10">
             <h1 class="logo">
               <a href="./blog.html">Creativo.</a>
             </h1>
@@ -436,7 +473,7 @@
             </div>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Useful links</span>
@@ -450,7 +487,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Documents</span>
@@ -462,7 +499,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-12">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Address</span>

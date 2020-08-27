@@ -107,7 +107,6 @@ h1 {
   background: url("../images/image_placeholder.png");
   margin: 1em 0;
   width: 100%;
-  height: 300px;
 }
 .icon_small,
 .icon_big {
@@ -135,6 +134,10 @@ header .col-xs-3 {
 }
 .top-menu-button a {
   padding: 1em 2em;
+}
+.sidebar,
+.mobile-hamburger-button {
+  display: none;
 }
 .navigation-menu {
   justify-content: flex-end !important;
@@ -272,12 +275,6 @@ header .col-xs-3 {
   padding: 1em 0;
   padding-top: 2em;
 }
-.blog-content .content-section {
-  width: 66%;
-}
-.side-menu {
-  width: 34%;
-}
 .side-menu .title-one {
   padding: 0.7em 1.5em 1.5em 0.7em;
 }
@@ -293,10 +290,8 @@ header .col-xs-3 {
   /* useful if you don't want a bg color from leaking outside the border: */
   background-clip: padding-box;
   /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
-  background: url("../images/image_placeholder.png");
   width: 97.3%;
   height: 350px;
-  margin-left: 0.75em;
   margin-bottom: 3em;
 }
 .side-menu-content {
@@ -317,9 +312,7 @@ header .col-xs-3 {
 }
 .small-ow-image {
   display: block;
-  background: url("../images/image_placeholder.png");
   position: absolute;
-  height: 100%;
   width: 100%;
   z-index: 2;
   left: 0;
@@ -366,10 +359,17 @@ header .col-xs-3 {
 }
 #author-image {
   display: block;
-  background: url("../images/sprites.png");
-  background-position: -128px -128px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  overflow: hidden;
+}
+#author-image img {
+  width: 115%;
 }
 .contact-ui {
   float: right;
@@ -462,3 +462,323 @@ footer > .container > .row {
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) { ... }
   */
+@media (max-width: 1200px) {
+  .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #solution-img {
+    width: 100%;
+  }
+  #cta-title {
+    font-size: 35px;
+  }
+  #cta-text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #solution-img {
+    width: 100%;
+  }
+  #cta-title {
+    font-size: 35px;
+  }
+  #cta-text {
+    font-size: 15px;
+  }
+  .blog-content .title-one {
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+  }
+}
+@media (min-width: 768px) {
+  .content-section {
+    width: 66%;
+  }
+  .side-menu {
+    width: 34%;
+  }
+}
+@media (max-width: 767.98px) {
+  .top-menu-button,
+  .navigation-menu ul {
+    display: none;
+  }
+  #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+  .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+  }
+  .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    background: #27a469;
+    width: 100%;
+    z-index: 99;
+  }
+  .lite header {
+    background: white;
+  }
+  .main-cta {
+    padding-top: 5em;
+  }
+  .sidebar {
+    display: block;
+    position: fixed;
+    width: 40vw;
+    height: 100vh;
+    right: -45vw;
+    z-index: 100;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    background: #27a469;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 -10px 27px -8px #000000;
+    box-shadow: 0 -10px 27px -8px #000000;
+  }
+  .sidebar .button {
+    background: white;
+  }
+  .sidebar .button:hover {
+    background: #e6e6e6;
+  }
+  .sidebar .button a {
+    color: #27a469;
+  }
+  .sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    clear: both;
+    margin-top: 4em;
+  }
+  .sidebar ul li a {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+  }
+  .sidebar ul hr {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+  .sidebar.lite {
+    background: white;
+  }
+  .sidebar.lite li a {
+    color: #27a469;
+  }
+  .sidebar.lite .button {
+    background: #27a469;
+  }
+  .sidebar.lite .button:hover {
+    background: #31cd83;
+  }
+  .sidebar.lite .button a {
+    color: white;
+  }
+  .sidebar.lite .side-menu-hamburger-button {
+    background-position: 0 -192px;
+  }
+  #contact-slidebar-button a {
+    font-size: 20px;
+    padding: 1em;
+  }
+  .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+    transition: 0.5s ease-in-out;
+  }
+  .main-background {
+    background: #27a469;
+  }
+  .lite .main-background {
+    background: white;
+  }
+  #cta-title,
+  #cta-text {
+    text-align: center;
+  }
+  #cta-text {
+    font-size: 14pt;
+  }
+  #cta-title {
+    font-size: 35px;
+  }
+  #cta-button {
+    margin: auto;
+    width: 200px;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  #cta-button a {
+    font-size: 14pt;
+  }
+  #solution-img {
+    margin-top: 5em;
+  }
+  .blog-content {
+    margin-top: 5em;
+  }
+  .blog-content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-content .featured-image {
+    margin: auto;
+    border-radius: 15px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .blog-content .title-one {
+    padding-right: 0;
+  }
+  .blog-content .contact-ui {
+    clear: both;
+    float: none;
+  }
+  .content-section .title-one {
+    font-size: 47px;
+  }
+  .content-section .content-title {
+    font-size: 27px;
+  }
+  .content-section .content {
+    font-size: 24px;
+  }
+  .content-img {
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .image-description {
+    font-style: italic;
+    text-align: center;
+  }
+  .author .content-title {
+    font-size: 25px;
+  }
+  .author #author-description {
+    font-size: 15px;
+  }
+  .contact-ui {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-ui .contact,
+  .contact-ui .bookmark,
+  .contact-ui .share {
+    width: 43px;
+    height: 43px;
+    background-size: 1680%;
+  }
+  .contact-ui .contact {
+    background-position: -360px 0;
+  }
+  .contact-ui .bookmark {
+    background-position: -480px 0;
+  }
+  .contact-ui .share {
+    background-position: -600px 0;
+  }
+  .contact-ui li {
+    display: flex;
+    width: 130px;
+  }
+  .contact-ui .contact-text {
+    color: #999999;
+    margin: 0 2em;
+    margin-top: 0.15em;
+    font-size: 25px;
+  }
+  .side-menu-heading .title-one {
+    text-align: center;
+    font-size: 45px;
+    padding-left: 0;
+  }
+  .small-ow {
+    height: 25em;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    overflow: hidden;
+  }
+  .small-ow .small-ow-title {
+    font-size: 20px;
+    padding: 0.8em;
+  }
+  .small-ow .small-ow-author {
+    font-size: 18px;
+  }
+  footer {
+    padding-top: 4em;
+    background: #27a469;
+  }
+  footer ul li:first-child {
+    margin-bottom: 1em;
+  }
+  footer .logo a {
+    font-size: 35px;
+  }
+  footer .description {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  footer .footer-list .content {
+    margin-bottom: 0.6em;
+  }
+  footer .footer-list .footer-title,
+  footer .footer-list .content {
+    font-size: 27px;
+  }
+  footer #address-fix {
+    margin-left: 0.75em;
+  }
+  footer hr {
+    color: #cccccc;
+    border-top: 2px solid #cccccc;
+  }
+  footer .copyright {
+    justify-content: flex-start;
+    font-size: 27px;
+    color: #e6e6e6;
+  }
+}

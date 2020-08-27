@@ -33,12 +33,12 @@
         <div class="container">
           <div class="row display-flex">
             <div class="col-xs-3">
-              <h1 class="logo lite">
+              <h1 class="logo">
                 <a href="./blog.html">Creativo.</a>
               </h1>
             </div>
 
-            <div class="col-xs-7 navigation-menu">
+            <div class="col-lg-7 col-xs-6 navigation-menu">
               <ul>
                 <li><a href="./blog.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
@@ -48,8 +48,33 @@
               </ul>
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-lg-2 col-xs-3" id="nav-action-pannel">
               <div class="button top-menu-button">
+                <a href="./contact_us.html">Contact us</a>
+              </div>
+              <span
+                class="mobile-hamburger-button"
+                onclick="openSidebar()"
+              ></span>
+            </div>
+            <div class="sidebar">
+              <span
+                class="side-menu-hamburger-button"
+                onclick="closeSidebar()"
+              ></span>
+              <ul>
+                <li><a href="./blog.html">Home</a></li>
+                <hr />
+                <li><a href="./about.html" class="nav-selected">About</a></li>
+                <hr />
+                <li><a href="./works.html">Works</a></li>
+                <hr />
+                <li><a href="./services.html">Services</a></li>
+                <hr />
+                <li><a href="./blog.html">Blog</a></li>
+                <hr />
+              </ul>
+              <div class="button" id="contact-slidebar-button">
                 <a href="./contact_us.html">Contact us</a>
               </div>
             </div>
@@ -61,9 +86,13 @@
     <!-- BLOG CONTENT -->
     <section class="blog-content">
       <div class="container">
+        <img
+          class="featured-image"
+          src="./images/image_wide.png"
+          alt="Featured image"
+        />
         <div class="row">
-          <div class="featured-image"></div>
-          <div class="col-xs-8 content-section">
+          <div class="col-sm-8 col-xs-11 content-section">
             <h1 class="title-one">
               FreeSty Gelar Event : Pengenalan Dampak & Manfaat Industri 4.0.
             </h1>
@@ -96,7 +125,11 @@
               aliquid ex eo ortum, tam. <br />
 
               <div class="blog-image">
-                <div class="content-img"></div>
+                <img
+                  class="content-img"
+                  src="./images/image_wide.png"
+                  alt="Content image"
+                />
                 <div class="image-description">
                   Quid ex ea commodi consequatur? quis autem nusquam hoc tenebo,
                   si ob aliquam causam non quo pertineant non quo voluptas in
@@ -121,7 +154,9 @@
               gessisse sine dubio praeclara.
             </div>
             <div class="author">
-              <div id="author-image"></div>
+              <div id="author-image">
+                <img src="./images/image_placeholder.png" alt="Author image" />
+              </div>
               <div id="author-name" class="content-title">
                 Mok Kwang-Hyun
                 <div id="author-description" class="content">
@@ -130,17 +165,34 @@
               </div>
             </div>
             <ul class="contact-ui">
-              <li><a class="contact hide-text" href="#">Contact</a></li>
               <li>
-                <a class="bookmark hide-text" href="#">Bookmark</a>
+                <a class="contact hide-text" href="#"
+                  >Contact
+                  <div class="contact-text">
+                    Comment
+                  </div>
+                </a>
               </li>
               <li>
-                <a class="share hide-text" href="#">Share</a>
+                <a class="bookmark hide-text" href="#"
+                  >Bookmark
+                  <div class="contact-text">
+                    Bookmark
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="share hide-text" href="#"
+                  >Share
+                  <div class="contact-text">
+                    Share
+                  </div>
+                </a>
               </li>
             </ul>
             <div id="author-line"></div>
           </div>
-          <div class="col-xs-3 side-menu">
+          <div class="col-sm-3 col-xs-11 side-menu">
             <div class="side-menu-heading">
               <h1 class="title-one">
                 Related Blog
@@ -148,7 +200,11 @@
             </div>
             <div class="side-menu-content">
               <div class="small-ow">
-                <div class="small-ow-image"></div>
+                <img
+                  class="small-ow-image"
+                  src="./images/image_small.png"
+                  alt="Blog image"
+                />
                 <div class="small-ow-text">
                   <div class="small-ow-title">
                     Perlengkapan yang harus kalian dapatkan.
@@ -159,7 +215,11 @@
                 </div>
               </div>
               <div class="small-ow">
-                <div class="small-ow-image"></div>
+                <img
+                  class="small-ow-image"
+                  src="./images/image_small.png"
+                  alt="Blog image"
+                />
                 <div class="small-ow-text">
                   <div class="small-ow-title">
                     Semoga senangmu adalah bahagiaku.
@@ -170,7 +230,11 @@
                 </div>
               </div>
               <div class="small-ow">
-                <div class="small-ow-image"></div>
+                <img
+                  class="small-ow-image"
+                  src="./images/image_small.png"
+                  alt="Blog image"
+                />
                 <div class="small-ow-text">
                   <div class="small-ow-title">
                     Awas Peretas ada dimana-mana
@@ -190,7 +254,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-xs-3">
+          <div class="col-sm-3 col-xs-10">
             <h1 class="logo">
               <a href="./blog.html">Creativo.</a>
             </h1>
@@ -200,12 +264,11 @@
             </div>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Useful links</span>
               </li>
-
               <li><a href="./about.html" class="content lite">About</a></li>
               <li>
                 <a href="./services.html" class="content lite">Services</a>
@@ -215,7 +278,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Documents</span>
@@ -227,7 +290,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-12">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Address</span>
@@ -256,7 +319,7 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <!-- <script src="./js/jquery-3.5.1.js"></script>
-  <script src="./js/script.js"></script> -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

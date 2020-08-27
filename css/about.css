@@ -5,6 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font: 400 20px "Roboto", Tahoma, sans-serif;
+  overflow-x: hidden;
 }
 a {
   display: inline-block;
@@ -142,6 +143,10 @@ header .col-xs-3 {
 .navigation-menu ul li .nav-selected:hover {
   color: white;
 }
+.sidebar,
+.mobile-hamburger-button {
+  display: none;
+}
 .sections {
   padding: 5em 0;
 }
@@ -227,21 +232,19 @@ header .col-xs-3 {
   background-image: -ms-linear-gradient(top, #fdfdfe, #dee5f4);
   background-image: linear-gradient(top, #fdfdfe, #dee5f4);
 }
-.details > .container {
-  width: 55%;
-}
 #details-title-one,
 #details-title-two {
   text-align: center;
-  width: 70%;
   margin: auto;
 }
 #details-title-one {
   font-weight: bold;
   margin-top: 3em;
+  width: 80%;
 }
 #details-title-two {
   margin-top: 2em;
+  width: 70%;
 }
 #details-image {
   display: block;
@@ -250,9 +253,8 @@ header .col-xs-3 {
   margin-top: 40px;
   padding-bottom: 70px;
 }
-.details-content.what,
-.details-content.why {
-  display: none;
+.details-content {
+  height: fit-content;
 }
 .content-menu {
   display: flex;
@@ -289,8 +291,8 @@ header .col-xs-3 {
   color: white;
 }
 .benefits {
-  background: url("../images/about/benefits_background.png");
-  background-size: contain;
+  background: url("../images/about/benefits_background.png") no-repeat;
+  background-size: cover;
   padding: 5.9em 0;
 }
 .benefits .title-one,
@@ -305,9 +307,6 @@ header .col-xs-3 {
 }
 .benefits .title-two {
   margin-top: 1em;
-}
-.benefits .container {
-  width: 70%;
 }
 .detail-box {
   margin: auto;
@@ -360,7 +359,7 @@ header .col-xs-3 {
   padding: 0.5em 0;
 }
 .member-card img {
-  overflow: hidden;
+  width: 100%;
 }
 .member-details {
   -webkit-box-shadow: 0 10px 27px -8px #c4c4c4;
@@ -425,7 +424,6 @@ footer > .container > .row {
 .copyright {
   display: flex;
   justify-content: center;
-  widows: 100%;
   color: white;
 }
 /* 
@@ -445,3 +443,323 @@ footer > .container > .row {
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) { ... }
   */
+@media (min-width: 1200px) {
+  .details > .container {
+    width: 55%;
+  }
+}
+@media (min-width: 992px) {
+  .benefits .container {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .details > .container {
+    width: 70%;
+  }
+  .benefits .container {
+    width: 80%;
+  }
+  .benefits .title-two {
+    width: 70%;
+  }
+  .team .title-one,
+  .team .title-two {
+    width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #solution-img {
+    width: 100%;
+  }
+  #cta-title {
+    font-size: 35px;
+  }
+  #cta-text {
+    font-size: 15px;
+  }
+  .benefits .title-two {
+    width: 80%;
+  }
+  .team .title-one,
+  .team .title-two {
+    width: 70%;
+  }
+}
+@media (max-width: 767.98px) {
+  .top-menu-button,
+  .navigation-menu ul {
+    display: none;
+  }
+  #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+  .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+  }
+  .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    background: #27a469;
+    width: 100%;
+    z-index: 99;
+  }
+  .lite header {
+    background: white;
+  }
+  .main-cta {
+    padding-top: 5em;
+  }
+  .sidebar {
+    display: block;
+    position: fixed;
+    width: 40vw;
+    height: 100vh;
+    right: -45vw;
+    z-index: 100;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    background: #27a469;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 -10px 27px -8px #000000;
+    box-shadow: 0 -10px 27px -8px #000000;
+  }
+  .sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    clear: both;
+    margin-top: 4em;
+  }
+  .sidebar ul li a {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+  }
+  .sidebar ul hr {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+  .sidebar.lite {
+    background: white;
+  }
+  .sidebar.lite li a {
+    color: #27a469;
+  }
+  .sidebar.lite .button {
+    background: #27a469;
+  }
+  .sidebar.lite .button:hover {
+    background: #31cd83;
+  }
+  .sidebar.lite .button a {
+    color: white;
+  }
+  .sidebar.lite .side-menu-hamburger-button {
+    background-position: 0 -192px;
+  }
+  #contact-slidebar-button a {
+    font-size: 20px;
+    padding: 1em;
+  }
+  .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+    transition: 0.5s ease-in-out;
+  }
+  .main-background {
+    background: #27a469;
+  }
+  .lite .main-background {
+    background: white;
+  }
+  #cta-title,
+  #cta-text {
+    text-align: center;
+  }
+  #cta-text {
+    font-size: 14pt;
+  }
+  #cta-title {
+    font-size: 35px;
+  }
+  #cta-button {
+    margin: auto;
+    width: 200px;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  #cta-button a {
+    font-size: 14pt;
+  }
+  #solution-img {
+    margin-top: 5em;
+  }
+  .details .button {
+    font-size: 12pt;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .details .details-title-one {
+    font-size: 24pt;
+  }
+  .details .details-title-two {
+    font-size: 14pt;
+  }
+  .details .content {
+    font-size: 14pt;
+    text-align: center;
+  }
+  .details #details-image {
+    width: 70%;
+  }
+  .details .content-menu .selected,
+  .details .content-menu li {
+    padding: 0.75em 1.5em;
+  }
+  .benefits {
+    background: url("../images/about/benefits_background_mobile.png") no-repeat;
+    background-size: cover;
+  }
+  .benefits .title-one,
+  .benefits .title-two {
+    display: none;
+  }
+  .benefits h3 {
+    font-size: 20pt;
+  }
+  .benefits .content {
+    font-size: 16pt;
+  }
+  .benefits .icon_big {
+    background-size: 600%;
+    width: 100px;
+    height: 100px;
+  }
+  .benefits #tick {
+    background-position: 0 0;
+  }
+  .benefits #mug {
+    background-position: -100px 0;
+  }
+  .benefits #bubble {
+    background-position: -200px 0;
+  }
+  .team {
+    background: #f5f6f8;
+  }
+  .team .title-one,
+  .team .title-two {
+    width: 70%;
+  }
+  .team .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .team .member-card img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .team .member-card .member-details {
+    background: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .team .member-card .member-description {
+    font-size: 25px;
+  }
+  .team .member-card .member-name {
+    font-size: 30px;
+  }
+  .team .member-card .icon_small {
+    background-size: 1500%;
+    width: 40px;
+    height: 40px;
+  }
+  .team .member-card .facebook {
+    background-position: 0 -100px;
+  }
+  .team .member-card .whatsapp {
+    background-position: -100px -100px;
+  }
+  .team .member-card .instagram {
+    background-position: -200px -100px;
+  }
+  .team .member-card .linkedin {
+    background-position: 0 -200px;
+  }
+  .team .col-xs-4 {
+    display: none;
+  }
+  footer {
+    padding-top: 4em;
+    background: #27a469;
+  }
+  footer ul li:first-child {
+    margin-bottom: 1em;
+  }
+  footer .logo a {
+    font-size: 35px;
+  }
+  footer .description {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  footer .footer-list .content {
+    margin-bottom: 0.6em;
+  }
+  footer .footer-list .footer-title,
+  footer .footer-list .content {
+    font-size: 27px;
+  }
+  footer #address-fix {
+    margin-left: 0.75em;
+  }
+  footer hr {
+    color: #cccccc;
+    border-top: 2px solid #cccccc;
+  }
+  footer .copyright {
+    justify-content: flex-start;
+    font-size: 27px;
+    color: #e6e6e6;
+  }
+}
