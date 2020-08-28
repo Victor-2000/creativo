@@ -539,9 +539,9 @@ footer > .container > .row {
   .sidebar {
     display: block;
     position: fixed;
-    width: 40vw;
+    width: 50vw;
     height: 100vh;
-    right: -45vw;
+    right: -55vw;
     z-index: 100;
     overflow-y: scroll;
     border-radius: 10px;
@@ -780,5 +780,28 @@ footer > .container > .row {
     justify-content: flex-start;
     font-size: 27px;
     color: #e6e6e6;
+  }
+}
+@media (max-width: 610px) {
+  .contact-ui .contact-text {
+    font-size: 3.5vw;
+    margin: 0 1.5em;
+  }
+  .contact-ui .contact,
+  .contact-ui .bookmark,
+  .contact-ui .share {
+    width: 22px;
+    height: 22px;
+    background-size: initial;
+  }
+  .contact-ui .contact {
+    background-position: -192px 0;
+  }
+  .contact-ui .bookmark {
+    background-position: -256px 0;
+    width: 18px;
+  }
+  .contact-ui .share {
+    background-position: -320px 0;
   }
 }

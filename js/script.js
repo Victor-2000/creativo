@@ -70,3 +70,17 @@ function openSidebar() {
   sidebar.css("right", "-10px");
   hamburger_sidebar.css("right", "-10px");
 }
+
+//Scroll detection for the BLOG header
+var href = document.location.href;
+var lastPathSegment = href.substr(href.lastIndexOf("/") + 1);
+if (lastPathSegment === "blog.html") {
+  header = $("header");
+  $(document).on("scroll", function () {
+    if ($(this).scrollTop() >= $(".main-cta").position().top) {
+      header.css("background", "#27a469");
+    } else {
+      header.css("background", "#27a46a4f");
+    }
+  });
+}

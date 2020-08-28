@@ -34,24 +34,48 @@
           <div class="row display-flex">
             <div class="col-xs-3">
               <h1 class="logo">
-                <a href="">Creativo.</a>
-                <!--TODO: add the Home page link-->
+                <a href="./blog.html">Creativo.</a>
               </h1>
             </div>
 
-            <div class="col-xs-7 navigation-menu">
+            <div class="col-lg-7 col-xs-6 navigation-menu">
               <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="" class="nav-selected">About</a></li>
-                <li><a href="">Works</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Blog</a></li>
+                <li><a href="./blog.html">Home</a></li>
+                <li><a href="./about.html" class="nav-selected">About</a></li>
+                <li><a href="./works.html">Works</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./blog.html">Blog</a></li>
               </ul>
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-lg-2 col-xs-3" id="nav-action-pannel">
               <div class="button top-menu-button">
-                <a href="">Contact us</a>
+                <a href="./contact_us.html">Contact us</a>
+              </div>
+              <span
+                class="mobile-hamburger-button"
+                onclick="openSidebar()"
+              ></span>
+            </div>
+            <div class="sidebar lite">
+              <span
+                class="side-menu-hamburger-button"
+                onclick="closeSidebar()"
+              ></span>
+              <ul>
+                <li><a href="./blog.html">Home</a></li>
+                <hr />
+                <li><a href="./about.html" class="nav-selected">About</a></li>
+                <hr />
+                <li><a href="./works.html">Works</a></li>
+                <hr />
+                <li><a href="./services.html">Services</a></li>
+                <hr />
+                <li><a href="./blog.html">Blog</a></li>
+                <hr />
+              </ul>
+              <div class="button" id="contact-slidebar-button">
+                <a href="./contact_us.html">Contact us</a>
               </div>
             </div>
           </div>
@@ -91,14 +115,12 @@
       </section>
     </div>
     <!-- FOOTER -->
-    <!-- FOOTER -->
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-xs-3">
+          <div class="col-sm-3 col-xs-10">
             <h1 class="logo">
-              <a href="">Creativo.</a>
-              <!--TODO: add the Home page link-->
+              <a href="./blog.html">Creativo.</a>
             </h1>
             <div class="description content">
               Torquem detraxit hosti et quidem se repellere, idque instituit
@@ -106,31 +128,33 @@
             </div>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Useful links</span>
               </li>
-              <li><a href="" class="content lite">About</a></li>
-              <li><a href="" class="content lite">Services</a></li>
-              <li><a href="" class="content lite">Works</a></li>
-              <li><a href="" class="content lite">Team</a></li>
+              <li><a href="./about.html" class="content lite">About</a></li>
+              <li>
+                <a href="./services.html" class="content lite">Services</a>
+              </li>
+              <li><a href="./works.html" class="content lite">Works</a></li>
+              <li><a href="./about.html#team" class="content lite">Team</a></li>
             </ul>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Documents</span>
               </li>
-              <li><a href="" class="content lite">Portofolio</a></li>
-              <li><a href="" class="content lite">Term of use</a></li>
-              <li><a href="" class="content lite">Privacy and policy</a></li>
-              <li><a href="" class="content lite">FAQ</a></li>
+              <li><a href="#" class="content lite">Portofolio</a></li>
+              <li><a href="#" class="content lite">Term of use</a></li>
+              <li><a href="#" class="content lite">Privacy and policy</a></li>
+              <li><a href="#" class="content lite">FAQ</a></li>
             </ul>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-12">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Address</span>
@@ -159,7 +183,7 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <!-- <script src="./js/jquery-3.5.1.js"></script>
-  <script src="./js/script.js"></script> -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

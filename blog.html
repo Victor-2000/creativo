@@ -38,18 +38,43 @@
               </h1>
             </div>
 
-            <div class="col-xs-7 navigation-menu">
+            <div class="col-lg-7 col-xs-6 navigation-menu">
               <ul>
                 <li><a href="./blog.html">Home</a></li>
-                <li><a href="./about.html" >About</a></li>
+                <li><a href="./about.html">About</a></li>
                 <li><a href="./works.html">Works</a></li>
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./blog.html" class="nav-selected">Blog</a></li>
               </ul>
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-lg-2 col-xs-3" id="nav-action-pannel">
               <div class="button top-menu-button">
+                <a href="./contact_us.html">Contact us</a>
+              </div>
+              <span
+                class="mobile-hamburger-button"
+                onclick="openSidebar()"
+              ></span>
+            </div>
+            <div class="sidebar lite">
+              <span
+                class="side-menu-hamburger-button"
+                onclick="closeSidebar()"
+              ></span>
+              <ul>
+                <li><a href="./blog.html">Home</a></li>
+                <hr />
+                <li><a href="./about.html" class="nav-selected">About</a></li>
+                <hr />
+                <li><a href="./works.html">Works</a></li>
+                <hr />
+                <li><a href="./services.html">Services</a></li>
+                <hr />
+                <li><a href="./blog.html">Blog</a></li>
+                <hr />
+              </ul>
+              <div class="button" id="contact-slidebar-button">
                 <a href="./contact_us.html">Contact us</a>
               </div>
             </div>
@@ -61,7 +86,7 @@
       <section class="main-cta">
         <div class="container">
           <div class="row display-flex">
-            <div class="col-xs-6">
+            <div class="col-sm-6 col-xs-12">
               <h1 id="cta-title" class="title-one">
                 Search Our Latest Blog
               </h1>
@@ -82,7 +107,7 @@
               </div>
             </div>
 
-            <div class="col-xs-6">
+            <div class="col-sm-6 col-xs-12">
               <img
                 src="./images/blog/hero_image.png"
                 alt="IT Solution Services"
@@ -97,11 +122,11 @@
     <!-- BLOG -->
     <section class="sections blog">
         <h1 class="title-one">From the blog</h1>
-        <div class="container">
+        <div class="container gallery">
             <div class="row">
                 <div class="col-xs-6 large-ow">
                     <div class="row">
-                        <div class="col-xs-5 large-ow-image"></div>
+                        <img class="col-xs-6 large-ow-image" src="./images/image_small.png" alt="Blog image.">
                         <div class="col-xs-5 large-ow-text">
                             <div class="content-title">
                                 Dapatkan Buah-buahan berkualitas dengan harga murah
@@ -110,7 +135,7 @@
                                 Laudem et molestiae consequatur, vel eum fugiat, quo voluptas expetenda, fugiendus dolor sit, amet, consectetur, adipisci velit.
                             </div>
                             <div class="author-details">
-                                <span class="author-img"></span>
+                                <img class="author-img" src="./images/image_placeholder.png" alt="Author image.">
                                 <div class="author-name">Joslin Rogers</div>
                                 <div class="author-description">Anonymous</div>
                             </div>
@@ -118,7 +143,7 @@
                     </div>
                 </div>
                 <div class="col-xs-3 small-ow">
-                    <div class="small-ow-image"></div>
+                    <img class="small-ow-image" src="./images/image_placeholder.png" alt="Blog image.">
                     <div class="small-ow-text">
                         <div class="small-ow-title">
                             Covid-19 vs Everybody
@@ -131,7 +156,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-3 small-ow">
-                    <div class="small-ow-image"></div>
+                    <img class="small-ow-image" src="./images/image_placeholder.png" alt="Blog image.">
                     <div class="small-ow-text">
                         <div class="small-ow-title">
                             Probabo, inquit, modo ista sis 
@@ -142,7 +167,7 @@
                     </div>
                 </div>
                 <div class="col-xs-3 small-ow">
-                    <div class="small-ow-image"></div>
+                    <img class="small-ow-image" src="./images/image_placeholder.png" alt="Blog image.">
                     <div class="small-ow-text">
                         <div class="small-ow-title">
                             Torquem detraxit hosti et quidem faciunt,
@@ -153,7 +178,7 @@
                     </div>
                 </div>
                 <div class="col-xs-3 small-ow">
-                    <div class="small-ow-image"></div>
+                    <img class="small-ow-image" src="./images/image_placeholder.png" alt="Blog image.">
                     <div class="small-ow-text">
                         <div class="small-ow-title">
                             Omne animal, simul atque 
@@ -166,7 +191,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-3 small-ow">
-                    <div class="small-ow-image"></div>
+                    <img class="small-ow-image" src="./images/image_placeholder.png" alt="Blog image.">
                     <div class="small-ow-text">
                         <div class="small-ow-title">
                             Probabo, inquit, modo ista sis 
@@ -178,7 +203,7 @@
                 </div>
                 <div class="col-xs-6 large-ow">
                     <div class="row">
-                        <div class="col-xs-5 large-ow-image"></div>
+                        <img class="col-xs-6 large-ow-image" src="./images/image_small.png" alt="Blog image.">
                         <div class="col-xs-5 large-ow-text">
                             <div class="content-title">
                                 Web development can change the world
@@ -187,7 +212,7 @@
                                 Laudem et molestiae consequatur, vel eum fugiat, quo voluptas expetenda, fugiendus dolor sit, amet, consectetur, adipisci velit.
                             </div>
                             <div class="author-details">
-                                <span class="author-img"></span>
+                                <img class="author-img" src="./images/image_placeholder.png" alt="Author image.">
                                 <div class="author-name">Joslin Rogers</div>
                                 <div class="author-description">Anonymous</div>
                             </div>
@@ -201,77 +226,118 @@
                   </div>
             </div>
         </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-3">
-            <h1 class="logo">
-              <a href="./blog.html">Creativo.</a>
-            </h1>
-            <div class="description content">
-              Torquem detraxit hosti et quidem se repellere, idque instituit
-              docere.
+        <div class="container mobile-gallery">
+            <div class="col-xs-12 small-ow">
+              <img class="small-ow-image" src="./images/image_placeholder.png" alt="Blog image.">
+              <div class="small-ow-text">
+                  <div class="small-ow-title">
+                    Perlengkapan yang harus kalian dapatkan.
+                  </div>
+                  <div class="small-ow-author">
+                    Mok Kwang-Hyun
+                  </div>
+              </div>
             </div>
-          </div>
-
-          <div class="col-xs-2">
-            <ul class="footer-list">
-              <li>
-                <span class="footer-title">Useful links</span>
-              </li>
-              <li><a href="./about.html" class="content lite">About</a></li>
-              <li>
-                <a href="./services.html" class="content lite">Services</a>
-              </li>
-              <li><a href="./works.html" class="content lite">Works</a></li>
-              <li><a href="./about.html#team" class="content lite">Team</a></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-2">
-            <ul class="footer-list">
-              <li>
-                <span class="footer-title">Documents</span>
-              </li>
-              <li><a href="#" class="content lite">Portofolio</a></li>
-              <li><a href="#" class="content lite">Term of use</a></li>
-              <li><a href="#" class="content lite">Privacy and policy</a></li>
-              <li><a href="#" class="content lite">FAQ</a></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-4">
-            <ul class="footer-list">
-              <li>
-                <span class="footer-title">Address</span>
-              </li>
-              <li class="content lite" id="address-fix">
-                FreeStyke STD. <br />
-                Jl. Budidya VI Block C10 Makassar <br> Sulawesi Selatan, Indonesia
-              </li>
-              <li>
-                <a href="tel:+6282 63784 9485" class="content lite"
-                  >+6282 63784 9485</a
-                >
-              </li>
-              <li>
-                <a href="mailto:Info@FreeStyle.com" class="content lite"
-                  >Info@FreeStyle.com</a
-                >
-              </li>
-            </ul>
+            <div class="col-xs-12 small-ow">
+              <img class="small-ow-image" src="./images/image_placeholder.png" alt="Blog image.">
+              <div class="small-ow-text">
+                  <div class="small-ow-title">
+                    Semoga senangmu adalah bahagiaku.
+                  </div>
+                  <div class="small-ow-author">
+                    Rim Chong-Suk
+                  </div>
+              </div>
+            </div>
+            <div class="col-xs-12 small-ow">
+              <img class="small-ow-image" src="./images/image_placeholder.png" alt="Blog image.">
+              <div class="small-ow-text">
+                  <div class="small-ow-title">
+                    Awas Peretas ada dimana-mana
+                  </div>
+                  <div class="small-ow-author">
+                    Veerle de Bree
+                  </div>
+              </div>
+            </div>
+          <div class="row">
+              <div class=" button blog-button">
+                  <a href="#">See more</a>
+                </div>
           </div>
         </div>
-        <hr/>
-        <span class="copyright content">Copyright Creativo. LTD. 2020</span>
-      </div>
-    </footer>
+    </section>
 
-    <!-- SCRIPTS -->
-    <!-- <script src="./js/jquery-3.5.1.js"></script>
-      <script src="./js/script.js"></script> -->
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-10">
+        <h1 class="logo">
+          <a href="./blog.html">Creativo.</a>
+        </h1>
+        <div class="description content">
+          Torquem detraxit hosti et quidem se repellere, idque instituit
+          docere.
+        </div>
+      </div>
+
+      <div class="col-sm-2 col-xs-6">
+        <ul class="footer-list">
+          <li>
+            <span class="footer-title">Useful links</span>
+          </li>
+          <li><a href="./about.html" class="content lite">About</a></li>
+          <li>
+            <a href="./services.html" class="content lite">Services</a>
+          </li>
+          <li><a href="./works.html" class="content lite">Works</a></li>
+          <li><a href="./about.html#team" class="content lite">Team</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-2 col-xs-6">
+        <ul class="footer-list">
+          <li>
+            <span class="footer-title">Documents</span>
+          </li>
+          <li><a href="#" class="content lite">Portofolio</a></li>
+          <li><a href="#" class="content lite">Term of use</a></li>
+          <li><a href="#" class="content lite">Privacy and policy</a></li>
+          <li><a href="#" class="content lite">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-4 col-xs-12">
+        <ul class="footer-list">
+          <li>
+            <span class="footer-title">Address</span>
+          </li>
+          <li class="content lite" id="address-fix">
+            FreeStyke STD. <br />
+            Jl. Budidya VI Block C10 Makassar <br />
+            Sulawesi Selatan, Indonesia
+          </li>
+          <li>
+            <a href="tel:+6282 63784 9485" class="content lite"
+              >+6282 63784 9485</a
+            >
+          </li>
+          <li>
+            <a href="mailto:Info@FreeStyle.com" class="content lite"
+              >Info@FreeStyle.com</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <span class="copyright content">Copyright Creativo. LTD. 2020</span>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="./js/jquery-3.5.1.js"></script>
+<script src="./js/script.js"></script>
   </body>
 </html>

@@ -290,6 +290,15 @@ header .col-xs-3 {
   padding: 5em 0;
 }
 
+.sidebar,
+.mobile-hamburger-button {
+  display: none;
+}
+
+.mobile-image {
+  display: none;
+}
+
 // MAIN-CTA
 .main-cta {
   margin-top: 3em;
@@ -562,6 +571,7 @@ header .col-xs-3 {
     color: white;
     height: 4em;
     width: 12em;
+    text-transform: uppercase;
   }
 
   input {
@@ -577,7 +587,7 @@ header .col-xs-3 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 9em 0 0 4em;
+  margin: 1.3em 0 0 4em;
 }
 
 .info-block {
@@ -686,3 +696,320 @@ footer > .container > .row {
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) { ... }
   */
+@media (max-width: 1200px) {
+  //HEADER
+  .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  //MAIN-CTA
+  #solution-img {
+    width: 100%;
+  }
+  #cta-title {
+    font-size: 35px;
+  }
+  #cta-text {
+    font-size: 15px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  //MAIN-CTA
+  #solution-img {
+    width: 100%;
+  }
+  #cta-title {
+    font-size: 35px;
+  }
+  #cta-text {
+    font-size: 15px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767.98px) {
+  //HEADER
+  .top-menu-button,
+  .navigation-menu ul {
+    display: none;
+  }
+
+  #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+
+  .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+
+    width: 30px;
+    height: 30px;
+
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+  }
+
+  .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    background: @theme-secondary-color;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .lite header {
+    background: @theme-primary-color;
+  }
+
+  .main-cta {
+    padding-top: 5em;
+  }
+
+  //SIDEBAR
+  .sidebar {
+    display: block;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -55vw;
+    z-index: 100;
+    overflow-y: scroll;
+
+    .round(10px);
+    background: @theme-secondary-color;
+
+    transition: 0.5s ease-in-out;
+
+    .box-shadow(0,-10px,27px,-8px,rgb(0, 0, 0));
+
+    .button {
+      background: @theme-primary-color;
+      &:hover {
+        background: darken(white, 10%);
+      }
+      a {
+        color: @theme-secondary-color;
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      flex-direction: column;
+
+      clear: both;
+
+      margin-top: 4em;
+
+      li {
+        a {
+          color: @theme-primary-color;
+          font-size: 30px;
+          margin-bottom: 0.3em;
+        }
+      }
+
+      hr {
+        border-top: 1px solid @border-color;
+        margin: 0;
+        margin-bottom: 1.3em;
+      }
+    }
+  }
+
+  .sidebar.lite {
+    background: @theme-primary-color;
+    li {
+      a {
+        color: @theme-secondary-color;
+      }
+    }
+    .button {
+      background: @theme-secondary-color;
+      &:hover {
+        background: lighten(@theme-secondary-color, 10%);
+      }
+      a {
+        color: @theme-primary-color;
+      }
+    }
+    .side-menu-hamburger-button {
+      background-position: 0 -192px;
+    }
+  }
+
+  #contact-slidebar-button {
+    a {
+      font-size: 20px;
+      padding: 1em;
+    }
+  }
+
+  .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+
+    width: 30px;
+    height: 30px;
+
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-background {
+    background: @theme-secondary-color;
+  }
+
+  .lite .main-background {
+    background: @theme-primary-color;
+  }
+
+  #cta-title,
+  #cta-text {
+    text-align: center;
+  }
+  #cta-text {
+    font-size: 14pt;
+  }
+  #cta-title {
+    font-size: 35px;
+  }
+  #cta-button {
+    margin: auto;
+    width: 200px;
+    .round(5px);
+    a {
+      font-size: 14pt;
+    }
+  }
+  #solution-img {
+    margin-top: 5em;
+  }
+
+  //MAIN-CTA
+  .main-cta {
+    display: none;
+  }
+
+  //CONTACT-CONTENT
+  .mobile-image {
+    display: block;
+  }
+
+  #solution-img {
+    width: 100%;
+  }
+
+  .contact-content {
+    margin-top: 3em;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  #contact-us-form {
+    input[type="submit"] {
+      width: 100%;
+      font-size: 20px;
+      .round(7px);
+    }
+    input[type="text"],
+    textarea {
+      font-size: 23px;
+      background: none;
+    }
+  }
+
+  .content {
+    font-size: 23px;
+  }
+
+  .contact-info {
+    margin-left: 0;
+    margin-top: 6em;
+  }
+
+  .info-text.content {
+    width: 300px;
+  }
+
+  .info-icon {
+    width: 70px;
+    height: 70px;
+    background-size: 910%;
+  }
+
+  .location {
+    background-position: -316px -105px;
+    margin-bottom: 2em;
+  }
+
+  .mail {
+    background-position: -423px -105px;
+  }
+
+  .phone {
+    background-position: -529px -105px;
+  }
+
+  //FOOTER
+  footer {
+    padding-top: 4em;
+    background: @theme-secondary-color;
+
+    ul li:first-child {
+      margin-bottom: 1em;
+    }
+
+    .logo a {
+      font-size: 35px;
+    }
+    .description {
+      font-size: 25px;
+      margin-top: 1em;
+      margin-bottom: 3em;
+    }
+    .footer-list {
+      .content {
+        margin-bottom: 0.6em;
+      }
+      .footer-title,
+      .content {
+        font-size: 27px;
+      }
+    }
+    #address-fix {
+      margin-left: 0.75em;
+    }
+    hr {
+      color: darken(white, 20%);
+      border-top: 2px solid darken(white, 20%);
+    }
+    .copyright {
+      justify-content: flex-start;
+      font-size: 27px;
+      color: darken(white, 10%);
+    }
+  }
+}

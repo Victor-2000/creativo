@@ -33,12 +33,12 @@
         <div class="container">
           <div class="row display-flex">
             <div class="col-xs-3">
-              <h1 class="logo lite">
+              <h1 class="logo">
                 <a href="./blog.html">Creativo.</a>
               </h1>
             </div>
 
-            <div class="col-xs-7 navigation-menu">
+            <div class="col-lg-7 col-xs-6 navigation-menu">
               <ul>
                 <li><a href="./blog.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
@@ -48,16 +48,40 @@
               </ul>
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-lg-2 col-xs-3" id="nav-action-pannel">
               <div class="button top-menu-button">
-                <a href="#">Contact us</a>
+                <a href="./contact_us.html">Contact us</a>
+              </div>
+              <span
+                class="mobile-hamburger-button"
+                onclick="openSidebar()"
+              ></span>
+            </div>
+            <div class="sidebar">
+              <span
+                class="side-menu-hamburger-button"
+                onclick="closeSidebar()"
+              ></span>
+              <ul>
+                <li><a href="./blog.html">Home</a></li>
+                <hr />
+                <li><a href="./about.html" class="nav-selected">About</a></li>
+                <hr />
+                <li><a href="./works.html">Works</a></li>
+                <hr />
+                <li><a href="./services.html">Services</a></li>
+                <hr />
+                <li><a href="./blog.html">Blog</a></li>
+                <hr />
+              </ul>
+              <div class="button" id="contact-slidebar-button">
+                <a href="./contact_us.html">Contact us</a>
               </div>
             </div>
           </div>
         </div>
       </header>
     </div>
-
     <!-- MAIN-CTA -->
     <section class="main-cta">
       <div class="container">
@@ -88,13 +112,22 @@
     <section class="contact-content">
       <div class="container">
         <div class="row">
-          <div class="col-xs-5">
+          <div class="col-xs-12">
             <h1 class="title-one">
               Let's start a project
             </h1>
             <div class="content">
               Feel free to drop your contact here
             </div>
+          </div>
+          <div class="col-xs-12 mobile-image">
+            <img
+              src="./images/contact_us/hero_image.png"
+              alt="IT Solution Services"
+              id="solution-img"
+            />
+          </div>
+          <div class="col-xs-12 col-sm-5">
             <form action="" method="post" id="contact-us-form">
               <input
                 type="text"
@@ -124,13 +157,13 @@
               </div>
             </form>
           </div>
-          <div class="col-xs-5">
+          <div class="col-xs-12 col-sm-5">
             <div class="contact-info">
               <div class="info-block">
                 <div class="info-icon location"></div>
                 <div class="info-text content">
-                  Jl. Budidaya VI No. 30. Kota Makassar, <br />
-                  Sulawesi Selatan, Indonesia
+                  Jl. Budidaya VI No. 30. Kota Makassar, Sulawesi Selatan,
+                  Indonesia
                 </div>
               </div>
               <div class="info-block">
@@ -151,7 +184,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-xs-3">
+          <div class="col-sm-3 col-xs-10">
             <h1 class="logo">
               <a href="./blog.html">Creativo.</a>
             </h1>
@@ -161,7 +194,7 @@
             </div>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Useful links</span>
@@ -175,7 +208,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Documents</span>
@@ -187,7 +220,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-12">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Address</span>
@@ -216,7 +249,7 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <!-- <script src="./js/jquery-3.5.1.js"></script>
-  <script src="./js/script.js"></script> -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -145,6 +145,10 @@ header .col-xs-3 {
 .sections {
   padding: 5em 0;
 }
+.sidebar,
+.mobile-hamburger-button {
+  display: none;
+}
 .main-cta {
   margin-top: 3em;
 }
@@ -345,9 +349,9 @@ footer > .container > .row {
   .sidebar {
     display: block;
     position: fixed;
-    width: 40vw;
+    width: 50vw;
     height: 100vh;
-    right: -45vw;
+    right: -55vw;
     z-index: 100;
     overflow-y: scroll;
     border-radius: 10px;
