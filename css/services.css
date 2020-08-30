@@ -411,11 +411,13 @@ section {
   background: #27a469;
 }
 .benefits {
-  font-size: 16px;
+  font-size: 20px;
 }
 .pricing-content {
   padding: 0.2em;
   width: 110%;
+  position: relative;
+  right: 0;
 }
 .pricing-content li {
   padding: 0.7em 0;
@@ -460,13 +462,13 @@ section {
   width: 60%;
 }
 .clients .heading .title-two {
-  width: 64%;
+  width: 65%;
   padding-top: 0.5em;
   margin-bottom: 2em;
 }
 #clients-img {
   margin: 1em 0;
-  width: 65%;
+  width: 70%;
   height: auto;
 }
 .interested {
@@ -495,7 +497,7 @@ section {
 }
 .interested .button {
   margin-top: 1.5em;
-  padding: 1.5em 3em;
+  padding: 1.5em 2em;
   text-transform: uppercase;
   font-size: 11px;
 }

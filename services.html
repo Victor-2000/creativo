@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/services2.css" />
 
     <!-- FONTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -38,20 +39,43 @@
               </h1>
             </div>
 
-            <div class="col-xs-7 navigation-menu">
+            <div class="col-lg-7 col-xs-6 navigation-menu">
               <ul>
                 <li><a href="./blog.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
+                <li><a href="./about.html" class="nav-selected">About</a></li>
                 <li><a href="./works.html">Works</a></li>
-                <li>
-                  <a href="./services.html" class="nav-selected">Services</a>
-                </li>
+                <li><a href="./services.html">Services</a></li>
                 <li><a href="./blog.html">Blog</a></li>
               </ul>
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-lg-2 col-xs-3" id="nav-action-pannel">
               <div class="button top-menu-button">
+                <a href="./contact_us.html">Contact us</a>
+              </div>
+              <span
+                class="mobile-hamburger-button"
+                onclick="openSidebar()"
+              ></span>
+            </div>
+            <div class="sidebar lite">
+              <span
+                class="side-menu-hamburger-button"
+                onclick="closeSidebar()"
+              ></span>
+              <ul>
+                <li><a href="./blog.html">Home</a></li>
+                <hr />
+                <li><a href="./about.html" class="nav-selected">About</a></li>
+                <hr />
+                <li><a href="./works.html">Works</a></li>
+                <hr />
+                <li><a href="./services.html">Services</a></li>
+                <hr />
+                <li><a href="./blog.html">Blog</a></li>
+                <hr />
+              </ul>
+              <div class="button" id="contact-slidebar-button">
                 <a href="./contact_us.html">Contact us</a>
               </div>
             </div>
@@ -92,7 +116,7 @@
     <section class="customer-reviews">
       <div class="container">
         <div class="row display-flex">
-          <div class="col-xs-6">
+          <div class="col-sm-6 col-xs-12">
             <div class="customer-review-heading">
               <h1 class="title-one">What our customer saying about us</h1>
               <div class="content">
@@ -101,7 +125,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-6">
+          <div class="col-sm-6 col-xs-12">
             <div class="customer-review-list">
               <div class="customer-review-card">
                 <div class="customer-review-text content">
@@ -109,7 +133,11 @@
                   primum igitur, inquit, modo ista sis aequitate.
                 </div>
                 <div class="author">
-                  <div id="author-image"></div>
+                  <img
+                    id="author-image"
+                    src="./images/image_placeholder.png"
+                    alt="Author-image"
+                  />
                   <div id="author-name" class="content-title">
                     Harsha Buksh
                     <div id="author-description" class="content">
@@ -124,7 +152,11 @@
                   omnis voluptas nulla pariatur?
                 </div>
                 <div class="author">
-                  <div id="author-image"></div>
+                  <img
+                    id="author-image"
+                    src="./images/image_placeholder.png"
+                    alt="Author-image"
+                  />
                   <div id="author-name" class="content-title">
                     Chineze Afamefuna
                     <div id="author-description" class="content">
@@ -139,7 +171,11 @@
                   architecto.
                 </div>
                 <div class="author">
-                  <div id="author-image"></div>
+                  <img
+                    id="author-image"
+                    src="./images/image_placeholder.png"
+                    alt="Author-image"
+                  />
                   <div id="author-name" class="content-title">
                     Deveedaas Nandi
                     <div id="author-description" class="content">
@@ -147,6 +183,9 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="button hollow alternative">
+                <a href="">See more</a>
               </div>
             </div>
           </div>
@@ -186,7 +225,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-4 card">
+          <div class="col-sm-4 col-xs-11 card">
             <div class="pricing-header">
               <div class="ratio">
                 <div class="price">$100</div>
@@ -234,7 +273,7 @@
             </div>
             <div class="pricing-footer">Get Regular Packet $100</div>
           </div>
-          <div class="col-xs-4 card">
+          <div class="col-sm-4 col-xs-11 card">
             <div class="pricing-header bright">
               <div class="ratio">
                 <div class="price">$500</div>
@@ -282,7 +321,7 @@
             </div>
             <div class="pricing-footer">Get Standard Packet $500</div>
           </div>
-          <div class="col-xs-4 card">
+          <div class="col-sm-4 col-xs-11 card">
             <div class="pricing-header">
               <div class="ratio">
                 <div class="price">$1.000</div>
@@ -351,6 +390,14 @@
           src="./images/services/clients.png"
           alt="Clients"
         />
+        <ul class="clients-list">
+          <li class="client-img" id="entro-stop"></li>
+          <li class="client-img" id="go-pay"></li>
+          <li class="client-img" id="usagi"></li>
+          <li class="separation"></li>
+          <li class="client-img" id="mapan"></li>
+          <li class="client-img" id="chubb"></li>
+        </ul>
         <div class="interested">
           <h1 class="title-one">
             Are you interested for using our services?
@@ -366,7 +413,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-xs-3">
+          <div class="col-sm-3 col-xs-10">
             <h1 class="logo">
               <a href="./blog.html">Creativo.</a>
             </h1>
@@ -376,7 +423,7 @@
             </div>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Useful links</span>
@@ -390,7 +437,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Documents</span>
@@ -402,7 +449,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-12">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Address</span>
@@ -431,7 +478,7 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <!-- <script src="./js/jquery-3.5.1.js"></script>
-  <script src="./js/script.js"></script> -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

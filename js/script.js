@@ -59,15 +59,28 @@ function changeContent(key, currentContent, currentButton) {
   }
 }
 
-function closeSidebar() {
-  sidebar_width = sidebar.width();
+sidebar_width = sidebar.width() * 2;
 
+function closeSidebar() {
   sidebar.css("right", -sidebar_width - 30);
   hamburger_sidebar.css("right", -sidebar_width - 30);
 }
 
 function openSidebar() {
+  //Move to close position
+  sidebar.css("transition", "none");
+  sidebar.css("right", -sidebar_width / 2 - 30);
+
+  //Do slide animation
+  sidebar.css("transition", "0.5s ease-in-out");
   sidebar.css("right", "-10px");
+
+  //Move to close position
+  hamburger_sidebar.css("transition", "none");
+  hamburger_sidebar.css("right", -sidebar_width / 2 - 30);
+
+  //Do slide animation
+  hamburger_sidebar.css("transition", "0.5s ease-in-out");
   hamburger_sidebar.css("right", "-10px");
 }
 
