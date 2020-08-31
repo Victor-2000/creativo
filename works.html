@@ -38,7 +38,7 @@
               </h1>
             </div>
 
-            <div class="col-xs-7 navigation-menu">
+            <div class="col-lg-7 col-xs-6 navigation-menu">
               <ul>
                 <li><a href="./blog.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
@@ -48,8 +48,33 @@
               </ul>
             </div>
 
-            <div class="col-xs-2">
+            <div class="col-lg-2 col-xs-3" id="nav-action-pannel">
               <div class="button top-menu-button">
+                <a href="./contact_us.html">Contact us</a>
+              </div>
+              <span
+                class="mobile-hamburger-button"
+                onclick="openSidebar()"
+              ></span>
+            </div>
+            <div class="sidebar lite">
+              <span
+                class="side-menu-hamburger-button"
+                onclick="closeSidebar()"
+              ></span>
+              <ul>
+                <li><a href="./blog.html">Home</a></li>
+                <hr />
+                <li><a href="./about.html" class="nav-selected">About</a></li>
+                <hr />
+                <li><a href="./works.html">Works</a></li>
+                <hr />
+                <li><a href="./services.html">Services</a></li>
+                <hr />
+                <li><a href="./blog.html">Blog</a></li>
+                <hr />
+              </ul>
+              <div class="button" id="contact-slidebar-button">
                 <a href="./contact_us.html">Contact us</a>
               </div>
             </div>
@@ -76,6 +101,14 @@
           </div>
         </div>
       </section>
+
+      <svg width="100%" viewBox="0 0 400 100">
+        <path
+          fill="#f5f6f8"
+          fill-opacity="1"
+          d="M 0 0 Q 200 100 400 0 L 400 100 L 0 100 L 0 0 Z"
+        ></path>
+      </svg>
     </div>
     <!-- GALLERY -->
     <section class="gallery">
@@ -87,18 +120,30 @@
           <li class="button hollow">Brand Identity</li>
         </ul>
         <div class="row">
-          <div class="col-xs-6">
+          <div class="col-sm-6 col-xs-12">
             <img src="./images/works/image_small.png" alt="Small image" />
-            <img src="./images/works/image_tall.png" alt="Tall image" />
+            <img
+              class="mobile-img"
+              src="./images/works/image_tall.png"
+              alt="Tall image"
+            />
             <img src="./images/works/image_small.png" alt="Small image" />
           </div>
-          <div class="col-xs-6">
-            <img src="./images/works/image_big.png" alt="Big image" />
+          <div class="col-sm-6 col-xs-12">
+            <img
+              class="mobile-img"
+              src="./images/works/image_big.png"
+              alt="Big image"
+            />
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-6">
-            <img src="./images/works/image_big.png" alt="Big image" />
+        <div class="row first-mobile">
+          <div class="col-sm-6 col-xs-12">
+            <img
+              class="mobile-img"
+              src="./images/works/image_big.png"
+              alt="Big image"
+            />
           </div>
           <div class="col-xs-6">
             <img src="./images/works/image_small.png" alt="Small image" />
@@ -114,10 +159,9 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-xs-3">
+          <div class="col-sm-3 col-xs-10">
             <h1 class="logo">
-              <a href="">Creativo.</a>
-              <!--TODO: add the Home page link-->
+              <a href="./blog.html">Creativo.</a>
             </h1>
             <div class="description content">
               Torquem detraxit hosti et quidem se repellere, idque instituit
@@ -125,7 +169,7 @@
             </div>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Useful links</span>
@@ -139,7 +183,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-2">
+          <div class="col-sm-2 col-xs-6">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Documents</span>
@@ -151,7 +195,7 @@
             </ul>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-sm-4 col-xs-12">
             <ul class="footer-list">
               <li>
                 <span class="footer-title">Address</span>
@@ -180,7 +224,7 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <!-- <script src="./js/jquery-3.5.1.js"></script>
-  <script src="./js/script.js"></script> -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

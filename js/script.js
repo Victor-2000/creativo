@@ -87,13 +87,14 @@ function openSidebar() {
 //Scroll detection for the BLOG header
 var href = document.location.href;
 var lastPathSegment = href.substr(href.lastIndexOf("/") + 1);
-if (lastPathSegment === "blog.html") {
+if (lastPathSegment === "blog.html" || lastPathSegment === "works.html") {
   header = $("header");
+  header.css("background", "#27a46a00");
   $(document).on("scroll", function () {
     if ($(this).scrollTop() >= $(".main-cta").position().top) {
       header.css("background", "#27a469");
     } else {
-      header.css("background", "#27a46a4f");
+      header.css("background", "#27a46a00");
     }
   });
 }
