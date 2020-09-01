@@ -465,14 +465,16 @@ header .col-xs-3 {
   align-items: center;
 }
 .info-text {
-  margin-left: 2em;
+  margin-left: 4em;
   float: left;
 }
 .info-icon {
+  position: absolute;
   display: block;
   background: url("../images/sprites.png");
   width: 40px;
   height: 40px;
+  z-index: 2;
   float: left;
 }
 .location {

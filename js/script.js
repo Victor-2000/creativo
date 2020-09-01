@@ -7,36 +7,13 @@ contentButtonPairs = {
   whyContent: { content: $(".content.why"), button: $(".button.why") },
 };
 
-maxHeight =
-  Math.max(
-    contentButtonPairs.whoContent.content.height(),
-    Math.max(
-      contentButtonPairs.whatContent.content.height(),
-      contentButtonPairs.whyContent.content.height()
-    )
-  ) + 20;
-
-console.log(maxHeight);
-
-switch (maxHeight - 20) {
-  case contentButtonPairs.whoContent.content.height():
-    console.log("Who");
-    break;
-  case contentButtonPairs.whatContent.content.height():
-    console.log("What");
-    break;
-  case contentButtonPairs.whyContent.content.height():
-    console.log("Why");
-    break;
-  default:
-    break;
-}
-
-contentButtonPairs.whoContent.content.height(maxHeight);
-contentButtonPairs.whatContent.content.height(maxHeight).css("display", "none");
-contentButtonPairs.whyContent.content.height(maxHeight).css("display", "none");
-
 last = "whoContent";
+
+$(window).resize(function () {
+  resizeContent(last);
+});
+
+resizeContent(last);
 
 $.each(contentButtonPairs, function (key, currentPair) {
   currentPair.button.click(() => {
@@ -45,7 +22,6 @@ $.each(contentButtonPairs, function (key, currentPair) {
 });
 
 function changeContent(key, currentContent, currentButton) {
-  console.log(currentContent);
   if (last !== currentContent) {
     //content change
     contentButtonPairs[last].content.fadeOut(400, function () {
@@ -57,6 +33,37 @@ function changeContent(key, currentContent, currentButton) {
       });
     });
   }
+}
+
+function resizeContent(last) {
+  contentButtonPairs.whoContent.content.css("display", "block");
+  contentButtonPairs.whatContent.content.css("display", "block");
+  contentButtonPairs.whyContent.content.css("display", "block");
+
+  contentButtonPairs.whoContent.content.css("height", "fit-content");
+  contentButtonPairs.whatContent.content.css("height", "fit-content");
+  contentButtonPairs.whyContent.content.css("height", "fit-content");
+
+  maxHeight =
+    Math.max(
+      contentButtonPairs.whoContent.content.height(),
+      Math.max(
+        contentButtonPairs.whatContent.content.height(),
+        contentButtonPairs.whyContent.content.height()
+      )
+    ) + 20;
+
+  contentButtonPairs.whoContent.content
+    .height(maxHeight)
+    .css("display", "none");
+  contentButtonPairs.whatContent.content
+    .height(maxHeight)
+    .css("display", "none");
+  contentButtonPairs.whyContent.content
+    .height(maxHeight)
+    .css("display", "none");
+
+  contentButtonPairs[last].content.css("display", "block");
 }
 
 sidebar_width = sidebar.width() * 2;

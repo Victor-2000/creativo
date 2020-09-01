@@ -449,6 +449,8 @@ svg {
 
 .gallery {
   padding-top: 3em;
+  padding-bottom: 3em;
+
   .gradient(#f5f6f8, @details-gradient-start);
   .row {
     display: flex;
@@ -587,6 +589,16 @@ footer > .container > .row {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  img {
+    width: 94%;
+  }
+
+  .small-img {
+    width: 44%;
+  }
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767.98px) {
   //HEADER
@@ -632,6 +644,11 @@ footer > .container > .row {
 
   .main-cta {
     padding-top: 5em;
+  }
+
+  .hollow.button {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
 
   //SIDEBAR

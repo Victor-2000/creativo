@@ -339,6 +339,7 @@ svg {
 }
 .gallery {
   padding-top: 3em;
+  padding-bottom: 3em;
   background-color: #fdfdfe;
   background-image: -webkit-linear-gradient(top, #f5f6f8, #fdfdfe);
   background-image: -moz-linear-gradient(top, #f5f6f8, #fdfdfe);
@@ -461,6 +462,14 @@ footer > .container > .row {
     font-size: 15px;
   }
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  img {
+    width: 94%;
+  }
+  .small-img {
+    width: 44%;
+  }
+}
 @media (max-width: 767.98px) {
   .top-menu-button,
   .navigation-menu ul {
@@ -496,6 +505,10 @@ footer > .container > .row {
   }
   .main-cta {
     padding-top: 5em;
+  }
+  .hollow.button {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
   .sidebar {
     display: block;

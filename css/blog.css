@@ -439,6 +439,10 @@ footer > .container > .row {
   #cta-text {
     font-size: 15px;
   }
+  .author-details {
+    position: absolute;
+    bottom: 1.5em;
+  }
 }
 @media (max-width: 767.98px) {
   .top-menu-button,
