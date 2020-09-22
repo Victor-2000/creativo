@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creativo | Works</title>
+
+    <!-- GOOD FOR SEO -->
+    <meta name="description" content="The Works page of creativo company." />
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/works.css" />
+
+    <!-- FONTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: [
+            "Playfair Display", //bold(700) title
+            "Roboto: 400,500,700", //bold(700) // regular(400) - default // medium(500) - buttons,menu,small headings
+          ],
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <div class="main-background">
+      <!-- HEADER -->
+      <header>
+        <div class="container">
+          <div class="row display-flex">
+            <div class="col-xs-3">
+              <h1 class="logo">
+                <a href="./blog.html">Creativo.</a>
+              </h1>
+            </div>
+
+            <div class="col-lg-7 col-xs-6 navigation-menu">
+              <ul>
+                <li><a href="./blog.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./works.html" class="nav-selected">Works</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-xs-3" id="nav-action-pannel">
+              <div class="button top-menu-button">
+                <a href="./contact_us.html">Contact us</a>
+              </div>
+              <span
+                class="mobile-hamburger-button"
+                onclick="openSidebar()"
+              ></span>
+            </div>
+            <div class="sidebar lite">
+              <span
+                class="side-menu-hamburger-button"
+                onclick="closeSidebar()"
+              ></span>
+              <ul>
+                <li><a href="./blog.html">Home</a></li>
+                <hr />
+                <li><a href="./about.html" class="nav-selected">About</a></li>
+                <hr />
+                <li><a href="./works.html">Works</a></li>
+                <hr />
+                <li><a href="./services.html">Services</a></li>
+                <hr />
+                <li><a href="./blog.html">Blog</a></li>
+                <hr />
+              </ul>
+              <div class="button" id="contact-slidebar-button">
+                <a href="./contact_us.html">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN-CTA -->
+      <section class="main-cta">
+        <div class="container">
+          <h1 id="cta-title" class="title-one">
+            You can show our great work everyday
+          </h1>
+
+          <div id="cta-text" class="title-two">
+            We provide one stop IT Solution services from concepting until
+            production for Website, Software, & Mobile Development.
+          </div>
+
+          <div class="button-pannel">
+            <div class="hollow lite button" id="cta-button">
+              <a href="./services.html">learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <svg width="100%" viewBox="0 0 400 100">
+        <path
+          fill="#f5f6f8"
+          fill-opacity="1"
+          d="M 0 0 Q 200 100 400 0 L 400 100 L 0 100 L 0 0 Z"
+        ></path>
+      </svg>
+    </div>
+    <!-- GALLERY -->
+    <section class="gallery">
+      <div class="container">
+        <ul class="gallery-nav">
+          <li class="button hollow selected">All</li>
+          <li class="button hollow">Website</li>
+          <li class="button hollow">Mobile Apps</li>
+          <li class="button hollow">Brand Identity</li>
+        </ul>
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <img
+              class="small-img"
+              src="./images/works/image_small.png"
+              alt="Small image"
+            />
+            <img
+              class="mobile-img small-img"
+              src="./images/works/image_tall.png"
+              alt="Tall image"
+            />
+            <img
+              class="small-img"
+              src="./images/works/image_small.png"
+              alt="Small image"
+            />
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <img
+              class="mobile-img"
+              src="./images/works/image_big.png"
+              alt="Big image"
+            />
+          </div>
+        </div>
+        <div class="row first-mobile">
+          <div class="col-sm-6 col-xs-12">
+            <img
+              class="mobile-img"
+              src="./images/works/image_big.png"
+              alt="Big image"
+            />
+          </div>
+          <div class="col-xs-6">
+            <img
+              class="small-img"
+              src="./images/works/image_small.png"
+              alt="Small image"
+            />
+            <img
+              class="small-img"
+              src="./images/works/image_small.png"
+              alt="Small image"
+            />
+            <img
+              class="small-img"
+              src="./images/works/image_small.png"
+              alt="Small image"
+            />
+            <img
+              class="small-img"
+              src="./images/works/image_small.png"
+              alt="Small image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-xs-10">
+            <h1 class="logo">
+              <a href="./blog.html">Creativo.</a>
+            </h1>
+            <div class="description content">
+              Torquem detraxit hosti et quidem se repellere, idque instituit
+              docere.
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-xs-6">
+            <ul class="footer-list">
+              <li>
+                <span class="footer-title">Useful links</span>
+              </li>
+              <li><a href="./about.html" class="content lite">About</a></li>
+              <li>
+                <a href="./services.html" class="content lite">Services</a>
+              </li>
+              <li><a href="./works.html" class="content lite">Works</a></li>
+              <li><a href="./about.html#team" class="content lite">Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-2 col-xs-6">
+            <ul class="footer-list">
+              <li>
+                <span class="footer-title">Documents</span>
+              </li>
+              <li><a href="#" class="content lite">Portofolio</a></li>
+              <li><a href="#" class="content lite">Term of use</a></li>
+              <li><a href="#" class="content lite">Privacy and policy</a></li>
+              <li><a href="#" class="content lite">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 col-xs-12">
+            <ul class="footer-list">
+              <li>
+                <span class="footer-title">Address</span>
+              </li>
+              <li class="content lite" id="address-fix">
+                FreeStyke STD. <br />
+                Jl. Budidya VI Block C10 Makassar <br />
+                Sulawesi Selatan, Indonesia
+              </li>
+              <li>
+                <a href="tel:+6282 63784 9485" class="content lite"
+                  >+6282 63784 9485</a
+                >
+              </li>
+              <li>
+                <a href="mailto:Info@FreeStyle.com" class="content lite"
+                  >Info@FreeStyle.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <span class="copyright content">Copyright Creativo. LTD. 2020</span>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

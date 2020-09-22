@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creativo | Services</title>
+
+    <!-- GOOD FOR SEO -->
+    <meta name="description" content="The Services page of creativo company." />
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/services2.css" />
+
+    <!-- FONTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: [
+            "Playfair Display", //bold(700) title
+            "Roboto: 400,500,700", //bold(700) // regular(400) - default // medium(500) - buttons,menu,small headings
+          ],
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <div class="main-background">
+      <!-- HEADER -->
+      <header>
+        <div class="container">
+          <div class="row display-flex">
+            <div class="col-xs-3">
+              <h1 class="logo">
+                <a href="./blog.html">Creativo.</a>
+              </h1>
+            </div>
+
+            <div class="col-lg-7 col-xs-6 navigation-menu">
+              <ul>
+                <li><a href="./blog.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./works.html">Works</a></li>
+                <li>
+                  <a href="./services.html" class="nav-selected">Services</a>
+                </li>
+                <li><a href="./blog.html">Blog</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-xs-3" id="nav-action-pannel">
+              <div class="button top-menu-button">
+                <a href="./contact_us.html">Contact us</a>
+              </div>
+              <span
+                class="mobile-hamburger-button"
+                onclick="openSidebar()"
+              ></span>
+            </div>
+            <div class="sidebar lite">
+              <span
+                class="side-menu-hamburger-button"
+                onclick="closeSidebar()"
+              ></span>
+              <ul>
+                <li><a href="./blog.html">Home</a></li>
+                <hr />
+                <li><a href="./about.html" class="nav-selected">About</a></li>
+                <hr />
+                <li><a href="./works.html">Works</a></li>
+                <hr />
+                <li><a href="./services.html">Services</a></li>
+                <hr />
+                <li><a href="./blog.html">Blog</a></li>
+                <hr />
+              </ul>
+              <div class="button" id="contact-slidebar-button">
+                <a href="./contact_us.html">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN-CTA -->
+      <section class="main-cta">
+        <div class="container">
+          <h1 id="cta-title" class="title-one">
+            Making your beautiful platform without difficulties
+          </h1>
+
+          <div id="cta-text" class="title-two">
+            Our great team will help you !
+          </div>
+
+          <div class="button-pannel">
+            <div class="button" id="cta-button">
+              <a href="./contact_us.html">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ADDITIONAL-CTA -->
+    <section class="additional-cta">
+      <div class="container content">
+        we provide you support if you have any problems, our support team will
+        reply within a day and we also have detailed documentation and video to
+        help you.
+      </div>
+    </section>
+
+    <!-- CUSTOMER-REVIEWS -->
+    <section class="customer-reviews">
+      <div class="container">
+        <div class="row display-flex">
+          <div class="col-sm-6 col-xs-12">
+            <div class="customer-review-heading">
+              <h1 class="title-one">What our customer saying about us</h1>
+              <div class="content">
+                Laudem et voluptatem ut enim maxime placeat, facere possimus,
+                omnis voluptas nulla pariatur?
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="customer-review-list">
+              <div class="customer-review-card">
+                <div class="customer-review-text content">
+                  Si sine causa, mox videro; interea hoc epicurus in ea quid est
+                  primum igitur, inquit, modo ista sis aequitate.
+                </div>
+                <div class="author">
+                  <img
+                    id="author-image"
+                    src="./images/image_placeholder.png"
+                    alt="Author-image"
+                  />
+                  <div id="author-name" class="content-title">
+                    Harsha Buksh
+                    <div id="author-description" class="content">
+                      Digital marketing
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="customer-review-card">
+                <div class="customer-review-text content">
+                  Laudem et voluptatem ut enim maxime placeat, facere possimus,
+                  omnis voluptas nulla pariatur?
+                </div>
+                <div class="author">
+                  <img
+                    id="author-image"
+                    src="./images/image_placeholder.png"
+                    alt="Author-image"
+                  />
+                  <div id="author-name" class="content-title">
+                    Chineze Afamefuna
+                    <div id="author-description" class="content">
+                      Influencer
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="customer-review-card">
+                <div class="customer-review-text content">
+                  In quo quaerimus, non recusandae itaque aiunt hanc quasi
+                  architecto.
+                </div>
+                <div class="author">
+                  <img
+                    id="author-image"
+                    src="./images/image_placeholder.png"
+                    alt="Author-image"
+                  />
+                  <div id="author-name" class="content-title">
+                    Deveedaas Nandi
+                    <div id="author-description" class="content">
+                      Marketing Officer
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="button hollow alternative">
+                <a href="">See more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER-HELP -->
+    <section class="customer-help lite">
+      <div class="container">
+        <h1 class="title-one">
+          We can help your company to get customer target.
+        </h1>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Drop your email here..."
+        />
+        <div class="button-pannel">
+          <div class="button">
+            Send
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING-PLAN -->
+    <section class="pricing-plan">
+      <div class="container">
+        <div class="heading">
+          <h1 class="title-one">Our pricing plan to help you</h1>
+          <div class="content">
+            Our theme is the most advanced and user-friendly theme you will find
+            on the market, we have documentation and video to help set your site
+            really easily,
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-xs-11 card">
+            <div class="pricing-header">
+              <div class="ratio">
+                <div class="price">$100</div>
+                /3 Month
+              </div>
+              <div class="header-title">Regular Packet</div>
+            </div>
+            <div class="pricing-content">
+              <ul class="benefits">
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">
+                    WordPress Core & Plugin Updates
+                  </div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">
+                    24/7 Security & Uptime Monitoring
+                  </div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">Video Tutorials</div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="benefits-text">Daily Backups & Restore</div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="benefits-text">2 x Monthly Content Updates</div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="benefits-text">Priority Support</div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="benefits-text">
+                    Cancel Anytime, No Long-term Contracts
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-footer">Get Regular Packet $100</div>
+          </div>
+          <div class="col-sm-4 col-xs-11 card">
+            <div class="pricing-header bright">
+              <div class="ratio">
+                <div class="price">$500</div>
+                /6 Month
+              </div>
+              <div class="header-title">Standard Packet</div>
+            </div>
+            <div class="pricing-content">
+              <ul class="benefits">
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">
+                    WordPress Core & Plugin Updates
+                  </div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">
+                    24/7 Security & Uptime Monitoring
+                  </div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">Video Tutorials</div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">Daily Backups & Restore</div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">2 x Monthly Content Updates</div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="benefits-text">Priority Support</div>
+                </li>
+                <li>
+                  <span></span>
+                  <div class="benefits-text">
+                    Cancel Anytime, No Long-term Contracts
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-footer">Get Standard Packet $500</div>
+          </div>
+          <div class="col-sm-4 col-xs-11 card">
+            <div class="pricing-header">
+              <div class="ratio">
+                <div class="price">$1.000</div>
+                /1 Year
+              </div>
+              <div class="header-title">Premium Packet</div>
+            </div>
+            <div class="pricing-content">
+              <ul class="benefits">
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">
+                    WordPress Core & Plugin Updates
+                  </div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">
+                    24/7 Security & Uptime Monitoring
+                  </div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">Video Tutorials</div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">Daily Backups & Restore</div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">2 x Monthly Content Updates</div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">Priority Support</div>
+                </li>
+                <li class="activated">
+                  <span></span>
+                  <div class="benefits-text">
+                    Cancel Anytime, No Long-term Contracts
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-footer">Get Premium Packet $1.000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="clients">
+      <div class="container">
+        <div class="heading">
+          <h1 class="title-one">
+            Some of our clients who have collaborated with us
+          </h1>
+          <h2 class="title-two">
+            In oculis quidem exercitus quid ex ea voluptate et impetus quo
+            pertineant non numquam
+          </h2>
+        </div>
+        <img
+          id="clients-img"
+          src="./images/services/clients.png"
+          alt="Clients"
+        />
+        <ul class="clients-list">
+          <li class="client-img" id="entro-stop"></li>
+          <li class="client-img" id="go-pay"></li>
+          <li class="client-img" id="usagi"></li>
+          <li class="separation"></li>
+          <li class="client-img" id="mapan"></li>
+          <li class="client-img" id="chubb"></li>
+        </ul>
+        <div class="interested">
+          <h1 class="title-one">
+            Are you interested for using our services?
+          </h1>
+          <div class="button" onclick="location.href = './contact_us.html'">
+            <a href="./contact_us.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-xs-10">
+            <h1 class="logo">
+              <a href="./blog.html">Creativo.</a>
+            </h1>
+            <div class="description content">
+              Torquem detraxit hosti et quidem se repellere, idque instituit
+              docere.
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-xs-6">
+            <ul class="footer-list">
+              <li>
+                <span class="footer-title">Useful links</span>
+              </li>
+              <li><a href="./about.html" class="content lite">About</a></li>
+              <li>
+                <a href="./services.html" class="content lite">Services</a>
+              </li>
+              <li><a href="./works.html" class="content lite">Works</a></li>
+              <li><a href="./about.html#team" class="content lite">Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-2 col-xs-6">
+            <ul class="footer-list">
+              <li>
+                <span class="footer-title">Documents</span>
+              </li>
+              <li><a href="#" class="content lite">Portofolio</a></li>
+              <li><a href="#" class="content lite">Term of use</a></li>
+              <li><a href="#" class="content lite">Privacy and policy</a></li>
+              <li><a href="#" class="content lite">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 col-xs-12">
+            <ul class="footer-list">
+              <li>
+                <span class="footer-title">Address</span>
+              </li>
+              <li class="content lite" id="address-fix">
+                FreeStyke STD. <br />
+                Jl. Budidya VI Block C10 Makassar <br />
+                Sulawesi Selatan, Indonesia
+              </li>
+              <li>
+                <a href="tel:+6282 63784 9485" class="content lite"
+                  >+6282 63784 9485</a
+                >
+              </li>
+              <li>
+                <a href="mailto:Info@FreeStyle.com" class="content lite"
+                  >Info@FreeStyle.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <span class="copyright content">Copyright Creativo. LTD. 2020</span>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

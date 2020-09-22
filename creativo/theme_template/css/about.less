@@ -1,0 +1,991 @@
+// VARIABLES
+
+@details-gradient-start: #fdfdfe;
+@details-gradient-end: #dee5f4;
+
+@logo-color: #eef7f2;
+
+@theme-primary-color: white;
+@theme-secondary-color: #27a469;
+@theme-ternary-color: #f5f6f8;
+
+@text-color-lite: #666666;
+
+@link-color-lite: #999999;
+@link-color-lite-hover: #666666;
+@link-color-lite-active: #333333;
+
+@text-color-title-lite: #333333;
+
+@link-color: rgba(255, 255, 255, 0.5);
+@link-color-hover: rgba(255, 255, 255, 0.8);
+@link-color-active: @theme-primary-color;
+
+@blog-second-color: #b7b7b8;
+
+@border-color: #dedede;
+
+@blog-card-color: #f5f6f8;
+@blog-text-color: @text-color-lite;
+
+@side-menu-content-background-color: @blog-card-color;
+@side-menu-heading-background-color: #d4ede1;
+
+@input-box-color: @blog-card-color;
+
+@title-font: 100 40px "Playfair Display", "Times New Roman", serif;
+@default-font: 400 20px "Roboto", Tahoma, sans-serif; //regular
+@ui-font: 500 20px "Roboto", Verdana, sans-serif; //medium
+
+// MIXINS
+.round(@radius: 5px) {
+  border-radius: @radius; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box; /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+}
+
+.gradient(@from: #20416a, @to: #3d69a5) {
+  background-color: @to;
+  background-image: -webkit-linear-gradient(top, @from, @to);
+  background-image: -moz-linear-gradient(top, @from, @to);
+  background-image: -o-linear-gradient(top, @from, @to);
+  background-image: -ms-linear-gradient(top, @from, @to);
+  background-image: linear-gradient(top, @from, @to);
+}
+
+.box-shadow(@x: 0, @y: 0, @blur: 1px, @spread: 0px, @color: #000) {
+  -webkit-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.inner-shadow(@inset: inset, @x: 0, @y: 0, @blur: 1px, @color: #000) {
+  -webkit-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.text-shadow(@x: 0, @y: 0, @blur: 1px, @color: #000) {
+  text-shadow: @arguments;
+}
+
+.hide-text {
+  font-size: 0.000001px;
+}
+
+//GENERAL
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: @default-font;
+  overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+
+.logo a {
+  font: @ui-font;
+  font-size: 30px;
+  color: @theme-primary-color;
+}
+
+.main-background {
+  position: relative;
+  background: url("../images/about/main_cta_background.png") 86% 12% no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 7em;
+}
+
+ul {
+  display: flex;
+  li {
+    margin-left: 1em;
+  }
+}
+
+h1 {
+  font: @title-font;
+  font-size: 40px;
+}
+
+.button {
+  .round(3px);
+  background: @theme-primary-color;
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background: darken(white, 10%);
+  }
+  a {
+    color: @theme-secondary-color;
+    font: @ui-font;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-one {
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.title-two {
+  font: @default-font;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: @text-color-lite;
+}
+
+.content {
+  font: @default-font;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: @text-color-lite;
+}
+
+.content-title {
+  font: @ui-font;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: black;
+}
+
+.icon_small,
+.icon_big {
+  display: block;
+  margin: auto;
+  background-size: 100% 100%;
+  background: url("../images/sprites.png");
+}
+
+.icon_big {
+  width: 64px;
+  height: 64px;
+}
+
+.icon_small {
+  width: 24px;
+  height: 24px;
+}
+
+.lite {
+  color: white;
+}
+
+.lite-secondary {
+  color: darken(white, 10%);
+}
+
+header .col-xs-3 {
+  align-items: flex-start !important;
+}
+
+.top-menu-button {
+  a {
+    padding: 1em 2em;
+  }
+}
+
+.navigation-menu {
+  justify-content: flex-end !important;
+  flex-direction: row !important;
+  ul {
+    float: right;
+    margin-top: 10px;
+    li {
+      margin-left: 2em;
+      a {
+        color: rgba(255, 255, 255, 0.5);
+        &:hover {
+          color: rgba(255, 255, 255, 0.8);
+        }
+        &:active {
+          color: @theme-primary-color;
+        }
+        font: @ui-font;
+        font-size: 12px;
+        text-transform: capitalize;
+      }
+      .nav-selected {
+        color: @theme-primary-color;
+        &:hover {
+          color: @theme-primary-color;
+        }
+      }
+    }
+  }
+}
+
+.sidebar,
+.mobile-hamburger-button {
+  display: none;
+}
+
+.sections {
+  padding: 5em 0;
+}
+
+// MAIN-CTA
+.main-cta {
+  margin-top: 3em;
+}
+
+#cta-title {
+  color: @theme-primary-color;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#cta-text {
+  margin: 1.5em 0 3em 0;
+  color: #f9fcfb;
+}
+
+.button-pannel,
+.input-pannel {
+  width: 100%;
+}
+
+.input-pannel {
+  position: relative;
+}
+
+#cta-button {
+  font-size: 0;
+  width: 140px;
+  margin: 0;
+  margin-bottom: 50px;
+  a {
+    padding: 15px;
+    font-size: 11px;
+  }
+}
+
+#cta-input {
+  input {
+    font: @default-font;
+    font-size: 12px;
+    .round(5px);
+    border: none;
+    padding: 1.3em;
+    padding-right: 5em;
+    width: 82%;
+    outline: none;
+    &:active {
+      border: none;
+    }
+  }
+}
+
+#search-button-pannel {
+  position: absolute;
+  z-index: 2;
+  left: 71%;
+  top: 6%;
+  .round(5px);
+  background: @theme-secondary-color;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background: lighten(@theme-secondary-color, 10%);
+  }
+  input {
+    padding: 0;
+    width: 17px;
+    height: 18px;
+    background: url("../images/sprites.png");
+    background-position: -64px -128px;
+  }
+}
+
+#solution-img {
+  width: 85%;
+}
+
+// DETAILS
+
+.details {
+  .gradient(@details-gradient-start, @details-gradient-end);
+}
+
+#details-title-one,
+#details-title-two {
+  text-align: center;
+  margin: auto;
+}
+
+#details-title-one {
+  font-weight: bold;
+  margin-top: 3em;
+  width: 80%;
+}
+
+#details-title-two {
+  margin-top: 2em;
+  width: 70%;
+}
+
+#details-image {
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  padding-bottom: 70px;
+}
+
+.details-content {
+  height: fit-content;
+}
+
+.content-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5em 0;
+
+  .selected,
+  li {
+    cursor: pointer;
+    font: @ui-font;
+    font-size: 12px;
+    padding: 0.75em 2.5em;
+    transition: 0.2s ease-in-out;
+  }
+
+  li {
+    border: 1px solid @border-color;
+    color: #666666;
+    &:hover {
+      transition: 0.3s ease-in-out;
+      border: 1px solid @theme-secondary-color;
+      background-color: lighten(@theme-secondary-color, 30%);
+      color: white;
+    }
+  }
+
+  .selected {
+    border: 1px solid @theme-secondary-color;
+    background-color: @theme-secondary-color;
+    color: white;
+    &:hover {
+      border: 1px solid lighten(@theme-secondary-color, 10%);
+      background-color: lighten(@theme-secondary-color, 10%);
+      color: white;
+    }
+  }
+}
+
+//BENEFITS
+
+.benefits {
+  background: url("../images/about/benefits_background.png") no-repeat;
+  background-size: cover;
+
+  padding: 5.9em 0;
+
+  .title-one,
+  .title-two {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: white;
+  }
+
+  .title-one {
+    font-family: "Roboto", Verdana, sans-serif;
+  }
+
+  .title-two {
+    margin-top: 1em;
+  }
+}
+
+.detail-box {
+  margin: auto;
+  color: white;
+  text-align: center;
+  margin-top: 4em;
+
+  h3 {
+    font: @ui-font;
+    font-size: 17px;
+  }
+
+  .content {
+    color: white;
+  }
+}
+
+#tick {
+  background-position: 0 0;
+}
+
+#mug {
+  background-position: -64px 0;
+}
+
+#bubble {
+  background-position: -128px 0;
+}
+
+//TEAM
+
+.team {
+  text-align: center;
+
+  padding: 5em 0;
+
+  .title-one,
+  .title-two {
+    width: 40%;
+    margin: auto;
+  }
+
+  .title-two {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .facebook {
+    background-position: 0 -64px;
+  }
+
+  .whatsapp {
+    background-position: -64px -64px;
+  }
+
+  .instagram {
+    background-position: -128px -64px;
+  }
+
+  .linkedin {
+    background-position: 0 -128px;
+  }
+}
+
+.member-card {
+  padding: 0.5em 0;
+  img {
+    width: 100%;
+  }
+}
+
+.member-details {
+  .box-shadow(0,10px,27px,-8px,rgb(196, 196, 196));
+  .member-name {
+    font: @ui-font;
+    font-size: 17px;
+    padding: 1em 0 0.5em 0;
+  }
+  .member-description {
+    font: @default-font;
+    color: @text-color-lite;
+    font-size: 12px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    li {
+      margin: 0 0.5em;
+    }
+  }
+}
+
+//FOOTER
+
+footer {
+  padding: 10em 0 2em 0;
+  background: url("../images/footer_decoration.png") center center no-repeat;
+  background-size: 100% 100%;
+
+  .description,
+  .lite {
+    color: darken(white, 10%);
+  }
+  ul {
+    flex-direction: column;
+    li {
+      color: white;
+      line-height: 1.75em;
+      &:first-child {
+        margin: 0.5em 0;
+        margin-left: 1em;
+      }
+      a {
+        color: darken(white, 10%);
+        font-size: 12px;
+        &:hover {
+          color: darken(white, 20%);
+        }
+      }
+    }
+  }
+}
+
+#address-fix {
+  margin-left: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+.footer-title {
+  font: @ui-font;
+  font-size: 18px;
+}
+
+footer > .container > .row {
+  padding-bottom: 3em;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+//MEDIA QUERIES
+
+/* 
+  //BOOTSTRAP MEDIA QUERIES
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  */
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  //DETAILS
+  .details > .container {
+    width: 55%;
+  }
+}
+
+@media (min-width: 992px) {
+  //BENEFITS
+  .benefits .container {
+    width: 70%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  //DETAILS
+  .details > .container {
+    width: 70%;
+  }
+
+  //BENEFITS
+  .benefits {
+    .container {
+      width: 80%;
+    }
+    .title-two {
+      width: 70%;
+    }
+  }
+
+  //TEAM
+
+  .team {
+    .title-one,
+    .title-two {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  //HEADER
+  .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  //MAIN-CTA
+  #solution-img {
+    width: 100%;
+  }
+  #cta-title {
+    font-size: 35px;
+  }
+  #cta-text {
+    font-size: 15px;
+  }
+
+  //BENEFITS
+  .benefits {
+    .title-two {
+      width: 80%;
+    }
+  }
+
+  //TEAM
+  .team {
+    .title-one,
+    .title-two {
+      width: 70%;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767.98px) {
+  //HEADER
+  .top-menu-button,
+  .navigation-menu ul {
+    display: none;
+  }
+
+  #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+
+  .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+
+    width: 30px;
+    height: 30px;
+
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+  }
+
+  .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    background: @theme-secondary-color;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .lite header {
+    background: @theme-primary-color;
+  }
+
+  .main-cta {
+    padding-top: 5em;
+  }
+
+  //SIDEBAR
+  .sidebar {
+    display: block;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -100vw;
+    z-index: 100;
+    overflow-y: scroll;
+
+    .round(10px);
+    background: @theme-secondary-color;
+
+    transition: 0.5s ease-in-out;
+
+    .box-shadow(0,-10px,27px,-8px,rgb(0, 0, 0));
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      flex-direction: column;
+
+      clear: both;
+
+      margin-top: 4em;
+
+      li {
+        a {
+          color: @theme-primary-color;
+          font-size: 30px;
+          margin-bottom: 0.3em;
+        }
+      }
+
+      hr {
+        border-top: 1px solid @border-color;
+        margin: 0;
+        margin-bottom: 1.3em;
+      }
+    }
+  }
+
+  .sidebar.lite {
+    background: @theme-primary-color;
+    li {
+      a {
+        color: @theme-secondary-color;
+      }
+    }
+    .button {
+      background: @theme-secondary-color;
+      &:hover {
+        background: lighten(@theme-secondary-color, 10%);
+      }
+      a {
+        color: @theme-primary-color;
+      }
+    }
+    .side-menu-hamburger-button {
+      background-position: 0 -192px;
+    }
+  }
+
+  #contact-slidebar-button {
+    a {
+      font-size: 20px;
+      padding: 1em;
+    }
+  }
+
+  .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+
+    width: 30px;
+    height: 30px;
+
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+
+    transition: 0.5s ease-in-out;
+  }
+
+  .main-background {
+    background: @theme-secondary-color;
+  }
+
+  .lite .main-background {
+    background: @theme-primary-color;
+  }
+
+  #cta-title,
+  #cta-text {
+    text-align: center;
+  }
+  #cta-text {
+    font-size: 14pt;
+  }
+  #cta-title {
+    font-size: 35px;
+  }
+  #cta-button {
+    margin: auto;
+    width: 200px;
+    .round(5px);
+    a {
+      font-size: 14pt;
+    }
+  }
+
+  #solution-img {
+    margin-top: 5em;
+  }
+
+  //DETAILS
+  .details {
+    .button {
+      font-size: 12pt;
+      .round(5px);
+    }
+    .details-title-one {
+      font-size: 24pt;
+    }
+
+    .details-title-two {
+      font-size: 14pt;
+    }
+
+    .content {
+      font-size: 14pt;
+      text-align: center;
+    }
+
+    #details-image {
+      width: 70%;
+    }
+
+    .content-menu {
+      .selected,
+      li {
+        padding: 0.75em 0.5em;
+        margin: 0 0.3em;
+      }
+    }
+  }
+
+  //BENEFITS
+  .benefits {
+    background: url("../images/about/benefits_background_mobile.png") no-repeat;
+    background-size: cover;
+    .title-one,
+    .title-two {
+      display: none;
+    }
+    h3 {
+      font-size: 20pt;
+    }
+    .content {
+      font-size: 16pt;
+    }
+    .icon_big {
+      background-size: 600%;
+      width: 100px;
+      height: 100px;
+    }
+    #tick {
+      background-position: 0 0;
+    }
+
+    #mug {
+      background-position: -100px 0;
+    }
+
+    #bubble {
+      background-position: -200px 0;
+    }
+  }
+
+  //TEAM
+  .team {
+    background: @theme-ternary-color;
+    .title-one,
+    .title-two {
+      width: 70%;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .member-card {
+      img {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      .member-details {
+        background: white;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      .member-description {
+        font-size: 25px;
+      }
+      .member-name {
+        font-size: 30px;
+      }
+
+      .icon_small {
+        background-size: 1500%;
+        width: 40px;
+        height: 40px;
+      }
+
+      .facebook {
+        background-position: 0 -100px;
+      }
+
+      .whatsapp {
+        background-position: -100px -100px;
+      }
+
+      .instagram {
+        background-position: -200px -100px;
+      }
+
+      .linkedin {
+        background-position: 0 -200px;
+      }
+    }
+
+    .col-xs-4 {
+      display: none;
+    }
+  }
+
+  //FOOTER
+  footer {
+    padding-top: 4em;
+    background: @theme-secondary-color;
+
+    ul li:first-child {
+      margin-bottom: 1em;
+    }
+
+    .logo a {
+      font-size: 35px;
+    }
+    .description {
+      font-size: 25px;
+      margin-top: 1em;
+      margin-bottom: 3em;
+    }
+    .footer-list {
+      .content {
+        margin-bottom: 0.6em;
+      }
+      .footer-title,
+      .content {
+        font-size: 27px;
+      }
+    }
+    #address-fix {
+      margin-left: 0.75em;
+    }
+    hr {
+      color: darken(white, 20%);
+      border-top: 2px solid darken(white, 20%);
+    }
+    .copyright {
+      justify-content: flex-start;
+      font-size: 27px;
+      color: darken(white, 10%);
+    }
+  }
+}
