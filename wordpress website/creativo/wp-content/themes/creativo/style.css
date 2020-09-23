@@ -1,0 +1,5106 @@
+.hide-text {
+  font-size: 0.000001px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+.about {
+  /* 
+  //BOOTSTRAP MEDIA QUERIES
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  */
+}
+.about a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+.about .logo a {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.about .main-background {
+  position: relative;
+  background: url("./images/about/main_cta_background.png") 86% 12% no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 7em;
+}
+.about ul {
+  display: flex;
+}
+.about ul li {
+  margin-left: 1em;
+}
+.about h1 {
+  font: 100 40px "Playfair Display", "Times New Roman", serif;
+  font-size: 40px;
+}
+.about .button {
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: white;
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.about .button:hover {
+  background: #e6e6e6;
+}
+.about .button a {
+  color: #27a469;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.about .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about .row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .title-one {
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.about .title-two {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: #666666;
+}
+.about .content {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.about .content-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: black;
+}
+.about .icon_small,
+.about .icon_big {
+  display: block;
+  margin: auto;
+  background-size: 100% 100%;
+  background: url("./images/sprites.png");
+}
+.about .icon_big {
+  width: 64px;
+  height: 64px;
+}
+.about .icon_small {
+  width: 24px;
+  height: 24px;
+}
+.about .lite {
+  color: white;
+}
+.about .lite-secondary {
+  color: #e6e6e6;
+}
+.about header .col-xs-3 {
+  align-items: flex-start !important;
+}
+.about .top-menu-button a {
+  padding: 1em 2em;
+}
+.about .navigation-menu {
+  justify-content: flex-end !important;
+  flex-direction: row !important;
+}
+.about .navigation-menu ul {
+  float: right;
+  margin-top: 10px;
+}
+.about .navigation-menu ul li {
+  margin-left: 2em;
+}
+.about .navigation-menu ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.about .navigation-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.about .navigation-menu ul li a:active {
+  color: white;
+}
+.about .navigation-menu ul li a[aria-current="page"] {
+  color: white !important;
+}
+.about .navigation-menu ul li a[aria-current="page"]:hover {
+  color: white !important;
+}
+.about .sidebar,
+.about .mobile-hamburger-button {
+  display: none;
+}
+.about .sections {
+  padding: 5em 0;
+}
+.about .main-cta {
+  margin-top: 3em;
+}
+.about #cta-title {
+  color: white;
+  margin-bottom: 0;
+  width: 100%;
+}
+.about #cta-text {
+  margin: 1.5em 0 3em 0;
+  color: #f9fcfb;
+}
+.about .button-pannel,
+.about .input-pannel {
+  width: 100%;
+}
+.about .input-pannel {
+  position: relative;
+}
+.about #cta-button {
+  font-size: 0;
+  width: 140px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.about #cta-button a {
+  padding: 15px;
+  font-size: 11px;
+}
+.about #cta-input input {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  border: none;
+  padding: 1.3em;
+  padding-right: 5em;
+  width: 82%;
+  outline: none;
+}
+.about #cta-input input:active {
+  border: none;
+}
+.about #search-button-pannel {
+  position: absolute;
+  z-index: 2;
+  left: 71%;
+  top: 6%;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: #27a469;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.about #search-button-pannel:hover {
+  background: #31cd83;
+}
+.about #search-button-pannel input {
+  padding: 0;
+  width: 17px;
+  height: 18px;
+  background: url("./images/sprites.png");
+  background-position: -64px -128px;
+}
+.about #solution-img {
+  width: 85%;
+}
+.about .details {
+  background-color: #dee5f4;
+  background-image: -webkit-linear-gradient(top, #fdfdfe, #dee5f4);
+  background-image: -moz-linear-gradient(top, #fdfdfe, #dee5f4);
+  background-image: -o-linear-gradient(top, #fdfdfe, #dee5f4);
+  background-image: -ms-linear-gradient(top, #fdfdfe, #dee5f4);
+  background-image: linear-gradient(top, #fdfdfe, #dee5f4);
+}
+.about #details-title-one,
+.about #details-title-two {
+  text-align: center;
+  margin: auto;
+}
+.about #details-title-one {
+  font-weight: bold;
+  margin-top: 3em;
+  width: 80%;
+}
+.about #details-title-two {
+  margin-top: 2em;
+  width: 70%;
+}
+.about #details-image {
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  padding-bottom: 70px;
+}
+.about .details-content {
+  height: fit-content;
+}
+.about .content-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+.about .content-menu .selected,
+.about .content-menu li {
+  cursor: pointer;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  padding: 0.75em 2.5em;
+  transition: 0.2s ease-in-out;
+}
+.about .content-menu li {
+  border: 1px solid #dedede;
+  color: #666666;
+}
+.about .content-menu li:hover {
+  transition: 0.3s ease-in-out;
+  border: 1px solid #27a469;
+  background-color: #83e1b5;
+  color: white;
+}
+.about .content-menu .selected {
+  border: 1px solid #27a469;
+  background-color: #27a469;
+  color: white;
+}
+.about .content-menu .selected:hover {
+  border: 1px solid #31cd83;
+  background-color: #31cd83;
+  color: white;
+}
+.about .benefits {
+  background: url("./images/about/benefits_background.png") no-repeat;
+  background-size: cover;
+  padding: 5.9em 0;
+}
+.about .benefits .title-one,
+.about .benefits .title-two {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+.about .benefits .title-one {
+  font-family: "Roboto", Verdana, sans-serif;
+}
+.about .benefits .title-two {
+  margin-top: 1em;
+}
+.about .detail-box {
+  margin: auto;
+  color: white;
+  text-align: center;
+  margin-top: 4em;
+}
+.about .detail-box h3 {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 17px;
+}
+.about .detail-box .content {
+  color: white;
+}
+.about #tick {
+  background-position: 0 0;
+}
+.about #mug {
+  background-position: -64px 0;
+}
+.about #bubble {
+  background-position: -128px 0;
+}
+.about .team {
+  text-align: center;
+  padding: 5em 0;
+}
+.about .team .title-one,
+.about .team .title-two {
+  width: 40%;
+  margin: auto;
+}
+.about .team .title-two {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.about .team .facebook {
+  background-position: 0 -64px;
+}
+.about .team .whatsapp {
+  background-position: -64px -64px;
+}
+.about .team .instagram {
+  background-position: -128px -64px;
+}
+.about .team .linkedin {
+  background-position: 0 -128px;
+}
+.about .member-card {
+  padding: 0.5em 0;
+}
+.about .member-card img {
+  width: 100%;
+}
+.about .member-details {
+  -webkit-box-shadow: 0 10px 27px -8px #c4c4c4;
+  box-shadow: 0 10px 27px -8px #c4c4c4;
+}
+.about .member-details .member-name {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 17px;
+  padding: 1em 0 0.5em 0;
+}
+.about .member-details .member-description {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  color: #666666;
+  font-size: 12px;
+}
+.about .member-details ul {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+.about .member-details ul li {
+  margin: 0 0.5em;
+}
+.about footer {
+  padding: 10em 0 2em 0;
+  background: url("./images/footer_decoration.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.about footer .description,
+.about footer .lite {
+  color: #e6e6e6;
+}
+.about footer ul {
+  flex-direction: column;
+}
+.about footer ul li {
+  color: white;
+  line-height: 1.75em;
+}
+.about footer ul li:first-child {
+  margin: 0.5em 0;
+  margin-left: 1em;
+}
+.about footer ul li a {
+  color: #e6e6e6;
+  font-size: 12px;
+}
+.about footer ul li a:hover {
+  color: #cccccc;
+}
+.about #address-fix {
+  margin-left: 1.4em;
+  margin-bottom: 0.5em;
+}
+.about .footer-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+}
+.about footer > .container > .row {
+  padding-bottom: 3em;
+}
+.about .copyright {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+@media (min-width: 1200px) {
+  .about .details > .container {
+    width: 55%;
+  }
+}
+@media (min-width: 992px) {
+  .about .benefits .container {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about .details > .container {
+    width: 70%;
+  }
+  .about .benefits .container {
+    width: 80%;
+  }
+  .about .benefits .title-two {
+    width: 70%;
+  }
+  .about .team .title-one,
+  .about .team .title-two {
+    width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .about .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about #solution-img {
+    width: 100%;
+  }
+  .about #cta-title {
+    font-size: 35px;
+  }
+  .about #cta-text {
+    font-size: 15px;
+  }
+  .about .benefits .title-two {
+    width: 80%;
+  }
+  .about .team .title-one,
+  .about .team .title-two {
+    width: 70%;
+  }
+}
+@media (max-width: 767.98px) {
+  .about .top-menu-button,
+  .about .navigation-menu ul {
+    display: none;
+  }
+  .about #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+  .about .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+  }
+  .about .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .about header {
+    position: fixed;
+    top: 0;
+    background: #27a469;
+    width: 100%;
+    z-index: 99;
+  }
+  .about .lite header {
+    background: white;
+  }
+  .about .main-cta {
+    padding-top: 5em;
+  }
+  .about .sidebar {
+    display: block;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -100vw;
+    z-index: 100;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    background: #27a469;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 -10px 27px -8px #000000;
+    box-shadow: 0 -10px 27px -8px #000000;
+  }
+  .about .sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    clear: both;
+    margin-top: 4em;
+  }
+  .about .sidebar ul li a {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+  }
+  .about .sidebar ul hr {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+  .about .sidebar.lite {
+    background: white;
+  }
+  .about .sidebar.lite li a {
+    color: #27a469;
+  }
+  .about .sidebar.lite .button {
+    background: #27a469;
+  }
+  .about .sidebar.lite .button:hover {
+    background: #31cd83;
+  }
+  .about .sidebar.lite .button a {
+    color: white;
+  }
+  .about .sidebar.lite .side-menu-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .about #contact-slidebar-button a {
+    font-size: 20px;
+    padding: 1em;
+  }
+  .about .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+    transition: 0.5s ease-in-out;
+  }
+  .about .main-background {
+    background: #27a469;
+  }
+  .about .lite .main-background {
+    background: white;
+  }
+  .about #cta-title,
+  .about #cta-text {
+    text-align: center;
+  }
+  .about #cta-text {
+    font-size: 14pt;
+  }
+  .about #cta-title {
+    font-size: 35px;
+  }
+  .about #cta-button {
+    margin: auto;
+    width: 200px;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .about #cta-button a {
+    font-size: 14pt;
+  }
+  .about #solution-img {
+    margin-top: 5em;
+  }
+  .about .details .button {
+    font-size: 12pt;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .about .details .details-title-one {
+    font-size: 24pt;
+  }
+  .about .details .details-title-two {
+    font-size: 14pt;
+  }
+  .about .details .content {
+    font-size: 14pt;
+    text-align: center;
+  }
+  .about .details #details-image {
+    width: 70%;
+  }
+  .about .details .content-menu .selected,
+  .about .details .content-menu li {
+    padding: 0.75em 0.5em;
+    margin: 0 0.3em;
+  }
+  .about .benefits {
+    background: url("./images/about/benefits_background_mobile.png") no-repeat;
+    background-size: cover;
+  }
+  .about .benefits .title-one,
+  .about .benefits .title-two {
+    display: none;
+  }
+  .about .benefits h3 {
+    font-size: 20pt;
+  }
+  .about .benefits .content {
+    font-size: 16pt;
+  }
+  .about .benefits .icon_big {
+    background-size: 600%;
+    width: 100px;
+    height: 100px;
+  }
+  .about .benefits #tick {
+    background-position: 0 0;
+  }
+  .about .benefits #mug {
+    background-position: -100px 0;
+  }
+  .about .benefits #bubble {
+    background-position: -200px 0;
+  }
+  .about .team {
+    background: #f5f6f8;
+  }
+  .about .team .title-one,
+  .about .team .title-two {
+    width: 70%;
+  }
+  .about .team .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .team .member-card img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .about .team .member-card .member-details {
+    background: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .about .team .member-card .member-description {
+    font-size: 25px;
+  }
+  .about .team .member-card .member-name {
+    font-size: 30px;
+  }
+  .about .team .member-card .icon_small {
+    background-size: 1500%;
+    width: 40px;
+    height: 40px;
+  }
+  .about .team .member-card .facebook {
+    background-position: 0 -100px;
+  }
+  .about .team .member-card .whatsapp {
+    background-position: -100px -100px;
+  }
+  .about .team .member-card .instagram {
+    background-position: -200px -100px;
+  }
+  .about .team .member-card .linkedin {
+    background-position: 0 -200px;
+  }
+  .about .team .col-xs-4 {
+    display: none;
+  }
+  .about footer {
+    padding-top: 4em;
+    background: #27a469;
+  }
+  .about footer ul li:first-child {
+    margin-bottom: 1em;
+  }
+  .about footer .logo a {
+    font-size: 35px;
+  }
+  .about footer .description {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  .about footer .footer-list .content {
+    margin-bottom: 0.6em;
+  }
+  .about footer .footer-list .footer-title,
+  .about footer .footer-list .content {
+    font-size: 27px;
+  }
+  .about footer #address-fix {
+    margin-left: 0.75em;
+  }
+  .about footer hr {
+    color: #cccccc;
+    border-top: 2px solid #cccccc;
+  }
+  .about footer .copyright {
+    justify-content: flex-start;
+    font-size: 27px;
+    color: #e6e6e6;
+  }
+}
+.hide-text {
+  font-size: 0.000001px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+}
+.blog-detail {
+  /* 
+  //BOOTSTRAP MEDIA QUERIES
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  */
+}
+.blog-detail a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+.blog-detail .logo a {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.blog-detail .lite .logo a {
+  color: #27a469;
+}
+.blog-detail .main-background {
+  position: relative;
+  background: url("./images/blog/main_cta_background.png") 86% 12% no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 7em;
+}
+.blog-detail .lite .main-background {
+  position: relative;
+  background: none;
+  padding-bottom: 2em;
+}
+.blog-detail ul {
+  display: flex;
+}
+.blog-detail ul li {
+  margin-left: 1em;
+}
+.blog-detail h1 {
+  font: 100 40px "Playfair Display", "Times New Roman", serif;
+  font-size: 40px;
+}
+.blog-detail .button {
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: white;
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.blog-detail .button:hover {
+  background: #e6e6e6;
+}
+.blog-detail .button a {
+  color: #27a469;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.blog-detail .lite .button {
+  background: #27a469;
+}
+.blog-detail .lite .button:hover {
+  background: #31cd83;
+}
+.blog-detail .lite .button a {
+  color: white;
+}
+.blog-detail .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog-detail .row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog-detail .title-one {
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.blog-detail .title-two {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: #666666;
+}
+.blog-detail .content {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.blog-detail .content-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #333333;
+}
+.blog-detail .content-img {
+  background: url("./images/image_placeholder.png");
+  margin: 1em 0;
+  width: 100%;
+}
+.blog-detail .icon_small,
+.blog-detail .icon_big {
+  display: block;
+  margin: auto;
+  background-size: 100% 100%;
+  background: url("./images/sprites.png");
+}
+.blog-detail .icon_big {
+  width: 64px;
+  height: 64px;
+}
+.blog-detail .icon_small {
+  width: 24px;
+  height: 24px;
+}
+.blog-detail .lite {
+  color: white;
+}
+.blog-detail .lite-secondary {
+  color: #e6e6e6;
+}
+.blog-detail header .col-xs-3 {
+  align-items: flex-start !important;
+}
+.blog-detail .top-menu-button a {
+  padding: 1em 2em;
+}
+.blog-detail .sidebar,
+.blog-detail .mobile-hamburger-button {
+  display: none;
+}
+.blog-detail .navigation-menu {
+  justify-content: flex-end !important;
+  flex-direction: row !important;
+}
+.blog-detail .navigation-menu ul {
+  float: right;
+  margin-top: 10px;
+}
+.blog-detail .navigation-menu ul li {
+  margin-left: 2em;
+}
+.blog-detail .navigation-menu ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.blog-detail .navigation-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.blog-detail .navigation-menu ul li a:active {
+  color: white;
+}
+.blog-detail .navigation-menu ul li a[aria-current="page"] {
+  color: white !important;
+}
+.blog-detail .navigation-menu ul li a[aria-current="page"]:hover {
+  color: white !important;
+}
+.blog-detail .lite .navigation-menu a {
+  color: #999999;
+}
+.blog-detail .lite .navigation-menu a:hover {
+  color: #666666;
+}
+.blog-detail .lite .navigation-menu a:active {
+  color: #333333;
+}
+.blog-detail .lite .navigation-menu a[aria-current="page"] {
+  color: #333333 !important;
+}
+.blog-detail .lite .navigation-menu a[aria-current="page"]:hover {
+  color: #333333 !important;
+}
+.blog-detail .sections {
+  padding: 5em 0;
+}
+.blog-detail .main-cta {
+  margin-top: 3em;
+}
+.blog-detail #cta-title {
+  color: white;
+  margin-bottom: 0;
+  width: 100%;
+}
+.blog-detail #cta-text {
+  margin: 1.5em 0 3em 0;
+  color: #f9fcfb;
+}
+.blog-detail .button-pannel,
+.blog-detail .input-pannel {
+  width: 100%;
+}
+.blog-detail .input-pannel {
+  position: relative;
+}
+.blog-detail #cta-button {
+  font-size: 0;
+  width: 140px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.blog-detail #cta-button a {
+  padding: 15px;
+  font-size: 11px;
+}
+.blog-detail #cta-input input {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  border: none;
+  padding: 1.3em;
+  padding-right: 5em;
+  width: 82%;
+  outline: none;
+}
+.blog-detail #cta-input input:active {
+  border: none;
+}
+.blog-detail #search-button-pannel {
+  position: absolute;
+  z-index: 2;
+  left: 71%;
+  top: 6%;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: #27a469;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.blog-detail #search-button-pannel:hover {
+  background: #31cd83;
+}
+.blog-detail #search-button-pannel input {
+  padding: 0;
+  width: 17px;
+  height: 18px;
+  background: url("./images/sprites.png");
+  background-position: -64px -128px;
+}
+.blog-detail #solution-img {
+  width: 75%;
+}
+.blog-detail .blog-content {
+  padding-bottom: 7em;
+}
+.blog-detail .blog-content .row {
+  width: 100%;
+}
+.blog-detail .blog-content .title-one {
+  color: #333333;
+  font-size: 36px;
+  padding: 0.7em 2em 0.5em 0;
+}
+.blog-detail .blog-content .content-title {
+  padding: 1em 0;
+  padding-top: 2em;
+}
+.blog-detail .side-menu .title-one {
+  padding: 0.7em 1.5em 1.5em 0.7em;
+}
+.blog-detail .side-menu-heading {
+  background: #d4ede1;
+}
+.blog-detail .side-menu-heading .title-one {
+  font-size: 32px;
+}
+.blog-detail .featured-image {
+  border-radius: 4px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  width: 97.3%;
+  height: 350px;
+  margin-bottom: 3em;
+}
+.blog-detail .side-menu-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #f5fbf8;
+  width: 100%;
+  padding: 1em 0;
+}
+.blog-detail .small-ow {
+  display: block;
+  position: relative;
+  top: 1px;
+  margin: 0.6em 1.5em;
+  height: 47vh;
+  cursor: pointer;
+}
+.blog-detail .small-ow-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+}
+.blog-detail .small-ow-text {
+  position: absolute;
+  background: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+.blog-detail .small-ow-text .small-ow-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  color: #333333;
+  font-size: 14px;
+  padding: 1em;
+}
+.blog-detail .small-ow-text .small-ow-author {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  color: #b7b7b8;
+  font-size: 12px;
+  padding: 0 0 2em 16px;
+}
+.blog-detail .blog-image {
+  margin: 1em 0;
+}
+.blog-detail .blog-image .image-description {
+  color: #666666;
+}
+.blog-detail .author {
+  display: flex;
+  padding-top: 3em;
+  float: left;
+  overflow: hidden;
+}
+.blog-detail #author-name {
+  padding: 0 0 0 1em;
+}
+.blog-detail #author-description {
+  padding-top: 0;
+  font-size: 12px;
+  color: #b7b7b8;
+}
+.blog-detail #author-image {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  overflow: hidden;
+}
+.blog-detail #author-image img {
+  width: 115%;
+}
+.blog-detail .contact-ui {
+  float: right;
+  padding-top: 3em;
+}
+.blog-detail .contact,
+.blog-detail .bookmark,
+.blog-detail .share {
+  display: block;
+  background: url("./images/sprites.png");
+  width: 22px;
+  height: 22px;
+}
+.blog-detail .contact {
+  background-position: -192px 0;
+}
+.blog-detail .bookmark {
+  background-position: -256px 0;
+  width: 18px;
+}
+.blog-detail .share {
+  background-position: -320px 0;
+}
+.blog-detail #author-line {
+  clear: both;
+  padding-top: 1.5em;
+  border-bottom: 1px solid #dedede;
+}
+.blog-detail .lite footer .logo a {
+  color: white;
+}
+.blog-detail footer {
+  padding: 10em 0 2em 0;
+  background: url("./images/footer_decoration.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.blog-detail footer .description,
+.blog-detail footer .lite {
+  color: #e6e6e6;
+}
+.blog-detail footer ul {
+  flex-direction: column;
+}
+.blog-detail footer ul li {
+  color: white;
+  line-height: 1.75em;
+}
+.blog-detail footer ul li:first-child {
+  margin: 0.5em 0;
+  margin-left: 1em;
+}
+.blog-detail footer ul li a {
+  color: #e6e6e6;
+  font-size: 12px;
+}
+.blog-detail footer ul li a:hover {
+  color: #cccccc;
+}
+.blog-detail #address-fix {
+  margin-left: 1.4em;
+  margin-bottom: 0.5em;
+}
+.blog-detail .footer-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+}
+.blog-detail footer > .container > .row {
+  padding-bottom: 3em;
+}
+.blog-detail .copyright {
+  display: flex;
+  justify-content: center;
+  widows: 100%;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .blog-detail .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .blog-detail #solution-img {
+    width: 100%;
+  }
+  .blog-detail #cta-title {
+    font-size: 35px;
+  }
+  .blog-detail #cta-text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .blog-detail #solution-img {
+    width: 100%;
+  }
+  .blog-detail #cta-title {
+    font-size: 35px;
+  }
+  .blog-detail #cta-text {
+    font-size: 15px;
+  }
+  .blog-detail .blog-content .title-one {
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+  }
+}
+@media (min-width: 768px) {
+  .blog-detail .content-section {
+    width: 66%;
+  }
+  .blog-detail .side-menu {
+    width: 34%;
+  }
+}
+@media (max-width: 767.98px) {
+  .blog-detail .top-menu-button,
+  .blog-detail .navigation-menu ul {
+    display: none;
+  }
+  .blog-detail #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+  .blog-detail .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+  }
+  .blog-detail .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .blog-detail header {
+    position: fixed;
+    top: 0;
+    background: #27a469;
+    width: 100%;
+    z-index: 99;
+  }
+  .blog-detail .lite header {
+    background: white;
+  }
+  .blog-detail .main-cta {
+    padding-top: 5em;
+  }
+  .blog-detail .sidebar {
+    display: block;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -100vw;
+    z-index: 100;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    background: #27a469;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 -10px 27px -8px #000000;
+    box-shadow: 0 -10px 27px -8px #000000;
+  }
+  .blog-detail .sidebar .button {
+    background: white;
+  }
+  .blog-detail .sidebar .button:hover {
+    background: #e6e6e6;
+  }
+  .blog-detail .sidebar .button a {
+    color: #27a469;
+  }
+  .blog-detail .sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    clear: both;
+    margin-top: 4em;
+  }
+  .blog-detail .sidebar ul li a {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+  }
+  .blog-detail .sidebar ul hr {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+  .blog-detail .sidebar.lite {
+    background: white;
+  }
+  .blog-detail .sidebar.lite li a {
+    color: #27a469;
+  }
+  .blog-detail .sidebar.lite .button {
+    background: #27a469;
+  }
+  .blog-detail .sidebar.lite .button:hover {
+    background: #31cd83;
+  }
+  .blog-detail .sidebar.lite .button a {
+    color: white;
+  }
+  .blog-detail .sidebar.lite .side-menu-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .blog-detail #contact-slidebar-button a {
+    font-size: 20px;
+    padding: 1em;
+  }
+  .blog-detail .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+    transition: 0.5s ease-in-out;
+  }
+  .blog-detail .main-background {
+    background: #27a469;
+  }
+  .blog-detail .lite .main-background {
+    background: white;
+  }
+  .blog-detail #cta-title,
+  .blog-detail #cta-text {
+    text-align: center;
+  }
+  .blog-detail #cta-text {
+    font-size: 14pt;
+  }
+  .blog-detail #cta-title {
+    font-size: 35px;
+  }
+  .blog-detail #cta-button {
+    margin: auto;
+    width: 200px;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .blog-detail #cta-button a {
+    font-size: 14pt;
+  }
+  .blog-detail #solution-img {
+    margin-top: 5em;
+  }
+  .blog-detail .blog-content {
+    margin-top: 5em;
+  }
+  .blog-detail .blog-content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-detail .blog-content .featured-image {
+    margin: auto;
+    border-radius: 15px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .blog-detail .blog-content .title-one {
+    padding-right: 0;
+  }
+  .blog-detail .blog-content .contact-ui {
+    clear: both;
+    float: none;
+  }
+  .blog-detail .content-section .title-one {
+    font-size: 47px;
+  }
+  .blog-detail .content-section .content-title {
+    font-size: 27px;
+  }
+  .blog-detail .content-section .content {
+    font-size: 24px;
+  }
+  .blog-detail .content-img {
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .blog-detail .image-description {
+    font-style: italic;
+    text-align: center;
+  }
+  .blog-detail .author .content-title {
+    font-size: 25px;
+  }
+  .blog-detail .author #author-description {
+    font-size: 15px;
+  }
+  .blog-detail .contact-ui {
+    display: flex;
+    justify-content: space-between;
+  }
+  .blog-detail .contact-ui .contact,
+  .blog-detail .contact-ui .bookmark,
+  .blog-detail .contact-ui .share {
+    width: 43px;
+    height: 43px;
+    background-size: 1680%;
+  }
+  .blog-detail .contact-ui .contact {
+    background-position: -360px 0;
+  }
+  .blog-detail .contact-ui .bookmark {
+    background-position: -480px 0;
+  }
+  .blog-detail .contact-ui .share {
+    background-position: -600px 0;
+  }
+  .blog-detail .contact-ui li {
+    display: flex;
+    width: 130px;
+  }
+  .blog-detail .contact-ui .contact-text {
+    color: #999999;
+    margin: 0 2em;
+    margin-top: 0.15em;
+    font-size: 25px;
+  }
+  .blog-detail .side-menu-heading .title-one {
+    text-align: center;
+    font-size: 45px;
+    padding-left: 0;
+  }
+  .blog-detail .small-ow {
+    height: 25em;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    overflow: hidden;
+  }
+  .blog-detail .small-ow .small-ow-title {
+    font-size: 20px;
+    padding: 0.8em;
+  }
+  .blog-detail .small-ow .small-ow-author {
+    font-size: 18px;
+  }
+  .blog-detail footer {
+    padding-top: 4em;
+    background: #27a469;
+  }
+  .blog-detail footer ul li:first-child {
+    margin-bottom: 1em;
+  }
+  .blog-detail footer .logo a {
+    font-size: 35px;
+  }
+  .blog-detail footer .description {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  .blog-detail footer .footer-list .content {
+    margin-bottom: 0.6em;
+  }
+  .blog-detail footer .footer-list .footer-title,
+  .blog-detail footer .footer-list .content {
+    font-size: 27px;
+  }
+  .blog-detail footer #address-fix {
+    margin-left: 0.75em;
+  }
+  .blog-detail footer hr {
+    color: #cccccc;
+    border-top: 2px solid #cccccc;
+  }
+  .blog-detail footer .copyright {
+    justify-content: flex-start;
+    font-size: 27px;
+    color: #e6e6e6;
+  }
+}
+@media (max-width: 610px) {
+  .blog-detail .contact-ui .contact-text {
+    font-size: 3.5vw;
+    margin: 0 1.5em;
+  }
+  .blog-detail .contact-ui .contact,
+  .blog-detail .contact-ui .bookmark,
+  .blog-detail .contact-ui .share {
+    width: 22px;
+    height: 22px;
+    background-size: initial;
+  }
+  .blog-detail .contact-ui .contact {
+    background-position: -192px 0;
+  }
+  .blog-detail .contact-ui .bookmark {
+    background-position: -256px 0;
+    width: 18px;
+  }
+  .blog-detail .contact-ui .share {
+    background-position: -320px 0;
+  }
+}
+.hide-text {
+  font-size: 0.000001px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+}
+.blog {
+  /* 
+  //BOOTSTRAP MEDIA QUERIES
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  */
+}
+.blog a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+.blog .logo a {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.blog .main-background {
+  position: relative;
+  background: url("./images/blog/main_cta_background.png") 86% 12% no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 7em;
+}
+.blog ul {
+  display: flex;
+}
+.blog ul li {
+  margin-left: 1em;
+}
+.blog h1 {
+  font: 100 40px "Playfair Display", "Times New Roman", serif;
+  font-size: 40px;
+}
+.blog .button {
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: white;
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.blog .button:hover {
+  background: #e6e6e6;
+}
+.blog .button a {
+  color: #27a469;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.blog .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog .row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog .title-one {
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.blog .title-two {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: #666666;
+}
+.blog .content {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.blog .content-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: black;
+}
+.blog .icon_small,
+.blog .icon_big {
+  display: block;
+  margin: auto;
+  background-size: 100% 100%;
+  background: url("./images/sprites.png");
+}
+.blog .icon_big {
+  width: 64px;
+  height: 64px;
+}
+.blog .icon_small {
+  width: 24px;
+  height: 24px;
+}
+.blog .lite {
+  color: white;
+}
+.blog .lite-secondary {
+  color: #e6e6e6;
+}
+.blog header .col-xs-3 {
+  align-items: flex-start !important;
+}
+.blog .top-menu-button a {
+  padding: 1em 2em;
+}
+.blog .navigation-menu {
+  justify-content: flex-end !important;
+  flex-direction: row !important;
+}
+.blog .navigation-menu ul {
+  float: right;
+  margin-top: 10px;
+}
+.blog .navigation-menu ul li {
+  margin-left: 2em;
+}
+.blog .navigation-menu ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.blog .navigation-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.blog .navigation-menu ul li a:active {
+  color: white;
+}
+.blog .navigation-menu ul li a[aria-current="page"] {
+  color: white !important;
+}
+.blog .navigation-menu ul li a[aria-current="page"]:hover {
+  color: white !important;
+}
+.blog .sections {
+  padding: 5em 0;
+}
+.blog .sidebar,
+.blog .mobile-hamburger-button {
+  display: none;
+}
+.blog .main-cta {
+  margin-top: 3em;
+}
+.blog #cta-title {
+  color: white;
+  margin-bottom: 0;
+  margin-top: -85px;
+  width: 100%;
+}
+.blog #cta-text {
+  margin: 1.5em 0 3em 0;
+  color: #f9fcfb;
+}
+.blog .button-pannel,
+.blog .input-pannel {
+  width: 100%;
+}
+.blog .input-pannel {
+  position: relative;
+}
+.blog #cta-button {
+  font-size: 0;
+  width: 140px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.blog #cta-button a {
+  padding: 15px;
+  font-size: 11px;
+}
+.blog #cta-input input {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  border: none;
+  padding: 1.3em;
+  padding-right: 6em;
+  width: 82%;
+  outline: none;
+}
+.blog #cta-input input:active {
+  border: none;
+}
+.blog #search-button-pannel {
+  position: absolute;
+  z-index: 2;
+  right: 18.5%;
+  top: 6%;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: #27a469;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.blog #search-button-pannel:hover {
+  background: #31cd83;
+}
+.blog #search-button-pannel input {
+  padding: 0;
+  width: 17px;
+  height: 18px;
+  background: url("./images/sprites.png");
+  background-position: -64px -128px;
+}
+.blog #solution-img {
+  width: 75%;
+}
+.blog .blog .title-one {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 48px;
+}
+.blog .blog .row {
+  display: flex;
+  justify-content: center;
+}
+.blog .blog-button {
+  margin-top: 3.5em;
+  box-sizing: content-box;
+  border: 1px solid #27a469;
+  padding: 0.75em 2em;
+  width: 10%;
+}
+.blog .blog-button:hover {
+  background: #83e1b5;
+}
+.blog .blog-button:hover a {
+  color: white;
+}
+.blog .blog-button a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 11px;
+  margin: 0;
+}
+.blog .small-ow,
+.blog .large-ow {
+  background: #f5f6f8;
+  margin: 0.5em;
+  height: 60vh;
+  width: 30%;
+  cursor: pointer;
+}
+.blog .large-ow {
+  width: 61.5%;
+}
+.blog .large-ow .row {
+  height: inherit;
+  display: block;
+}
+.blog .large-ow-image {
+  box-sizing: content-box;
+  height: inherit;
+}
+.blog .large-ow-text {
+  height: inherit;
+  padding: 0;
+  width: 47%;
+}
+.blog .large-ow-image {
+  float: left;
+  padding: 0;
+}
+.blog .large-ow-text {
+  float: right;
+}
+.blog .large-ow-text .content-title,
+.blog .large-ow-text .content {
+  padding: 10px;
+}
+.blog .large-ow-text .content-title {
+  margin-top: 1em;
+}
+.blog .author-details {
+  margin-top: 2.5em;
+}
+.blog .author-img {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+}
+.blog .author-name,
+.blog .author-description {
+  margin-left: 55px;
+}
+.blog .author-name {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 14px;
+  padding-top: 0.47em;
+}
+.blog .author-description {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 10px;
+  color: #b7b7b8;
+}
+.blog .small-ow-image {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+}
+.blog .small-ow-text {
+  position: absolute;
+  background: #f5f6f8;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+.blog .small-ow-text .small-ow-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 16px;
+  padding: 1em;
+}
+.blog .small-ow-text .small-ow-author {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  color: #b7b7b8;
+  font-size: 14px;
+  padding: 0 0 2em 16px;
+}
+.blog .mobile-gallery {
+  display: none;
+}
+.blog footer {
+  padding: 10em 0 2em 0;
+  background: url("./images/footer_decoration.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.blog footer .description,
+.blog footer .lite {
+  color: #e6e6e6;
+}
+.blog footer ul {
+  flex-direction: column;
+}
+.blog footer ul li {
+  color: white;
+  line-height: 1.75em;
+}
+.blog footer ul li:first-child {
+  margin: 0.5em 0;
+  margin-left: 1em;
+}
+.blog footer ul li a {
+  color: #e6e6e6;
+  font-size: 12px;
+}
+.blog footer ul li a:hover {
+  color: #cccccc;
+}
+.blog #address-fix {
+  margin-left: 1.4em;
+  margin-bottom: 0.5em;
+}
+.blog .footer-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+}
+.blog footer > .container > .row {
+  padding-bottom: 3em;
+}
+.blog .copyright {
+  display: flex;
+  justify-content: center;
+  widows: 100%;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .blog .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .blog #solution-img {
+    width: 100%;
+  }
+  .blog #cta-title {
+    font-size: 35px;
+  }
+  .blog #cta-text {
+    font-size: 15px;
+  }
+  .blog #search-button-pannel {
+    right: 20%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .blog #solution-img {
+    width: 100%;
+  }
+  .blog #cta-title {
+    font-size: 35px;
+  }
+  .blog #cta-text {
+    font-size: 15px;
+  }
+  .blog .author-details {
+    position: absolute;
+    bottom: 1.5em;
+  }
+}
+@media (max-width: 767.98px) {
+  .blog .top-menu-button,
+  .blog .navigation-menu ul {
+    display: none;
+  }
+  .blog #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+  .blog .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+  }
+  .blog .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .blog header {
+    position: fixed;
+    top: 0;
+    background: #27a46a4f;
+    width: 100%;
+    z-index: 99;
+    transition: 0.3s ease-in-out;
+  }
+  .blog .lite header {
+    background: white;
+  }
+  .blog .main-cta {
+    padding-top: 5em;
+  }
+  .blog .main-background {
+    background: url("./images/blog/main_cta_background_mobile.png");
+    background-size: cover;
+    padding-top: 1px;
+  }
+  .blog .lite .main-background {
+    background: white;
+  }
+  .blog #cta-title {
+    font-family: "Roboto", Verdana, sans-serif;
+    font-weight: bold;
+    padding-top: 3em;
+  }
+  .blog #solution-img {
+    width: 100%;
+  }
+  .blog .sidebar {
+    display: block;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -100vw;
+    z-index: 100;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    background: #27a469;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 -10px 27px -8px #000000;
+    box-shadow: 0 -10px 27px -8px #000000;
+  }
+  .blog .sidebar .button {
+    background: white;
+  }
+  .blog .sidebar .button:hover {
+    background: #e6e6e6;
+  }
+  .blog .sidebar .button a {
+    color: #27a469;
+  }
+  .blog .sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    clear: both;
+    margin-top: 4em;
+  }
+  .blog .sidebar ul li a {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+  }
+  .blog .sidebar ul hr {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+  .blog .sidebar.lite {
+    background: white;
+  }
+  .blog .sidebar.lite li a {
+    color: #27a469;
+  }
+  .blog .sidebar.lite .button {
+    background: #27a469;
+  }
+  .blog .sidebar.lite .button:hover {
+    background: #31cd83;
+  }
+  .blog .sidebar.lite .button a {
+    color: white;
+  }
+  .blog .sidebar.lite .side-menu-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .blog #contact-slidebar-button a {
+    font-size: 20px;
+    padding: 1em;
+  }
+  .blog .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+    transition: 0.5s ease-in-out;
+  }
+  .blog #cta-title,
+  .blog #cta-text {
+    text-align: center;
+  }
+  .blog #cta-text {
+    font-size: 14pt;
+  }
+  .blog #cta-title {
+    font-size: 35px;
+  }
+  .blog #cta-button {
+    margin: auto;
+    width: 200px;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .blog #cta-button a {
+    font-size: 14pt;
+  }
+  .blog #solution-img {
+    margin-top: 5em;
+  }
+  .blog #cta-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog #cta-input input[type="text"] {
+    font-size: 18px;
+    padding: 1em;
+  }
+  .blog #search-button-pannel {
+    right: 9.5%;
+    top: 7%;
+    padding: 0.2em 0.5em;
+  }
+  .blog #search-button-pannel input {
+    width: 34px;
+    height: 36px;
+    background-size: 1400%;
+    background-position: -73px -149px;
+  }
+  .blog .mobile-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog .mobile-gallery .row {
+    width: 100%;
+  }
+  .blog .gallery {
+    display: none;
+  }
+  .blog .small-ow {
+    width: 90%;
+    border-radius: 7px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    overflow: hidden;
+    height: 420px;
+  }
+  .blog .blog-button {
+    width: 90%;
+    border-radius: 7px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .blog .blog-button a {
+    font-size: 20px;
+    padding: 0.5em 0;
+  }
+  .blog footer {
+    padding-top: 4em;
+    background: #27a469;
+  }
+  .blog footer ul li:first-child {
+    margin-bottom: 1em;
+  }
+  .blog footer .logo a {
+    font-size: 35px;
+  }
+  .blog footer .description {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  .blog footer .footer-list .content {
+    margin-bottom: 0.6em;
+  }
+  .blog footer .footer-list .footer-title,
+  .blog footer .footer-list .content {
+    font-size: 27px;
+  }
+  .blog footer #address-fix {
+    margin-left: 0.75em;
+  }
+  .blog footer hr {
+    color: #cccccc;
+    border-top: 2px solid #cccccc;
+  }
+  .blog footer .copyright {
+    justify-content: flex-start;
+    font-size: 27px;
+    color: #e6e6e6;
+  }
+}
+.hide-text {
+  font-size: 0.000001px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+}
+.contact-us {
+  /* 
+  //BOOTSTRAP MEDIA QUERIES
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  */
+}
+.contact-us a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+.contact-us .logo a {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.contact-us .lite .logo a {
+  color: #27a469;
+}
+.contact-us .main-background {
+  position: relative;
+  background: url("./images/blog/main_cta_background.png") 86% 12% no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 7em;
+}
+.contact-us input,
+.contact-us textarea {
+  background: #f5f6f8;
+  border: 1px solid #dedede;
+  color: #333333;
+  outline: none;
+  resize: none;
+}
+.contact-us .lite .main-background {
+  position: relative;
+  background: none;
+  padding-bottom: 2em;
+}
+.contact-us ul {
+  display: flex;
+}
+.contact-us ul li {
+  margin-left: 1em;
+}
+.contact-us h1 {
+  font: 100 40px "Playfair Display", "Times New Roman", serif;
+  font-size: 40px;
+}
+.contact-us .button {
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: white;
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.contact-us .button:hover {
+  background: #e6e6e6;
+}
+.contact-us .button a {
+  color: #27a469;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.contact-us .lite .button {
+  background: #27a469;
+}
+.contact-us .lite .button:hover {
+  background: #31cd83;
+}
+.contact-us .lite .button a {
+  color: white;
+}
+.contact-us .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-us .row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us .title-one {
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.contact-us .title-two {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: #666666;
+}
+.contact-us .content {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.contact-us .content-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #333333;
+}
+.contact-us .content-img {
+  background: url("./images/image_placeholder.png");
+  margin: 1em 0;
+  width: 100%;
+  height: 300px;
+}
+.contact-us .icon_small,
+.contact-us .icon_big {
+  display: block;
+  margin: auto;
+  background-size: 100% 100%;
+  background: url("./images/sprites.png");
+}
+.contact-us .icon_big {
+  width: 64px;
+  height: 64px;
+}
+.contact-us .icon_small {
+  width: 24px;
+  height: 24px;
+}
+.contact-us .lite {
+  color: white;
+}
+.contact-us .lite-secondary {
+  color: #e6e6e6;
+}
+.contact-us header .col-xs-3 {
+  align-items: flex-start !important;
+}
+.contact-us .top-menu-button a {
+  padding: 1em 2em;
+}
+.contact-us .navigation-menu {
+  justify-content: flex-end !important;
+  flex-direction: row !important;
+}
+.contact-us .navigation-menu ul {
+  float: right;
+  margin-top: 10px;
+}
+.contact-us .navigation-menu ul li {
+  margin-left: 2em;
+}
+.contact-us .navigation-menu ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.contact-us .navigation-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.contact-us .navigation-menu ul li a:active {
+  color: white;
+}
+.contact-us .navigation-menu ul li a[aria-current="page"] {
+  color: white !important;
+}
+.contact-us .navigation-menu ul li a[aria-current="page"]:hover {
+  color: white !important;
+}
+.contact-us .lite .navigation-menu a {
+  color: #999999;
+}
+.contact-us .lite .navigation-menu a:hover {
+  color: #666666;
+}
+.contact-us .lite .navigation-menu a:active {
+  color: #333333;
+}
+.contact-us .lite .navigation-menu a[aria-current="page"] {
+  color: #333333 !important;
+}
+.contact-us .lite .navigation-menu a[aria-current="page"]:hover {
+  color: #333333 !important;
+}
+.contact-us .sections {
+  padding: 5em 0;
+}
+.contact-us .sidebar,
+.contact-us .mobile-hamburger-button {
+  display: none;
+}
+.contact-us .mobile-image {
+  display: none;
+}
+.contact-us .main-cta {
+  margin-top: 3em;
+}
+.contact-us #cta-title {
+  color: white;
+  margin-bottom: 0;
+  width: 100%;
+}
+.contact-us .lite #cta-title {
+  color: #333333;
+}
+.contact-us #cta-text {
+  margin: 1.5em 0 3em 0;
+  color: #f9fcfb;
+}
+.contact-us .lite #cta-text {
+  color: #666666;
+}
+.contact-us .button-pannel,
+.contact-us .input-pannel {
+  width: 100%;
+}
+.contact-us .input-pannel {
+  position: relative;
+}
+.contact-us #cta-button {
+  font-size: 0;
+  width: 140px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.contact-us #cta-button a {
+  padding: 15px;
+  font-size: 11px;
+}
+.contact-us #cta-input input {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  border: none;
+  padding: 1.3em;
+  padding-right: 5em;
+  width: 82%;
+  outline: none;
+}
+.contact-us #cta-input input:active {
+  border: none;
+}
+.contact-us #search-button-pannel {
+  position: absolute;
+  z-index: 2;
+  left: 71%;
+  top: 6%;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: #27a469;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.contact-us #search-button-pannel:hover {
+  background: #31cd83;
+}
+.contact-us #search-button-pannel input {
+  padding: 0;
+  width: 17px;
+  height: 18px;
+  background: url("./images/sprites.png");
+  background-position: -64px -128px;
+}
+.contact-us #solution-img {
+  width: 75%;
+}
+.contact-us .main-cta {
+  margin-top: 0;
+}
+.contact-us .contact-content {
+  padding-bottom: 7em;
+}
+.contact-us .contact-content .button-pannel {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+.contact-us .contact-content .row {
+  width: 100%;
+}
+.contact-us .contact-content .title-one {
+  color: #333333;
+  font-size: 36px;
+  padding: 0.7em 2em 0.5em 0;
+}
+.contact-us .contact-content .content-title {
+  padding: 1em 0;
+  padding-top: 2em;
+}
+.contact-us .contact-content .content-section {
+  width: 66%;
+}
+.contact-us .side-menu {
+  width: 34%;
+}
+.contact-us .side-menu .title-one {
+  padding: 0.7em 1.5em 1.5em 0.7em;
+}
+.contact-us .side-menu-heading {
+  background: #d4ede1;
+}
+.contact-us .side-menu-heading .title-one {
+  font-size: 32px;
+}
+.contact-us .featured-image {
+  border-radius: 4px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: url("./images/image_placeholder.png");
+  width: 97.3%;
+  height: 350px;
+  margin-left: 0.75em;
+  margin-bottom: 3em;
+}
+.contact-us .side-menu-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #f5f6f8;
+  width: 100%;
+  padding: 1em 0;
+}
+.contact-us .small-ow {
+  display: block;
+  position: relative;
+  top: 1px;
+  margin: 0.6em 1.5em;
+  height: 47vh;
+  cursor: pointer;
+}
+.contact-us .small-ow-image {
+  display: block;
+  background: url("./images/image_placeholder.png");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+}
+.contact-us .small-ow-text {
+  position: absolute;
+  background: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+.contact-us .small-ow-text .small-ow-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  color: #333333;
+  font-size: 14px;
+  padding: 1em;
+}
+.contact-us .small-ow-text .small-ow-author {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  color: #b7b7b8;
+  font-size: 12px;
+  padding: 0 0 2em 16px;
+}
+.contact-us .blog-image {
+  margin: 1em 0;
+}
+.contact-us .blog-image .image-description {
+  color: #666666;
+}
+.contact-us .author {
+  display: flex;
+  padding-top: 3em;
+  float: left;
+  overflow: hidden;
+}
+.contact-us #author-name {
+  padding: 0 0 0 1em;
+}
+.contact-us #author-description {
+  padding-top: 0;
+  font-size: 12px;
+  color: #b7b7b8;
+}
+.contact-us #author-image {
+  display: block;
+  background: url("./images/sprites.png");
+  background-position: -128px -128px;
+  width: 40px;
+  height: 40px;
+}
+.contact-us .contact-ui {
+  float: right;
+  padding-top: 3em;
+}
+.contact-us .contact,
+.contact-us .bookmark,
+.contact-us .share {
+  display: block;
+  background: url("./images/sprites.png");
+  width: 22px;
+  height: 22px;
+}
+.contact-us .contact {
+  background-position: -192px 0;
+}
+.contact-us .bookmark {
+  background-position: -256px 0;
+  width: 18px;
+}
+.contact-us .share {
+  background-position: -320px 0;
+}
+.contact-us #author-line {
+  clear: both;
+  padding-top: 1.5em;
+  border-bottom: 1px solid #dedede;
+}
+.contact-us #contact-us-form input,
+.contact-us #contact-us-form textarea {
+  width: 100%;
+  font-size: 14px;
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+}
+.contact-us #contact-us-form input[type="submit"] {
+  width: initial;
+  margin: auto;
+  color: white;
+  height: 4em;
+  width: 12em;
+  text-transform: uppercase;
+}
+.contact-us #contact-us-form input {
+  height: 3em;
+}
+.contact-us #contact-us-form textarea {
+  height: 10em;
+}
+.contact-us .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1.3em 0 0 4em;
+}
+.contact-us .info-block {
+  display: flex;
+  margin-bottom: 2em;
+  align-items: center;
+}
+.contact-us .info-text {
+  margin-left: 4em;
+  float: left;
+}
+.contact-us .info-icon {
+  position: absolute;
+  display: block;
+  background: url("./images/sprites.png");
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  float: left;
+}
+.contact-us .location {
+  background-position: -192px -64px;
+}
+.contact-us .mail {
+  background-position: -256px -64px;
+}
+.contact-us .phone {
+  background-position: -320px -64px;
+}
+.contact-us .lite footer .logo a {
+  color: white;
+}
+.contact-us footer {
+  padding: 10em 0 2em 0;
+  background: url("./images/footer_decoration.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.contact-us footer .description,
+.contact-us footer .lite {
+  color: #e6e6e6;
+}
+.contact-us footer ul {
+  flex-direction: column;
+}
+.contact-us footer ul li {
+  color: white;
+  line-height: 1.75em;
+}
+.contact-us footer ul li:first-child {
+  margin: 0.5em 0;
+  margin-left: 1em;
+}
+.contact-us footer ul li a {
+  color: #e6e6e6;
+  font-size: 12px;
+}
+.contact-us footer ul li a:hover {
+  color: #cccccc;
+}
+.contact-us #address-fix {
+  margin-left: 1.4em;
+  margin-bottom: 0.5em;
+}
+.contact-us .footer-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+}
+.contact-us footer > .container > .row {
+  padding-bottom: 3em;
+}
+.contact-us .copyright {
+  display: flex;
+  justify-content: center;
+  widows: 100%;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .contact-us .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-us #solution-img {
+    width: 100%;
+  }
+  .contact-us #cta-title {
+    font-size: 35px;
+  }
+  .contact-us #cta-text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-us #solution-img {
+    width: 100%;
+  }
+  .contact-us #cta-title {
+    font-size: 35px;
+  }
+  .contact-us #cta-text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .contact-us .top-menu-button,
+  .contact-us .navigation-menu ul {
+    display: none;
+  }
+  .contact-us #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+  .contact-us .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+  }
+  .contact-us .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .contact-us header {
+    position: fixed;
+    top: 0;
+    background: #27a469;
+    width: 100%;
+    z-index: 99;
+  }
+  .contact-us .lite header {
+    background: white;
+  }
+  .contact-us .main-cta {
+    padding-top: 5em;
+  }
+  .contact-us .sidebar {
+    display: block;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -100vw;
+    z-index: 100;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    background: #27a469;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 -10px 27px -8px #000000;
+    box-shadow: 0 -10px 27px -8px #000000;
+  }
+  .contact-us .sidebar .button {
+    background: white;
+  }
+  .contact-us .sidebar .button:hover {
+    background: #e6e6e6;
+  }
+  .contact-us .sidebar .button a {
+    color: #27a469;
+  }
+  .contact-us .sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    clear: both;
+    margin-top: 4em;
+  }
+  .contact-us .sidebar ul li a {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+  }
+  .contact-us .sidebar ul hr {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+  .contact-us .sidebar.lite {
+    background: white;
+  }
+  .contact-us .sidebar.lite li a {
+    color: #27a469;
+  }
+  .contact-us .sidebar.lite .button {
+    background: #27a469;
+  }
+  .contact-us .sidebar.lite .button:hover {
+    background: #31cd83;
+  }
+  .contact-us .sidebar.lite .button a {
+    color: white;
+  }
+  .contact-us .sidebar.lite .side-menu-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .contact-us #contact-slidebar-button a {
+    font-size: 20px;
+    padding: 1em;
+  }
+  .contact-us .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+    transition: 0.5s ease-in-out;
+  }
+  .contact-us .main-background {
+    background: #27a469;
+  }
+  .contact-us .lite .main-background {
+    background: white;
+  }
+  .contact-us #cta-title,
+  .contact-us #cta-text {
+    text-align: center;
+  }
+  .contact-us #cta-text {
+    font-size: 14pt;
+  }
+  .contact-us #cta-title {
+    font-size: 35px;
+  }
+  .contact-us #cta-button {
+    margin: auto;
+    width: 200px;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .contact-us #cta-button a {
+    font-size: 14pt;
+  }
+  .contact-us #solution-img {
+    margin-top: 5em;
+  }
+  .contact-us .main-cta {
+    display: none;
+  }
+  .contact-us .mobile-image {
+    display: block;
+  }
+  .contact-us #solution-img {
+    width: 100%;
+  }
+  .contact-us .contact-content {
+    margin-top: 3em;
+  }
+  .contact-us .contact-content .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-us #contact-us-form input[type="submit"] {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 7px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .contact-us #contact-us-form input[type="text"],
+  .contact-us #contact-us-form textarea {
+    font-size: 23px;
+    background: none;
+  }
+  .contact-us .content {
+    font-size: 23px;
+  }
+  .contact-us .contact-info {
+    margin-left: 0;
+    margin-top: 6em;
+  }
+  .contact-us .info-text.content {
+    width: 300px;
+  }
+  .contact-us .info-icon {
+    width: 70px;
+    height: 70px;
+    background-size: 910%;
+  }
+  .contact-us .location {
+    background-position: -316px -105px;
+    margin-bottom: 2em;
+  }
+  .contact-us .mail {
+    background-position: -423px -105px;
+  }
+  .contact-us .phone {
+    background-position: -529px -105px;
+  }
+  .contact-us footer {
+    padding-top: 4em;
+    background: #27a469;
+  }
+  .contact-us footer ul li:first-child {
+    margin-bottom: 1em;
+  }
+  .contact-us footer .logo a {
+    font-size: 35px;
+  }
+  .contact-us footer .description {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  .contact-us footer .footer-list .content {
+    margin-bottom: 0.6em;
+  }
+  .contact-us footer .footer-list .footer-title,
+  .contact-us footer .footer-list .content {
+    font-size: 27px;
+  }
+  .contact-us footer #address-fix {
+    margin-left: 0.75em;
+  }
+  .contact-us footer hr {
+    color: #cccccc;
+    border-top: 2px solid #cccccc;
+  }
+  .contact-us footer .copyright {
+    justify-content: flex-start;
+    font-size: 27px;
+    color: #e6e6e6;
+  }
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+}
+.services {
+  /* 
+  //BOOTSTRAP MEDIA QUERIES
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  */
+  /* 
+  //BOOTSTRAP MEDIA QUERIES
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  */
+}
+.services .hide-text {
+  font-size: 0.000001px;
+}
+.services a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+.services .logo a {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.services .main-background {
+  position: relative;
+  background: url("./images/services/main_cta_background.png") 86% 12% no-repeat;
+  background-size: 100% 100%;
+}
+.services ul {
+  display: flex;
+}
+.services ul li {
+  margin-left: 1em;
+}
+.services h1 {
+  font: 100 40px "Playfair Display", "Times New Roman", serif;
+  font-size: 40px;
+}
+.services .card {
+  margin: 0.5em;
+  padding: 1.5em 2.5em;
+  background: white;
+  -webkit-box-shadow: inset 0 0 0 1px #dedede;
+  box-shadow: inset 0 0 0 1px #dedede;
+  border-radius: 10px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+}
+.services .button {
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: white;
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  color: #27a469;
+}
+.services .button:hover {
+  background: #cccccc;
+}
+.services .button a {
+  color: #27a469;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.services .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services .row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services .title-one {
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.services .title-two {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: #666666;
+}
+.services .content {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.services .content-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: black;
+}
+.services .icon_small,
+.services .icon_big {
+  display: block;
+  margin: auto;
+  background-size: 100% 100%;
+  background: url("./images/sprites.png");
+}
+.services .icon_big {
+  width: 64px;
+  height: 64px;
+}
+.services .icon_small {
+  width: 24px;
+  height: 24px;
+}
+.services .lite {
+  color: white;
+}
+.services .lite-secondary {
+  color: #e6e6e6;
+}
+.services header .col-xs-3 {
+  align-items: flex-start !important;
+}
+.services .top-menu-button a {
+  padding: 1em 2em;
+}
+.services .navigation-menu {
+  justify-content: flex-end !important;
+  flex-direction: row !important;
+}
+.services .navigation-menu ul {
+  float: right;
+  margin-top: 10px;
+}
+.services .navigation-menu ul li {
+  margin-left: 2em;
+}
+.services .navigation-menu ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.services .navigation-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.services .navigation-menu ul li a:active {
+  color: white;
+}
+.services .navigation-menu ul li a[aria-current="page"] {
+  color: white !important;
+}
+.services .navigation-menu ul li a[aria-current="page"]:hover {
+  color: white !important;
+}
+.services section {
+  padding: 5em 0;
+}
+.services .lite input {
+  text-align: center;
+  outline: none;
+  border: none;
+  width: 74%;
+  padding: 1em;
+  font-size: 16px;
+  margin-top: 3em;
+  color: #333333;
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+}
+.services .lite input::placeholder {
+  color: #a9a9a9;
+}
+.services .lite input:focus::placeholder {
+  color: transparent;
+}
+.services .lite .button {
+  color: #27a469;
+  text-transform: uppercase;
+  padding: 1.2em 4em;
+  margin-top: 2.5em;
+  font-size: 11px;
+}
+.services .main-cta {
+  padding-top: 2em;
+}
+.services .main-cta .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.services #cta-title {
+  color: white;
+  margin-bottom: 0;
+  width: 50%;
+}
+.services #cta-text {
+  margin: 3em 0 2em 0;
+  color: #f9fcfb;
+}
+.services .button-pannel,
+.services .input-pannel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.services .input-pannel {
+  position: relative;
+}
+.services #cta-button {
+  font-size: 0;
+  width: 140px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.services #cta-button a {
+  padding: 15px;
+  font-size: 11px;
+}
+.services #cta-input input {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  border: none;
+  padding: 1.3em;
+  padding-right: 5em;
+  width: 82%;
+  outline: none;
+}
+.services #cta-input input:active {
+  border: none;
+}
+.services #search-button-pannel {
+  position: absolute;
+  z-index: 2;
+  left: 71%;
+  top: 6%;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: #27a469;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.services #search-button-pannel:hover {
+  background: #31cd83;
+}
+.services #search-button-pannel input {
+  padding: 0;
+  width: 17px;
+  height: 18px;
+  background: url("./images/sprites.png");
+  background-position: -64px -128px;
+}
+.services #solution-img {
+  width: 75%;
+}
+.services .author {
+  display: flex;
+  padding-top: 1em;
+  float: left;
+  overflow: hidden;
+}
+.services #author-name {
+  padding: 0 0 0 1em;
+}
+.services #author-description {
+  padding-top: 0;
+  font-size: 12px;
+  color: #b7b7b8;
+}
+.services #author-image {
+  display: block;
+  background: url("./images/sprites.png");
+  background-position: -128px -128px;
+  width: 40px;
+  height: 40px;
+}
+.services .additional-cta {
+  padding: 5em 0;
+}
+.services .additional-cta .container {
+  width: 46%;
+  text-align: center;
+}
+.services .customer-reviews {
+  background: #f5f6f8;
+  padding: 5em 0;
+}
+.services .customer-review-list {
+  display: flex;
+  flex-direction: column;
+}
+.services .customer-review-list .customer-review-card {
+  margin: 0.5em;
+  padding: 1.5em 2.5em;
+  background: white;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+}
+.services .customer-review-heading {
+  background: url("./images/services/quote.png") no-repeat;
+  padding: 6em 0;
+}
+.services .customer-review-heading .title-one {
+  padding: 0.14em 1.2em;
+  font-size: 48px;
+  background: url("./images/services/dot_matrix.png") no-repeat;
+}
+.services .customer-review-heading .content {
+  padding: 2em 3.8em;
+}
+.services .customer-help {
+  background: #27a469;
+}
+.services .customer-help .container {
+  width: 50%;
+  text-align: center;
+}
+.services .customer-help h1 {
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-weight: bold;
+}
+.services .pricing-plan {
+  background: #edffe6;
+  text-align: center;
+}
+.services .pricing-plan .title-one {
+  font-size: 48px;
+}
+.services .pricing-plan .content {
+  width: 50%;
+  margin: 2em auto;
+  margin-bottom: 6em;
+}
+.services .pricing-plan .row {
+  display: flex;
+}
+.services .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  padding: 0 1.5em;
+  padding-top: 7em;
+  padding-bottom: 3em;
+  overflow: hidden;
+}
+.services .card .pricing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #333333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6em;
+  outline: none;
+}
+.services .card .pricing-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #27a469;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.2em;
+  font-size: 16px;
+}
+.services .ratio {
+  display: flex;
+  align-items: flex-end;
+}
+.services .ratio .price {
+  font-size: 30px;
+}
+.services .pricing-content .benefits {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.services .header-title {
+  margin-top: 0.3em;
+}
+.services .pricing-header.bright {
+  background: #27a469;
+}
+.services .benefits {
+  font-size: 20px;
+}
+.services .pricing-content {
+  padding: 0.2em;
+  width: 110%;
+  position: relative;
+  right: 0;
+}
+.services .pricing-content li {
+  padding: 0.7em 0;
+  margin: 0;
+}
+.services .pricing-content li {
+  display: flex;
+  color: #999999;
+}
+.services .pricing-content li.activated {
+  color: #666666;
+}
+.services .pricing-content li.activated span {
+  background-position: -192px -128px;
+}
+.services .pricing-content li span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("./images/sprites.png");
+  background-position: -256px -128px;
+  margin-right: 20px;
+  padding-right: 25px;
+}
+.services .benefits-text {
+  padding-top: 0.2em;
+}
+.services .clients {
+  text-align: center;
+}
+.services .clients .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.services .clients .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+}
+.services .clients .heading .title-two {
+  width: 65%;
+  padding-top: 0.5em;
+  margin-bottom: 2em;
+}
+.services #clients-img {
+  margin: 1em 0;
+  width: 70%;
+  height: auto;
+}
+.services .interested {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 90%;
+  margin: 5em auto;
+  margin-bottom: 1.5em;
+  padding: 2em 3em;
+  background: url("./images/services/interested_background.png");
+  background-size: cover;
+  border-radius: 10px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+}
+.services .interested h1 {
+  width: 50%;
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+.services .interested .button {
+  margin-top: 1.5em;
+  padding: 1.5em 2em;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.services .interested .button a {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.services footer {
+  padding: 10em 0 2em 0;
+  background: url("./images/footer_decoration.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.services footer .description,
+.services footer .lite {
+  color: #e6e6e6;
+}
+.services footer ul {
+  flex-direction: column;
+}
+.services footer ul li {
+  color: white;
+  line-height: 1.75em;
+}
+.services footer ul li:first-child {
+  margin: 0.5em 0;
+  margin-left: 1em;
+}
+.services footer ul li a {
+  color: #e6e6e6;
+  font-size: 12px;
+}
+.services footer ul li a:hover {
+  color: #cccccc;
+}
+.services #address-fix {
+  margin-left: 1.4em;
+  margin-bottom: 0.5em;
+}
+.services .footer-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+}
+.services footer > .container > .row {
+  padding-bottom: 3em;
+}
+.services .copyright {
+  display: flex;
+  justify-content: center;
+  widows: 100%;
+  color: white;
+}
+.services .hide-text {
+  font-size: 0.000001px;
+}
+.services #author-image {
+  background: none;
+  border-radius: 50%;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+}
+.services a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+.services .logo a {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.services .main-background {
+  position: relative;
+  background-size: 100% 100%;
+  padding-bottom: 7em;
+}
+.services ul {
+  display: flex;
+}
+.services ul li {
+  margin-left: 1em;
+}
+.services h1 {
+  font: 100 40px "Playfair Display", "Times New Roman", serif;
+  font-size: 40px;
+}
+.services .button {
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: white;
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.services .button:hover {
+  background: #e6e6e6;
+}
+.services .button a {
+  color: #27a469;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.services .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services .row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services .title-one {
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.services .title-two {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: #666666;
+}
+.services .content {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.services .content-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: black;
+}
+.services .icon_small,
+.services .icon_big {
+  display: block;
+  margin: auto;
+  background-size: 100% 100%;
+  background: url("./images/sprites.png");
+}
+.services .icon_big {
+  width: 64px;
+  height: 64px;
+}
+.services .icon_small {
+  width: 24px;
+  height: 24px;
+}
+.services .lite {
+  color: white;
+}
+.services .lite-secondary {
+  color: #e6e6e6;
+}
+.services header .col-xs-3 {
+  align-items: flex-start !important;
+}
+.services .top-menu-button a {
+  padding: 1em 2em;
+}
+.services .navigation-menu {
+  justify-content: flex-end !important;
+  flex-direction: row !important;
+}
+.services .navigation-menu ul {
+  float: right;
+  margin-top: 10px;
+}
+.services .navigation-menu ul li {
+  margin-left: 2em;
+}
+.services .navigation-menu ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.services .navigation-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.services .navigation-menu ul li a:active {
+  color: white;
+}
+.services .navigation-menu ul li a[aria-current="page"] {
+  color: white !important;
+}
+.services .navigation-menu ul li a[aria-current="page"]:hover {
+  color: white !important;
+}
+.services .sections {
+  padding: 5em 0;
+}
+.services .sidebar,
+.services .mobile-hamburger-button {
+  display: none;
+}
+.services .hollow.button {
+  cursor: pointer;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  padding: 0.75em 2.5em;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #dedede;
+  color: #666666;
+  background: none;
+}
+.services .hollow.button:hover {
+  color: white;
+  border: 1px solid #27a469;
+  background-color: #83e1b5;
+}
+.services .hollow.button:hover a {
+  color: white;
+}
+.services .hollow.button.selected {
+  color: white;
+  background-color: #27a469;
+  border: 1px solid #27a469;
+}
+.services .hollow.button.selected a {
+  color: white;
+}
+.services .hollow.button.selected:hover {
+  border: 1px solid #2cb976;
+  background-color: #2cb976;
+}
+.services .hollow.button.alternative {
+  border-color: #27a469;
+}
+.services .hollow.button.lite {
+  color: white;
+  border: 1px solid #dedede;
+}
+.services .hollow.button.lite a {
+  color: white;
+}
+.services .hollow.button.lite:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.services .hollow.button.lite:hover a {
+  color: white;
+}
+.services .clients-list {
+  display: none;
+}
+.services .main-cta {
+  margin-top: 3em;
+}
+.services #cta-text {
+  margin: 1.5em 0 3em 0;
+  color: #f9fcfb;
+}
+.services .button-pannel,
+.services .input-pannel {
+  width: 100%;
+}
+.services .input-pannel {
+  position: relative;
+}
+.services #cta-button {
+  font-size: 0;
+  width: 140px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.services #cta-button a {
+  padding: 15px;
+  font-size: 11px;
+}
+.services #cta-input input {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  border: none;
+  padding: 1.3em;
+  padding-right: 5em;
+  width: 82%;
+  outline: none;
+}
+.services #cta-input input:active {
+  border: none;
+}
+.services #search-button-pannel {
+  position: absolute;
+  z-index: 2;
+  left: 71%;
+  top: 6%;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: #27a469;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.services #search-button-pannel:hover {
+  background: #31cd83;
+}
+.services #search-button-pannel input {
+  padding: 0;
+  width: 17px;
+  height: 18px;
+  background: url("./images/sprites.png");
+  background-position: -64px -128px;
+}
+.services #solution-img {
+  width: 75%;
+}
+.services .customer-reviews .button {
+  display: none;
+}
+.services footer {
+  padding: 10em 0 2em 0;
+  background: url("./images/footer_decoration.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.services footer .description,
+.services footer .lite {
+  color: #e6e6e6;
+}
+.services footer ul {
+  flex-direction: column;
+}
+.services footer ul li {
+  color: white;
+  line-height: 1.75em;
+}
+.services footer ul li:first-child {
+  margin: 0.5em 0;
+  margin-left: 1em;
+}
+.services footer ul li a {
+  color: #e6e6e6;
+  font-size: 12px;
+}
+.services footer ul li a:hover {
+  color: #cccccc;
+}
+.services #address-fix {
+  margin-left: 1.4em;
+  margin-bottom: 0.5em;
+}
+.services .footer-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+}
+.services footer > .container > .row {
+  padding-bottom: 3em;
+}
+.services .copyright {
+  display: flex;
+  justify-content: center;
+  widows: 100%;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .services .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .services #solution-img {
+    width: 100%;
+  }
+  .services #cta-title {
+    font-size: 35px;
+    width: 100%;
+  }
+  .services #cta-text {
+    font-size: 15px;
+  }
+  .services .benefits {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767.98px) {
+  .services .top-menu-button,
+  .services .navigation-menu ul {
+    display: none;
+  }
+  .services #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+  .services .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+  }
+  .services .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .services header {
+    position: fixed;
+    top: 0;
+    background: #27a469;
+    width: 100%;
+    z-index: 99;
+  }
+  .services .lite header {
+    background: white;
+  }
+  .services .main-cta {
+    padding-top: 5em;
+  }
+  .services .sidebar {
+    display: block;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -100vw;
+    z-index: 100;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    background: #27a469;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 -10px 27px -8px #000000;
+    box-shadow: 0 -10px 27px -8px #000000;
+  }
+  .services .sidebar .button {
+    background: white;
+  }
+  .services .sidebar .button:hover {
+    background: #e6e6e6;
+  }
+  .services .sidebar .button a {
+    color: #27a469;
+  }
+  .services .sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    clear: both;
+    margin-top: 4em;
+  }
+  .services .sidebar ul li a {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+  }
+  .services .sidebar ul hr {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+  .services .sidebar.lite {
+    background: white;
+  }
+  .services .sidebar.lite li a {
+    color: #27a469;
+  }
+  .services .sidebar.lite .button {
+    background: #27a469;
+  }
+  .services .sidebar.lite .button:hover {
+    background: #31cd83;
+  }
+  .services .sidebar.lite .button a {
+    color: white;
+  }
+  .services .sidebar.lite .side-menu-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .services #contact-slidebar-button a {
+    font-size: 20px;
+    padding: 0.5em 0;
+  }
+  .services .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+    transition: 0.5s ease-in-out;
+  }
+  .services .main-background {
+    background: #27a469;
+  }
+  .services .lite .main-background {
+    background: white;
+  }
+  .services #cta-title,
+  .services #cta-text {
+    text-align: center;
+  }
+  .services #cta-text {
+    font-size: 14pt;
+  }
+  .services #cta-title {
+    font-size: 35px;
+    width: 100%;
+  }
+  .services #cta-button {
+    margin: auto;
+    width: 200px;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .services #cta-button a {
+    font-size: 14pt;
+  }
+  .services #solution-img {
+    margin-top: 5em;
+  }
+  .services .additional-cta .content {
+    width: 95%;
+    font-size: 20px;
+  }
+  .services .customer-reviews {
+    padding-top: 3em;
+  }
+  .services .customer-reviews .customer-review-heading,
+  .services .customer-reviews .title-one {
+    background: none;
+  }
+  .services .customer-reviews .customer-review-heading {
+    padding-bottom: 2em;
+    padding-top: 0;
+  }
+  .services .customer-reviews .customer-review-heading .content {
+    display: none;
+  }
+  .services .customer-reviews .customer-review-heading .title-one {
+    padding: 0;
+    font-size: 35px;
+    text-align: center;
+  }
+  .services .customer-reviews .button {
+    display: block;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    margin-top: 3em;
+    border-radius: 7px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .services .customer-reviews .button a {
+    font-size: 18px;
+  }
+  .services .customer-review-list .customer-review-card {
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .services .customer-review-list .customer-review-card .content {
+    font-size: 20px;
+  }
+  .services .author {
+    padding-top: 2em;
+  }
+  .services #author-name {
+    font-size: 22px;
+  }
+  .services #author-description {
+    font-size: 17px;
+  }
+  .services #author-image {
+    width: 55px;
+    height: 55px;
+  }
+  .services .customer-help {
+    background: url("./images/services/background_help.png") no-repeat;
+    background-size: cover;
+  }
+  .services .customer-help .container {
+    width: 100%;
+  }
+  .services .customer-help .container input[type="text"] {
+    font-size: 20px;
+    width: 95%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 7px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .services .customer-help .title-one {
+    font: 100 40px "Playfair Display", "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 37px;
+  }
+  .services .customer-help .button {
+    font-size: 20px;
+    padding: 0.8em 3em;
+    border-radius: 7px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .services .pricing-plan {
+    background: none;
+  }
+  .services .pricing-plan .title-one {
+    font-size: 37px;
+  }
+  .services .pricing-plan .heading .content {
+    width: 95%;
+    font-size: 20px;
+  }
+  .services .pricing-plan .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services .pricing-plan .price {
+    font-size: 40px;
+  }
+  .services .pricing-plan .ratio {
+    font-size: 25px;
+  }
+  .services .pricing-plan .pricing-header {
+    height: auto;
+    padding: 2em 0;
+  }
+  .services .pricing-plan .pricing-header .header-title {
+    font-size: 27px;
+  }
+  .services .pricing-plan .pricing-content {
+    padding-top: 3.5em;
+    padding-bottom: 2.5em;
+  }
+  .services .pricing-plan .pricing-content li span {
+    background-position: -322px -160px;
+    background-size: 1600%;
+    width: 30px;
+    height: 30px;
+  }
+  .services .pricing-plan .pricing-content li.activated span {
+    background-position: -241px -160px;
+  }
+  .services .pricing-plan .benefits {
+    font-size: 20px;
+  }
+  .services .pricing-plan .benefits .benefits-text {
+    width: 330px;
+  }
+  .services .pricing-plan .pricing-footer {
+    font-size: 22px;
+  }
+  .services .card {
+    margin-bottom: 2em;
+  }
+  .services .clients {
+    background: #f5f6f8;
+    padding-top: 3em;
+  }
+  .services .clients .heading {
+    width: 100%;
+  }
+  .services .clients .heading .title-one {
+    font-size: 35px;
+  }
+  .services .clients .heading .title-two {
+    font-size: 20px;
+    width: 80%;
+  }
+  .services .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .services .client-img {
+    background: url("./images/sprites.png");
+  }
+  .services .separation {
+    width: 90vw;
+    height: 30px;
+  }
+  .services #entro-stop {
+    width: 53px;
+    height: 28px;
+    background-position: -64px -192px;
+  }
+  .services #go-pay {
+    width: 116px;
+    height: 25px;
+    background-position: 0 -256px;
+  }
+  .services #usagi {
+    width: 43px;
+    height: 27px;
+    background-position: -128px -192px;
+  }
+  .services #mapan {
+    width: 119px;
+    height: 24px;
+    background-position: -128px -256px;
+  }
+  .services #chubb {
+    width: 153px;
+    height: 20px;
+    background-position: -192px -192px;
+  }
+  .services #clients-img {
+    display: none;
+  }
+  .services .interested {
+    padding-left: 0;
+    padding-right: 0;
+    background: url("./images/services/interested_background_mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .services .interested .title-one {
+    width: 100%;
+    font: 100 40px "Playfair Display", "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  .services .interested .button {
+    padding: 1.5em 8em;
+    border-radius: 7px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    margin-top: 5em;
+  }
+  .services .interested .button a {
+    font-size: 20px;
+  }
+  .services footer {
+    padding-top: 4em;
+    background: #27a469;
+  }
+  .services footer ul li:first-child {
+    margin-bottom: 1em;
+  }
+  .services footer .logo a {
+    font-size: 35px;
+  }
+  .services footer .description {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  .services footer .footer-list .content {
+    margin-bottom: 0.6em;
+  }
+  .services footer .footer-list .footer-title,
+  .services footer .footer-list .content {
+    font-size: 27px;
+  }
+  .services footer #address-fix {
+    margin-left: 0.75em;
+  }
+  .services footer hr {
+    color: #cccccc;
+    border-top: 2px solid #cccccc;
+  }
+  .services footer .copyright {
+    justify-content: flex-start;
+    font-size: 27px;
+    color: #e6e6e6;
+  }
+}
+.hide-text {
+  font-size: 0.000001px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+}
+.works {
+  /* 
+  //BOOTSTRAP MEDIA QUERIES
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  */
+}
+.works a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+.works .logo a {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.works .main-background {
+  position: relative;
+  background: url("./images/blog/main_cta_background.png") 86% 12% no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 7em;
+}
+.works ul {
+  display: flex;
+}
+.works ul li {
+  margin-left: 1em;
+}
+.works h1 {
+  font: 100 40px "Playfair Display", "Times New Roman", serif;
+  font-size: 40px;
+}
+.works .button {
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: white;
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.works .button:hover {
+  background: #e6e6e6;
+}
+.works .button a {
+  color: #27a469;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.works .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.works .row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.works .title-one {
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.works .title-two {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: #666666;
+}
+.works .content {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.works .content-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: black;
+}
+.works .icon_small,
+.works .icon_big {
+  display: block;
+  margin: auto;
+  background-size: 100% 100%;
+  background: url("./images/sprites.png");
+}
+.works .icon_big {
+  width: 64px;
+  height: 64px;
+}
+.works .icon_small {
+  width: 24px;
+  height: 24px;
+}
+.works .lite {
+  color: white;
+}
+.works .lite-secondary {
+  color: #e6e6e6;
+}
+.works header .col-xs-3 {
+  align-items: flex-start !important;
+}
+.works .top-menu-button a {
+  padding: 1em 2em;
+}
+.works .navigation-menu {
+  justify-content: flex-end !important;
+  flex-direction: row !important;
+}
+.works .navigation-menu ul {
+  float: right;
+  margin-top: 10px;
+}
+.works .navigation-menu ul li {
+  margin-left: 2em;
+}
+.works .navigation-menu ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.works .navigation-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.works .navigation-menu ul li a:active {
+  color: white;
+}
+.works .navigation-menu ul li a[aria-current="page"] {
+  color: white !important;
+}
+.works .navigation-menu ul li a[aria-current="page"]:hover {
+  color: white !important;
+}
+.works svg {
+  display: none;
+}
+.works .sections {
+  padding: 5em 0;
+}
+.works .sidebar,
+.works .mobile-hamburger-button {
+  display: none;
+}
+.works .hollow.button {
+  cursor: pointer;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  padding: 0.75em 2.5em;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #dedede;
+  color: #666666;
+  background: none;
+}
+.works .hollow.button:hover {
+  color: white;
+  border: 1px solid #27a469;
+  background-color: #83e1b5;
+}
+.works .hollow.button:hover a {
+  color: white;
+}
+.works .hollow.button.selected {
+  color: white;
+  background-color: #27a469;
+  border: 1px solid #27a469;
+}
+.works .hollow.button.selected a {
+  color: white;
+}
+.works .hollow.button.selected:hover {
+  border: 1px solid #2cb976;
+  background-color: #2cb976;
+}
+.works .hollow.button.lite {
+  color: white;
+  border: 1px solid #dedede;
+}
+.works .hollow.button.lite a {
+  color: white;
+}
+.works .hollow.button.lite:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.works .hollow.button.lite:hover a {
+  color: white;
+}
+.works .hollow.button {
+  cursor: pointer;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  padding: 0.75em 2.5em;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #dedede;
+  color: #666666;
+  background: none;
+}
+.works .hollow.button:hover {
+  color: white;
+  border: 1px solid #27a469;
+  background-color: #83e1b5;
+}
+.works .hollow.button:hover a {
+  color: white;
+}
+.works .hollow.button.selected {
+  color: white;
+  background-color: #27a469;
+  border: 1px solid #27a469;
+}
+.works .hollow.button.selected a {
+  color: white;
+}
+.works .hollow.button.selected:hover {
+  border: 1px solid #2cb976;
+  background-color: #2cb976;
+}
+.works .hollow.button.alternative {
+  border-color: #27a469;
+}
+.works .hollow.button.lite {
+  color: white;
+  border: 1px solid #dedede;
+}
+.works .hollow.button.lite a {
+  color: white;
+}
+.works .hollow.button.lite:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.works .hollow.button.lite:hover a {
+  color: white;
+}
+.works .main-cta {
+  margin-top: 3em;
+}
+.works #cta-title {
+  color: white;
+  margin-bottom: 0;
+  width: 100%;
+}
+.works #cta-text {
+  margin: 1.5em 0 3em 0;
+  color: #f9fcfb;
+}
+.works .button-pannel,
+.works .input-pannel {
+  width: 100%;
+}
+.works .input-pannel {
+  position: relative;
+}
+.works #cta-button {
+  font-size: 0;
+  width: 140px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.works #cta-button a {
+  padding: 15px;
+  font-size: 11px;
+}
+.works #cta-input input {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  border: none;
+  padding: 1.3em;
+  padding-right: 5em;
+  width: 82%;
+  outline: none;
+}
+.works #cta-input input:active {
+  border: none;
+}
+.works #search-button-pannel {
+  position: absolute;
+  z-index: 2;
+  left: 71%;
+  top: 6%;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: #27a469;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.works #search-button-pannel:hover {
+  background: #31cd83;
+}
+.works #search-button-pannel input {
+  padding: 0;
+  width: 17px;
+  height: 18px;
+  background: url("./images/sprites.png");
+  background-position: -64px -128px;
+}
+.works #solution-img {
+  width: 75%;
+}
+.works .main-background {
+  background: url("./images/image_placeholder.png");
+}
+.works .main-cta .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+.works #cta-text {
+  width: 85%;
+  color: #eeeeee;
+}
+.works .button-pannel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.works .gallery {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: #fdfdfe;
+  background-image: -webkit-linear-gradient(top, #f5f6f8, #fdfdfe);
+  background-image: -moz-linear-gradient(top, #f5f6f8, #fdfdfe);
+  background-image: -o-linear-gradient(top, #f5f6f8, #fdfdfe);
+  background-image: -ms-linear-gradient(top, #f5f6f8, #fdfdfe);
+  background-image: linear-gradient(top, #f5f6f8, #fdfdfe);
+}
+.works .gallery .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.works .gallery div [class*="col"] {
+  padding: 0 4px;
+}
+.works .gallery div [class*="col"] img:nth-child(even) {
+  float: right;
+}
+.works .gallery div [class*="col"] img:nth-child(n + 3) {
+  margin-top: 26px;
+}
+.works .gallery .row img {
+  vertical-align: middle;
+  margin-top: 21px;
+  margin-right: 21px;
+  -webkit-box-shadow: 2px 2px 5px 0 #999999;
+  box-shadow: 2px 2px 5px 0 #999999;
+}
+.works .gallery-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.works footer {
+  padding: 10em 0 2em 0;
+  background: url("./images/footer_decoration.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.works footer .description,
+.works footer .lite {
+  color: #e6e6e6;
+}
+.works footer ul {
+  flex-direction: column;
+}
+.works footer ul li {
+  color: white;
+  line-height: 1.75em;
+}
+.works footer ul li:first-child {
+  margin: 0.5em 0;
+  margin-left: 1em;
+}
+.works footer ul li a {
+  color: #e6e6e6;
+  font-size: 12px;
+}
+.works footer ul li a:hover {
+  color: #cccccc;
+}
+.works #address-fix {
+  margin-left: 1.4em;
+  margin-bottom: 0.5em;
+}
+.works .footer-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+}
+.works footer > .container > .row {
+  padding-bottom: 3em;
+}
+.works .copyright {
+  display: flex;
+  justify-content: center;
+  widows: 100%;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .works .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .works #solution-img {
+    width: 100%;
+  }
+  .works #cta-title {
+    font-size: 35px;
+  }
+  .works #cta-text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .works #solution-img {
+    width: 100%;
+  }
+  .works #cta-title {
+    font-size: 35px;
+  }
+  .works #cta-text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .works img {
+    width: 94%;
+  }
+  .works .small-img {
+    width: 44%;
+  }
+}
+@media (max-width: 767.98px) {
+  .works .top-menu-button,
+  .works .navigation-menu ul {
+    display: none;
+  }
+  .works #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+  .works .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+  }
+  .works .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .works header {
+    position: fixed;
+    top: 0;
+    background: #27a469;
+    width: 100%;
+    z-index: 99;
+    transition: 0.2s ease-in-out;
+  }
+  .works .lite header {
+    background: white;
+  }
+  .works .main-cta {
+    padding-top: 5em;
+  }
+  .works .hollow.button {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .works .sidebar {
+    display: block;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -100vw;
+    z-index: 100;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    background: #27a469;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 -10px 27px -8px #000000;
+    box-shadow: 0 -10px 27px -8px #000000;
+  }
+  .works .sidebar .button {
+    background: white;
+  }
+  .works .sidebar .button:hover {
+    background: #e6e6e6;
+  }
+  .works .sidebar .button a {
+    color: #27a469;
+  }
+  .works .sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    clear: both;
+    margin-top: 4em;
+  }
+  .works .sidebar ul li a {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+  }
+  .works .sidebar ul hr {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+  .works .sidebar.lite {
+    background: white;
+  }
+  .works .sidebar.lite li a {
+    color: #27a469;
+  }
+  .works .sidebar.lite .button {
+    background: #27a469;
+  }
+  .works .sidebar.lite .button:hover {
+    background: #31cd83;
+  }
+  .works .sidebar.lite .button a {
+    color: white;
+  }
+  .works .sidebar.lite .side-menu-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .works #contact-slidebar-button a {
+    font-size: 20px;
+    padding: 1em;
+  }
+  .works .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+    width: 30px;
+    height: 30px;
+    background: url("./images/sprites.png");
+    background-position: -320px -128px;
+    transition: 0.5s ease-in-out;
+  }
+  .works .main-background {
+    padding-top: 3em;
+  }
+  .works .lite .main-background {
+    background: white;
+  }
+  .works #cta-title,
+  .works #cta-text {
+    text-align: center;
+  }
+  .works #cta-text {
+    font-size: 14pt;
+  }
+  .works #cta-title {
+    font-size: 35px;
+  }
+  .works #cta-button {
+    margin: auto;
+    width: 200px;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .works #cta-button a {
+    font-size: 14pt;
+  }
+  .works #solution-img {
+    margin-top: 5em;
+  }
+  .works .main-cta .container {
+    width: 75%;
+  }
+  .works svg {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    bottom: -3em;
+  }
+  .works .gallery {
+    margin-bottom: 2em;
+  }
+  .works .gallery img {
+    display: none;
+  }
+  .works .gallery .mobile-img {
+    display: block;
+    width: 85%;
+  }
+  .works .gallery div [class*="col"] {
+    display: flex;
+    justify-content: center;
+  }
+  .works .gallery .row {
+    display: flex;
+    justify-content: center;
+  }
+  .works .gallery .row img {
+    margin-right: 0;
+    margin-bottom: 3em;
+  }
+  .works footer {
+    padding-top: 4em;
+    background: #27a469;
+  }
+  .works footer ul li:first-child {
+    margin-bottom: 1em;
+  }
+  .works footer .logo a {
+    font-size: 35px;
+  }
+  .works footer .description {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  .works footer .footer-list .content {
+    margin-bottom: 0.6em;
+  }
+  .works footer .footer-list .footer-title,
+  .works footer .footer-list .content {
+    font-size: 27px;
+  }
+  .works footer #address-fix {
+    margin-left: 0.75em;
+  }
+  .works footer hr {
+    color: #cccccc;
+    border-top: 2px solid #cccccc;
+  }
+  .works footer .copyright {
+    justify-content: flex-start;
+    font-size: 27px;
+    color: #e6e6e6;
+  }
+}

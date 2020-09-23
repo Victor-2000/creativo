@@ -1,0 +1,817 @@
+.hide-text {
+  font-size: 0.000001px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+}
+.contact-us {
+  /* 
+  //BOOTSTRAP MEDIA QUERIES
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  */
+}
+.contact-us a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+.contact-us .logo a {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.contact-us .lite .logo a {
+  color: #27a469;
+}
+.contact-us .main-background {
+  position: relative;
+  background: url("../images/blog/main_cta_background.png") 86% 12% no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 7em;
+}
+.contact-us input,
+.contact-us textarea {
+  background: #f5f6f8;
+  border: 1px solid #dedede;
+  color: #333333;
+  outline: none;
+  resize: none;
+}
+.contact-us .lite .main-background {
+  position: relative;
+  background: none;
+  padding-bottom: 2em;
+}
+.contact-us ul {
+  display: flex;
+}
+.contact-us ul li {
+  margin-left: 1em;
+}
+.contact-us h1 {
+  font: 100 40px "Playfair Display", "Times New Roman", serif;
+  font-size: 40px;
+}
+.contact-us .button {
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: white;
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.contact-us .button:hover {
+  background: #e6e6e6;
+}
+.contact-us .button a {
+  color: #27a469;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.contact-us .lite .button {
+  background: #27a469;
+}
+.contact-us .lite .button:hover {
+  background: #31cd83;
+}
+.contact-us .lite .button a {
+  color: white;
+}
+.contact-us .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-us .row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us .title-one {
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.contact-us .title-two {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: #666666;
+}
+.contact-us .content {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.contact-us .content-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #333333;
+}
+.contact-us .content-img {
+  background: url("../images/image_placeholder.png");
+  margin: 1em 0;
+  width: 100%;
+  height: 300px;
+}
+.contact-us .icon_small,
+.contact-us .icon_big {
+  display: block;
+  margin: auto;
+  background-size: 100% 100%;
+  background: url("../images/sprites.png");
+}
+.contact-us .icon_big {
+  width: 64px;
+  height: 64px;
+}
+.contact-us .icon_small {
+  width: 24px;
+  height: 24px;
+}
+.contact-us .lite {
+  color: white;
+}
+.contact-us .lite-secondary {
+  color: #e6e6e6;
+}
+.contact-us header .col-xs-3 {
+  align-items: flex-start !important;
+}
+.contact-us .top-menu-button a {
+  padding: 1em 2em;
+}
+.contact-us .navigation-menu {
+  justify-content: flex-end !important;
+  flex-direction: row !important;
+}
+.contact-us .navigation-menu ul {
+  float: right;
+  margin-top: 10px;
+}
+.contact-us .navigation-menu ul li {
+  margin-left: 2em;
+}
+.contact-us .navigation-menu ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.contact-us .navigation-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.contact-us .navigation-menu ul li a:active {
+  color: white;
+}
+.contact-us .navigation-menu ul li .nav-selected {
+  color: white;
+}
+.contact-us .navigation-menu ul li .nav-selected:hover {
+  color: white;
+}
+.contact-us .lite .navigation-menu a {
+  color: #999999;
+}
+.contact-us .lite .navigation-menu a:hover {
+  color: #666666;
+}
+.contact-us .lite .navigation-menu a:active {
+  color: #333333;
+}
+.contact-us .lite .navigation-menu .nav-selected {
+  color: #333333;
+}
+.contact-us .lite .navigation-menu .nav-selected:hover {
+  color: #333333;
+}
+.contact-us .sections {
+  padding: 5em 0;
+}
+.contact-us .sidebar,
+.contact-us .mobile-hamburger-button {
+  display: none;
+}
+.contact-us .mobile-image {
+  display: none;
+}
+.contact-us .main-cta {
+  margin-top: 3em;
+}
+.contact-us #cta-title {
+  color: white;
+  margin-bottom: 0;
+  width: 100%;
+}
+.contact-us .lite #cta-title {
+  color: #333333;
+}
+.contact-us #cta-text {
+  margin: 1.5em 0 3em 0;
+  color: #f9fcfb;
+}
+.contact-us .lite #cta-text {
+  color: #666666;
+}
+.contact-us .button-pannel,
+.contact-us .input-pannel {
+  width: 100%;
+}
+.contact-us .input-pannel {
+  position: relative;
+}
+.contact-us #cta-button {
+  font-size: 0;
+  width: 140px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.contact-us #cta-button a {
+  padding: 15px;
+  font-size: 11px;
+}
+.contact-us #cta-input input {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  border: none;
+  padding: 1.3em;
+  padding-right: 5em;
+  width: 82%;
+  outline: none;
+}
+.contact-us #cta-input input:active {
+  border: none;
+}
+.contact-us #search-button-pannel {
+  position: absolute;
+  z-index: 2;
+  left: 71%;
+  top: 6%;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: #27a469;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.contact-us #search-button-pannel:hover {
+  background: #31cd83;
+}
+.contact-us #search-button-pannel input {
+  padding: 0;
+  width: 17px;
+  height: 18px;
+  background: url("../images/sprites.png");
+  background-position: -64px -128px;
+}
+.contact-us #solution-img {
+  width: 75%;
+}
+.contact-us .main-cta {
+  margin-top: 0;
+}
+.contact-us .contact-content {
+  padding-bottom: 7em;
+}
+.contact-us .contact-content .button-pannel {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+.contact-us .contact-content .row {
+  width: 100%;
+}
+.contact-us .contact-content .title-one {
+  color: #333333;
+  font-size: 36px;
+  padding: 0.7em 2em 0.5em 0;
+}
+.contact-us .contact-content .content-title {
+  padding: 1em 0;
+  padding-top: 2em;
+}
+.contact-us .contact-content .content-section {
+  width: 66%;
+}
+.contact-us .side-menu {
+  width: 34%;
+}
+.contact-us .side-menu .title-one {
+  padding: 0.7em 1.5em 1.5em 0.7em;
+}
+.contact-us .side-menu-heading {
+  background: #d4ede1;
+}
+.contact-us .side-menu-heading .title-one {
+  font-size: 32px;
+}
+.contact-us .featured-image {
+  border-radius: 4px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: url("../images/image_placeholder.png");
+  width: 97.3%;
+  height: 350px;
+  margin-left: 0.75em;
+  margin-bottom: 3em;
+}
+.contact-us .side-menu-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #f5f6f8;
+  width: 100%;
+  padding: 1em 0;
+}
+.contact-us .small-ow {
+  display: block;
+  position: relative;
+  top: 1px;
+  margin: 0.6em 1.5em;
+  height: 47vh;
+  cursor: pointer;
+}
+.contact-us .small-ow-image {
+  display: block;
+  background: url("../images/image_placeholder.png");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+}
+.contact-us .small-ow-text {
+  position: absolute;
+  background: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+.contact-us .small-ow-text .small-ow-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  color: #333333;
+  font-size: 14px;
+  padding: 1em;
+}
+.contact-us .small-ow-text .small-ow-author {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  color: #b7b7b8;
+  font-size: 12px;
+  padding: 0 0 2em 16px;
+}
+.contact-us .blog-image {
+  margin: 1em 0;
+}
+.contact-us .blog-image .image-description {
+  color: #666666;
+}
+.contact-us .author {
+  display: flex;
+  padding-top: 3em;
+  float: left;
+  overflow: hidden;
+}
+.contact-us #author-name {
+  padding: 0 0 0 1em;
+}
+.contact-us #author-description {
+  padding-top: 0;
+  font-size: 12px;
+  color: #b7b7b8;
+}
+.contact-us #author-image {
+  display: block;
+  background: url("../images/sprites.png");
+  background-position: -128px -128px;
+  width: 40px;
+  height: 40px;
+}
+.contact-us .contact-ui {
+  float: right;
+  padding-top: 3em;
+}
+.contact-us .contact,
+.contact-us .bookmark,
+.contact-us .share {
+  display: block;
+  background: url("../images/sprites.png");
+  width: 22px;
+  height: 22px;
+}
+.contact-us .contact {
+  background-position: -192px 0;
+}
+.contact-us .bookmark {
+  background-position: -256px 0;
+  width: 18px;
+}
+.contact-us .share {
+  background-position: -320px 0;
+}
+.contact-us #author-line {
+  clear: both;
+  padding-top: 1.5em;
+  border-bottom: 1px solid #dedede;
+}
+.contact-us #contact-us-form input,
+.contact-us #contact-us-form textarea {
+  width: 100%;
+  font-size: 14px;
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+}
+.contact-us #contact-us-form input[type="submit"] {
+  width: initial;
+  margin: auto;
+  color: white;
+  height: 4em;
+  width: 12em;
+  text-transform: uppercase;
+}
+.contact-us #contact-us-form input {
+  height: 3em;
+}
+.contact-us #contact-us-form textarea {
+  height: 10em;
+}
+.contact-us .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1.3em 0 0 4em;
+}
+.contact-us .info-block {
+  display: flex;
+  margin-bottom: 2em;
+  align-items: center;
+}
+.contact-us .info-text {
+  margin-left: 4em;
+  float: left;
+}
+.contact-us .info-icon {
+  position: absolute;
+  display: block;
+  background: url("../images/sprites.png");
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  float: left;
+}
+.contact-us .location {
+  background-position: -192px -64px;
+}
+.contact-us .mail {
+  background-position: -256px -64px;
+}
+.contact-us .phone {
+  background-position: -320px -64px;
+}
+.contact-us .lite footer .logo a {
+  color: white;
+}
+.contact-us footer {
+  padding: 10em 0 2em 0;
+  background: url("../images/footer_decoration.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.contact-us footer .description,
+.contact-us footer .lite {
+  color: #e6e6e6;
+}
+.contact-us footer ul {
+  flex-direction: column;
+}
+.contact-us footer ul li {
+  color: white;
+  line-height: 1.75em;
+}
+.contact-us footer ul li:first-child {
+  margin: 0.5em 0;
+  margin-left: 1em;
+}
+.contact-us footer ul li a {
+  color: #e6e6e6;
+  font-size: 12px;
+}
+.contact-us footer ul li a:hover {
+  color: #cccccc;
+}
+.contact-us #address-fix {
+  margin-left: 1.4em;
+  margin-bottom: 0.5em;
+}
+.contact-us .footer-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+}
+.contact-us footer > .container > .row {
+  padding-bottom: 3em;
+}
+.contact-us .copyright {
+  display: flex;
+  justify-content: center;
+  widows: 100%;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .contact-us .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-us #solution-img {
+    width: 100%;
+  }
+  .contact-us #cta-title {
+    font-size: 35px;
+  }
+  .contact-us #cta-text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-us #solution-img {
+    width: 100%;
+  }
+  .contact-us #cta-title {
+    font-size: 35px;
+  }
+  .contact-us #cta-text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .contact-us .top-menu-button,
+  .contact-us .navigation-menu ul {
+    display: none;
+  }
+  .contact-us #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+  .contact-us .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+  }
+  .contact-us .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .contact-us header {
+    position: fixed;
+    top: 0;
+    background: #27a469;
+    width: 100%;
+    z-index: 99;
+  }
+  .contact-us .lite header {
+    background: white;
+  }
+  .contact-us .main-cta {
+    padding-top: 5em;
+  }
+  .contact-us .sidebar {
+    display: block;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -100vw;
+    z-index: 100;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    background: #27a469;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 -10px 27px -8px #000000;
+    box-shadow: 0 -10px 27px -8px #000000;
+  }
+  .contact-us .sidebar .button {
+    background: white;
+  }
+  .contact-us .sidebar .button:hover {
+    background: #e6e6e6;
+  }
+  .contact-us .sidebar .button a {
+    color: #27a469;
+  }
+  .contact-us .sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    clear: both;
+    margin-top: 4em;
+  }
+  .contact-us .sidebar ul li a {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+  }
+  .contact-us .sidebar ul hr {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+  .contact-us .sidebar.lite {
+    background: white;
+  }
+  .contact-us .sidebar.lite li a {
+    color: #27a469;
+  }
+  .contact-us .sidebar.lite .button {
+    background: #27a469;
+  }
+  .contact-us .sidebar.lite .button:hover {
+    background: #31cd83;
+  }
+  .contact-us .sidebar.lite .button a {
+    color: white;
+  }
+  .contact-us .sidebar.lite .side-menu-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .contact-us #contact-slidebar-button a {
+    font-size: 20px;
+    padding: 1em;
+  }
+  .contact-us .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+    transition: 0.5s ease-in-out;
+  }
+  .contact-us .main-background {
+    background: #27a469;
+  }
+  .contact-us .lite .main-background {
+    background: white;
+  }
+  .contact-us #cta-title,
+  .contact-us #cta-text {
+    text-align: center;
+  }
+  .contact-us #cta-text {
+    font-size: 14pt;
+  }
+  .contact-us #cta-title {
+    font-size: 35px;
+  }
+  .contact-us #cta-button {
+    margin: auto;
+    width: 200px;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .contact-us #cta-button a {
+    font-size: 14pt;
+  }
+  .contact-us #solution-img {
+    margin-top: 5em;
+  }
+  .contact-us .main-cta {
+    display: none;
+  }
+  .contact-us .mobile-image {
+    display: block;
+  }
+  .contact-us #solution-img {
+    width: 100%;
+  }
+  .contact-us .contact-content {
+    margin-top: 3em;
+  }
+  .contact-us .contact-content .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-us #contact-us-form input[type="submit"] {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 7px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .contact-us #contact-us-form input[type="text"],
+  .contact-us #contact-us-form textarea {
+    font-size: 23px;
+    background: none;
+  }
+  .contact-us .content {
+    font-size: 23px;
+  }
+  .contact-us .contact-info {
+    margin-left: 0;
+    margin-top: 6em;
+  }
+  .contact-us .info-text.content {
+    width: 300px;
+  }
+  .contact-us .info-icon {
+    width: 70px;
+    height: 70px;
+    background-size: 910%;
+  }
+  .contact-us .location {
+    background-position: -316px -105px;
+    margin-bottom: 2em;
+  }
+  .contact-us .mail {
+    background-position: -423px -105px;
+  }
+  .contact-us .phone {
+    background-position: -529px -105px;
+  }
+  .contact-us footer {
+    padding-top: 4em;
+    background: #27a469;
+  }
+  .contact-us footer ul li:first-child {
+    margin-bottom: 1em;
+  }
+  .contact-us footer .logo a {
+    font-size: 35px;
+  }
+  .contact-us footer .description {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  .contact-us footer .footer-list .content {
+    margin-bottom: 0.6em;
+  }
+  .contact-us footer .footer-list .footer-title,
+  .contact-us footer .footer-list .content {
+    font-size: 27px;
+  }
+  .contact-us footer #address-fix {
+    margin-left: 0.75em;
+  }
+  .contact-us footer hr {
+    color: #cccccc;
+    border-top: 2px solid #cccccc;
+  }
+  .contact-us footer .copyright {
+    justify-content: flex-start;
+    font-size: 27px;
+    color: #e6e6e6;
+  }
+}

@@ -1,0 +1,768 @@
+.hide-text {
+  font-size: 0.000001px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+.about {
+  /* 
+  //BOOTSTRAP MEDIA QUERIES
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  */
+}
+.about a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+.about .logo a {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.about .main-background {
+  position: relative;
+  background: url("../images/about/main_cta_background.png") 86% 12% no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 7em;
+}
+.about ul {
+  display: flex;
+}
+.about ul li {
+  margin-left: 1em;
+}
+.about h1 {
+  font: 100 40px "Playfair Display", "Times New Roman", serif;
+  font-size: 40px;
+}
+.about .button {
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: white;
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.about .button:hover {
+  background: #e6e6e6;
+}
+.about .button a {
+  color: #27a469;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.about .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about .row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .title-one {
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.about .title-two {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: #666666;
+}
+.about .content {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.about .content-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: black;
+}
+.about .icon_small,
+.about .icon_big {
+  display: block;
+  margin: auto;
+  background-size: 100% 100%;
+  background: url("../images/sprites.png");
+}
+.about .icon_big {
+  width: 64px;
+  height: 64px;
+}
+.about .icon_small {
+  width: 24px;
+  height: 24px;
+}
+.about .lite {
+  color: white;
+}
+.about .lite-secondary {
+  color: #e6e6e6;
+}
+.about header .col-xs-3 {
+  align-items: flex-start !important;
+}
+.about .top-menu-button a {
+  padding: 1em 2em;
+}
+.about .navigation-menu {
+  justify-content: flex-end !important;
+  flex-direction: row !important;
+}
+.about .navigation-menu ul {
+  float: right;
+  margin-top: 10px;
+}
+.about .navigation-menu ul li {
+  margin-left: 2em;
+}
+.about .navigation-menu ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.about .navigation-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.about .navigation-menu ul li a:active {
+  color: white;
+}
+.about .navigation-menu ul li .nav-selected {
+  color: white;
+}
+.about .navigation-menu ul li .nav-selected:hover {
+  color: white;
+}
+.about .sidebar,
+.about .mobile-hamburger-button {
+  display: none;
+}
+.about .sections {
+  padding: 5em 0;
+}
+.about .main-cta {
+  margin-top: 3em;
+}
+.about #cta-title {
+  color: white;
+  margin-bottom: 0;
+  width: 100%;
+}
+.about #cta-text {
+  margin: 1.5em 0 3em 0;
+  color: #f9fcfb;
+}
+.about .button-pannel,
+.about .input-pannel {
+  width: 100%;
+}
+.about .input-pannel {
+  position: relative;
+}
+.about #cta-button {
+  font-size: 0;
+  width: 140px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.about #cta-button a {
+  padding: 15px;
+  font-size: 11px;
+}
+.about #cta-input input {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  border: none;
+  padding: 1.3em;
+  padding-right: 5em;
+  width: 82%;
+  outline: none;
+}
+.about #cta-input input:active {
+  border: none;
+}
+.about #search-button-pannel {
+  position: absolute;
+  z-index: 2;
+  left: 71%;
+  top: 6%;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: #27a469;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.about #search-button-pannel:hover {
+  background: #31cd83;
+}
+.about #search-button-pannel input {
+  padding: 0;
+  width: 17px;
+  height: 18px;
+  background: url("../images/sprites.png");
+  background-position: -64px -128px;
+}
+.about #solution-img {
+  width: 85%;
+}
+.about .details {
+  background-color: #dee5f4;
+  background-image: -webkit-linear-gradient(top, #fdfdfe, #dee5f4);
+  background-image: -moz-linear-gradient(top, #fdfdfe, #dee5f4);
+  background-image: -o-linear-gradient(top, #fdfdfe, #dee5f4);
+  background-image: -ms-linear-gradient(top, #fdfdfe, #dee5f4);
+  background-image: linear-gradient(top, #fdfdfe, #dee5f4);
+}
+.about #details-title-one,
+.about #details-title-two {
+  text-align: center;
+  margin: auto;
+}
+.about #details-title-one {
+  font-weight: bold;
+  margin-top: 3em;
+  width: 80%;
+}
+.about #details-title-two {
+  margin-top: 2em;
+  width: 70%;
+}
+.about #details-image {
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  padding-bottom: 70px;
+}
+.about .details-content {
+  height: fit-content;
+}
+.about .content-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+.about .content-menu .selected,
+.about .content-menu li {
+  cursor: pointer;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  padding: 0.75em 2.5em;
+  transition: 0.2s ease-in-out;
+}
+.about .content-menu li {
+  border: 1px solid #dedede;
+  color: #666666;
+}
+.about .content-menu li:hover {
+  transition: 0.3s ease-in-out;
+  border: 1px solid #27a469;
+  background-color: #83e1b5;
+  color: white;
+}
+.about .content-menu .selected {
+  border: 1px solid #27a469;
+  background-color: #27a469;
+  color: white;
+}
+.about .content-menu .selected:hover {
+  border: 1px solid #31cd83;
+  background-color: #31cd83;
+  color: white;
+}
+.about .benefits {
+  background: url("../images/about/benefits_background.png") no-repeat;
+  background-size: cover;
+  padding: 5.9em 0;
+}
+.about .benefits .title-one,
+.about .benefits .title-two {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+.about .benefits .title-one {
+  font-family: "Roboto", Verdana, sans-serif;
+}
+.about .benefits .title-two {
+  margin-top: 1em;
+}
+.about .detail-box {
+  margin: auto;
+  color: white;
+  text-align: center;
+  margin-top: 4em;
+}
+.about .detail-box h3 {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 17px;
+}
+.about .detail-box .content {
+  color: white;
+}
+.about #tick {
+  background-position: 0 0;
+}
+.about #mug {
+  background-position: -64px 0;
+}
+.about #bubble {
+  background-position: -128px 0;
+}
+.about .team {
+  text-align: center;
+  padding: 5em 0;
+}
+.about .team .title-one,
+.about .team .title-two {
+  width: 40%;
+  margin: auto;
+}
+.about .team .title-two {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.about .team .facebook {
+  background-position: 0 -64px;
+}
+.about .team .whatsapp {
+  background-position: -64px -64px;
+}
+.about .team .instagram {
+  background-position: -128px -64px;
+}
+.about .team .linkedin {
+  background-position: 0 -128px;
+}
+.about .member-card {
+  padding: 0.5em 0;
+}
+.about .member-card img {
+  width: 100%;
+}
+.about .member-details {
+  -webkit-box-shadow: 0 10px 27px -8px #c4c4c4;
+  box-shadow: 0 10px 27px -8px #c4c4c4;
+}
+.about .member-details .member-name {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 17px;
+  padding: 1em 0 0.5em 0;
+}
+.about .member-details .member-description {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  color: #666666;
+  font-size: 12px;
+}
+.about .member-details ul {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+.about .member-details ul li {
+  margin: 0 0.5em;
+}
+.about footer {
+  padding: 10em 0 2em 0;
+  background: url("../images/footer_decoration.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.about footer .description,
+.about footer .lite {
+  color: #e6e6e6;
+}
+.about footer ul {
+  flex-direction: column;
+}
+.about footer ul li {
+  color: white;
+  line-height: 1.75em;
+}
+.about footer ul li:first-child {
+  margin: 0.5em 0;
+  margin-left: 1em;
+}
+.about footer ul li a {
+  color: #e6e6e6;
+  font-size: 12px;
+}
+.about footer ul li a:hover {
+  color: #cccccc;
+}
+.about #address-fix {
+  margin-left: 1.4em;
+  margin-bottom: 0.5em;
+}
+.about .footer-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+}
+.about footer > .container > .row {
+  padding-bottom: 3em;
+}
+.about .copyright {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+@media (min-width: 1200px) {
+  .about .details > .container {
+    width: 55%;
+  }
+}
+@media (min-width: 992px) {
+  .about .benefits .container {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about .details > .container {
+    width: 70%;
+  }
+  .about .benefits .container {
+    width: 80%;
+  }
+  .about .benefits .title-two {
+    width: 70%;
+  }
+  .about .team .title-one,
+  .about .team .title-two {
+    width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .about .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about #solution-img {
+    width: 100%;
+  }
+  .about #cta-title {
+    font-size: 35px;
+  }
+  .about #cta-text {
+    font-size: 15px;
+  }
+  .about .benefits .title-two {
+    width: 80%;
+  }
+  .about .team .title-one,
+  .about .team .title-two {
+    width: 70%;
+  }
+}
+@media (max-width: 767.98px) {
+  .about .top-menu-button,
+  .about .navigation-menu ul {
+    display: none;
+  }
+  .about #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+  .about .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+  }
+  .about .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .about header {
+    position: fixed;
+    top: 0;
+    background: #27a469;
+    width: 100%;
+    z-index: 99;
+  }
+  .about .lite header {
+    background: white;
+  }
+  .about .main-cta {
+    padding-top: 5em;
+  }
+  .about .sidebar {
+    display: block;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -100vw;
+    z-index: 100;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    background: #27a469;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 -10px 27px -8px #000000;
+    box-shadow: 0 -10px 27px -8px #000000;
+  }
+  .about .sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    clear: both;
+    margin-top: 4em;
+  }
+  .about .sidebar ul li a {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+  }
+  .about .sidebar ul hr {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+  .about .sidebar.lite {
+    background: white;
+  }
+  .about .sidebar.lite li a {
+    color: #27a469;
+  }
+  .about .sidebar.lite .button {
+    background: #27a469;
+  }
+  .about .sidebar.lite .button:hover {
+    background: #31cd83;
+  }
+  .about .sidebar.lite .button a {
+    color: white;
+  }
+  .about .sidebar.lite .side-menu-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .about #contact-slidebar-button a {
+    font-size: 20px;
+    padding: 1em;
+  }
+  .about .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+    transition: 0.5s ease-in-out;
+  }
+  .about .main-background {
+    background: #27a469;
+  }
+  .about .lite .main-background {
+    background: white;
+  }
+  .about #cta-title,
+  .about #cta-text {
+    text-align: center;
+  }
+  .about #cta-text {
+    font-size: 14pt;
+  }
+  .about #cta-title {
+    font-size: 35px;
+  }
+  .about #cta-button {
+    margin: auto;
+    width: 200px;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .about #cta-button a {
+    font-size: 14pt;
+  }
+  .about #solution-img {
+    margin-top: 5em;
+  }
+  .about .details .button {
+    font-size: 12pt;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .about .details .details-title-one {
+    font-size: 24pt;
+  }
+  .about .details .details-title-two {
+    font-size: 14pt;
+  }
+  .about .details .content {
+    font-size: 14pt;
+    text-align: center;
+  }
+  .about .details #details-image {
+    width: 70%;
+  }
+  .about .details .content-menu .selected,
+  .about .details .content-menu li {
+    padding: 0.75em 0.5em;
+    margin: 0 0.3em;
+  }
+  .about .benefits {
+    background: url("../images/about/benefits_background_mobile.png") no-repeat;
+    background-size: cover;
+  }
+  .about .benefits .title-one,
+  .about .benefits .title-two {
+    display: none;
+  }
+  .about .benefits h3 {
+    font-size: 20pt;
+  }
+  .about .benefits .content {
+    font-size: 16pt;
+  }
+  .about .benefits .icon_big {
+    background-size: 600%;
+    width: 100px;
+    height: 100px;
+  }
+  .about .benefits #tick {
+    background-position: 0 0;
+  }
+  .about .benefits #mug {
+    background-position: -100px 0;
+  }
+  .about .benefits #bubble {
+    background-position: -200px 0;
+  }
+  .about .team {
+    background: #f5f6f8;
+  }
+  .about .team .title-one,
+  .about .team .title-two {
+    width: 70%;
+  }
+  .about .team .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .team .member-card img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .about .team .member-card .member-details {
+    background: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .about .team .member-card .member-description {
+    font-size: 25px;
+  }
+  .about .team .member-card .member-name {
+    font-size: 30px;
+  }
+  .about .team .member-card .icon_small {
+    background-size: 1500%;
+    width: 40px;
+    height: 40px;
+  }
+  .about .team .member-card .facebook {
+    background-position: 0 -100px;
+  }
+  .about .team .member-card .whatsapp {
+    background-position: -100px -100px;
+  }
+  .about .team .member-card .instagram {
+    background-position: -200px -100px;
+  }
+  .about .team .member-card .linkedin {
+    background-position: 0 -200px;
+  }
+  .about .team .col-xs-4 {
+    display: none;
+  }
+  .about footer {
+    padding-top: 4em;
+    background: #27a469;
+  }
+  .about footer ul li:first-child {
+    margin-bottom: 1em;
+  }
+  .about footer .logo a {
+    font-size: 35px;
+  }
+  .about footer .description {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  .about footer .footer-list .content {
+    margin-bottom: 0.6em;
+  }
+  .about footer .footer-list .footer-title,
+  .about footer .footer-list .content {
+    font-size: 27px;
+  }
+  .about footer #address-fix {
+    margin-left: 0.75em;
+  }
+  .about footer hr {
+    color: #cccccc;
+    border-top: 2px solid #cccccc;
+  }
+  .about footer .copyright {
+    justify-content: flex-start;
+    font-size: 27px;
+    color: #e6e6e6;
+  }
+}

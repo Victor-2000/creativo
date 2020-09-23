@@ -1,0 +1,693 @@
+.hide-text {
+  font-size: 0.000001px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+}
+.blog {
+  /* 
+  //BOOTSTRAP MEDIA QUERIES
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  */
+}
+.blog a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+}
+.blog .logo a {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+.blog .main-background {
+  position: relative;
+  background: url("../images/blog/main_cta_background.png") 86% 12% no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 7em;
+}
+.blog ul {
+  display: flex;
+}
+.blog ul li {
+  margin-left: 1em;
+}
+.blog h1 {
+  font: 100 40px "Playfair Display", "Times New Roman", serif;
+  font-size: 40px;
+}
+.blog .button {
+  border-radius: 3px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: white;
+  margin: 1em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.blog .button:hover {
+  background: #e6e6e6;
+}
+.blog .button a {
+  color: #27a469;
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.blog .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog .row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog .title-one {
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.blog .title-two {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: #666666;
+}
+.blog .content {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.blog .content-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: black;
+}
+.blog .icon_small,
+.blog .icon_big {
+  display: block;
+  margin: auto;
+  background-size: 100% 100%;
+  background: url("../images/sprites.png");
+}
+.blog .icon_big {
+  width: 64px;
+  height: 64px;
+}
+.blog .icon_small {
+  width: 24px;
+  height: 24px;
+}
+.blog .lite {
+  color: white;
+}
+.blog .lite-secondary {
+  color: #e6e6e6;
+}
+.blog header .col-xs-3 {
+  align-items: flex-start !important;
+}
+.blog .top-menu-button a {
+  padding: 1em 2em;
+}
+.blog .navigation-menu {
+  justify-content: flex-end !important;
+  flex-direction: row !important;
+}
+.blog .navigation-menu ul {
+  float: right;
+  margin-top: 10px;
+}
+.blog .navigation-menu ul li {
+  margin-left: 2em;
+}
+.blog .navigation-menu ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.blog .navigation-menu ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.blog .navigation-menu ul li a:active {
+  color: white;
+}
+.blog .navigation-menu ul li .nav-selected {
+  color: white;
+}
+.blog .navigation-menu ul li .nav-selected:hover {
+  color: white;
+}
+.blog .sections {
+  padding: 5em 0;
+}
+.blog .sidebar,
+.blog .mobile-hamburger-button {
+  display: none;
+}
+.blog .main-cta {
+  margin-top: 3em;
+}
+.blog #cta-title {
+  color: white;
+  margin-bottom: 0;
+  margin-top: -85px;
+  width: 100%;
+}
+.blog #cta-text {
+  margin: 1.5em 0 3em 0;
+  color: #f9fcfb;
+}
+.blog .button-pannel,
+.blog .input-pannel {
+  width: 100%;
+}
+.blog .input-pannel {
+  position: relative;
+}
+.blog #cta-button {
+  font-size: 0;
+  width: 140px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.blog #cta-button a {
+  padding: 15px;
+  font-size: 11px;
+}
+.blog #cta-input input {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  border: none;
+  padding: 1.3em;
+  padding-right: 6em;
+  width: 82%;
+  outline: none;
+}
+.blog #cta-input input:active {
+  border: none;
+}
+.blog #search-button-pannel {
+  position: absolute;
+  z-index: 2;
+  right: 18.5%;
+  top: 6%;
+  border-radius: 5px;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  background: #27a469;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.blog #search-button-pannel:hover {
+  background: #31cd83;
+}
+.blog #search-button-pannel input {
+  padding: 0;
+  width: 17px;
+  height: 18px;
+  background: url("../images/sprites.png");
+  background-position: -64px -128px;
+}
+.blog #solution-img {
+  width: 75%;
+}
+.blog .blog .title-one {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 48px;
+}
+.blog .blog .row {
+  display: flex;
+  justify-content: center;
+}
+.blog .blog-button {
+  margin-top: 3.5em;
+  box-sizing: content-box;
+  border: 1px solid #27a469;
+  padding: 0.75em 2em;
+  width: 10%;
+}
+.blog .blog-button:hover {
+  background: #83e1b5;
+}
+.blog .blog-button:hover a {
+  color: white;
+}
+.blog .blog-button a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 11px;
+  margin: 0;
+}
+.blog .small-ow,
+.blog .large-ow {
+  background: #f5f6f8;
+  margin: 0.5em;
+  height: 60vh;
+  width: 30%;
+  cursor: pointer;
+}
+.blog .large-ow {
+  width: 61.5%;
+}
+.blog .large-ow .row {
+  height: inherit;
+  display: block;
+}
+.blog .large-ow-image {
+  box-sizing: content-box;
+  height: inherit;
+}
+.blog .large-ow-text {
+  height: inherit;
+  padding: 0;
+  width: 47%;
+}
+.blog .large-ow-image {
+  float: left;
+  padding: 0;
+}
+.blog .large-ow-text {
+  float: right;
+}
+.blog .large-ow-text .content-title,
+.blog .large-ow-text .content {
+  padding: 10px;
+}
+.blog .large-ow-text .content-title {
+  margin-top: 1em;
+}
+.blog .author-details {
+  margin-top: 2.5em;
+}
+.blog .author-img {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  background-clip: padding-box;
+  /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+}
+.blog .author-name,
+.blog .author-description {
+  margin-left: 55px;
+}
+.blog .author-name {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 14px;
+  padding-top: 0.47em;
+}
+.blog .author-description {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  font-size: 10px;
+  color: #b7b7b8;
+}
+.blog .small-ow-image {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+}
+.blog .small-ow-text {
+  position: absolute;
+  background: #f5f6f8;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+.blog .small-ow-text .small-ow-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 16px;
+  padding: 1em;
+}
+.blog .small-ow-text .small-ow-author {
+  font: 400 20px "Roboto", Tahoma, sans-serif;
+  color: #b7b7b8;
+  font-size: 14px;
+  padding: 0 0 2em 16px;
+}
+.blog .mobile-gallery {
+  display: none;
+}
+.blog footer {
+  padding: 10em 0 2em 0;
+  background: url("../images/footer_decoration.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+.blog footer .description,
+.blog footer .lite {
+  color: #e6e6e6;
+}
+.blog footer ul {
+  flex-direction: column;
+}
+.blog footer ul li {
+  color: white;
+  line-height: 1.75em;
+}
+.blog footer ul li:first-child {
+  margin: 0.5em 0;
+  margin-left: 1em;
+}
+.blog footer ul li a {
+  color: #e6e6e6;
+  font-size: 12px;
+}
+.blog footer ul li a:hover {
+  color: #cccccc;
+}
+.blog #address-fix {
+  margin-left: 1.4em;
+  margin-bottom: 0.5em;
+}
+.blog .footer-title {
+  font: 500 20px "Roboto", Verdana, sans-serif;
+  font-size: 18px;
+}
+.blog footer > .container > .row {
+  padding-bottom: 3em;
+}
+.blog .copyright {
+  display: flex;
+  justify-content: center;
+  widows: 100%;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .blog .top-menu-button a {
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .blog #solution-img {
+    width: 100%;
+  }
+  .blog #cta-title {
+    font-size: 35px;
+  }
+  .blog #cta-text {
+    font-size: 15px;
+  }
+  .blog #search-button-pannel {
+    right: 20%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .blog #solution-img {
+    width: 100%;
+  }
+  .blog #cta-title {
+    font-size: 35px;
+  }
+  .blog #cta-text {
+    font-size: 15px;
+  }
+  .blog .author-details {
+    position: absolute;
+    bottom: 1.5em;
+  }
+}
+@media (max-width: 767.98px) {
+  .blog .top-menu-button,
+  .blog .navigation-menu ul {
+    display: none;
+  }
+  .blog #nav-action-pannel {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center !important;
+  }
+  .blog .mobile-hamburger-button {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+  }
+  .blog .lite .mobile-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .blog header {
+    position: fixed;
+    top: 0;
+    background: #27a46a4f;
+    width: 100%;
+    z-index: 99;
+    transition: 0.3s ease-in-out;
+  }
+  .blog .lite header {
+    background: white;
+  }
+  .blog .main-cta {
+    padding-top: 5em;
+  }
+  .blog .main-background {
+    background: url("../images/blog/main_cta_background_mobile.png");
+    background-size: cover;
+    padding-top: 1px;
+  }
+  .blog .lite .main-background {
+    background: white;
+  }
+  .blog #cta-title {
+    font-family: "Roboto", Verdana, sans-serif;
+    font-weight: bold;
+    padding-top: 3em;
+  }
+  .blog #solution-img {
+    width: 100%;
+  }
+  .blog .sidebar {
+    display: block;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    right: -100vw;
+    z-index: 100;
+    overflow-y: scroll;
+    border-radius: 10px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    background: #27a469;
+    transition: 0.5s ease-in-out;
+    -webkit-box-shadow: 0 -10px 27px -8px #000000;
+    box-shadow: 0 -10px 27px -8px #000000;
+  }
+  .blog .sidebar .button {
+    background: white;
+  }
+  .blog .sidebar .button:hover {
+    background: #e6e6e6;
+  }
+  .blog .sidebar .button a {
+    color: #27a469;
+  }
+  .blog .sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    clear: both;
+    margin-top: 4em;
+  }
+  .blog .sidebar ul li a {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.3em;
+  }
+  .blog .sidebar ul hr {
+    border-top: 1px solid #dedede;
+    margin: 0;
+    margin-bottom: 1.3em;
+  }
+  .blog .sidebar.lite {
+    background: white;
+  }
+  .blog .sidebar.lite li a {
+    color: #27a469;
+  }
+  .blog .sidebar.lite .button {
+    background: #27a469;
+  }
+  .blog .sidebar.lite .button:hover {
+    background: #31cd83;
+  }
+  .blog .sidebar.lite .button a {
+    color: white;
+  }
+  .blog .sidebar.lite .side-menu-hamburger-button {
+    background-position: 0 -192px;
+  }
+  .blog #contact-slidebar-button a {
+    font-size: 20px;
+    padding: 1em;
+  }
+  .blog .side-menu-hamburger-button {
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: -45vw;
+    margin: 24px 26px 25px 25px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites.png");
+    background-position: -320px -128px;
+    transition: 0.5s ease-in-out;
+  }
+  .blog #cta-title,
+  .blog #cta-text {
+    text-align: center;
+  }
+  .blog #cta-text {
+    font-size: 14pt;
+  }
+  .blog #cta-title {
+    font-size: 35px;
+  }
+  .blog #cta-button {
+    margin: auto;
+    width: 200px;
+    border-radius: 5px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .blog #cta-button a {
+    font-size: 14pt;
+  }
+  .blog #solution-img {
+    margin-top: 5em;
+  }
+  .blog #cta-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog #cta-input input[type="text"] {
+    font-size: 18px;
+    padding: 1em;
+  }
+  .blog #search-button-pannel {
+    right: 9.5%;
+    top: 7%;
+    padding: 0.2em 0.5em;
+  }
+  .blog #search-button-pannel input {
+    width: 34px;
+    height: 36px;
+    background-size: 1400%;
+    background-position: -73px -149px;
+  }
+  .blog .mobile-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog .mobile-gallery .row {
+    width: 100%;
+  }
+  .blog .gallery {
+    display: none;
+  }
+  .blog .small-ow {
+    width: 90%;
+    border-radius: 7px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+    overflow: hidden;
+    height: 420px;
+  }
+  .blog .blog-button {
+    width: 90%;
+    border-radius: 7px;
+    /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+    /* useful if you don't want a bg color from leaking outside the border: */
+    background-clip: padding-box;
+    /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera*/
+  }
+  .blog .blog-button a {
+    font-size: 20px;
+    padding: 0.5em 0;
+  }
+  .blog footer {
+    padding-top: 4em;
+    background: #27a469;
+  }
+  .blog footer ul li:first-child {
+    margin-bottom: 1em;
+  }
+  .blog footer .logo a {
+    font-size: 35px;
+  }
+  .blog footer .description {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  .blog footer .footer-list .content {
+    margin-bottom: 0.6em;
+  }
+  .blog footer .footer-list .footer-title,
+  .blog footer .footer-list .content {
+    font-size: 27px;
+  }
+  .blog footer #address-fix {
+    margin-left: 0.75em;
+  }
+  .blog footer hr {
+    color: #cccccc;
+    border-top: 2px solid #cccccc;
+  }
+  .blog footer .copyright {
+    justify-content: flex-start;
+    font-size: 27px;
+    color: #e6e6e6;
+  }
+}
